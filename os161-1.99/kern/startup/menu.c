@@ -274,6 +274,21 @@ cmd_panic(int nargs, char **args)
 }
 
 /*
+ * Command for enabling DB_THREAD dubugging messages .
+ */
+static
+int
+cmd_dth(int nargs, char **args)
+{
+	(void)nargs;
+	(void)args;
+
+	dbflags = DB_THREADS; 
+	return 0;
+}
+
+
+/*
  * Command for shutting down.
  */
 static
@@ -436,7 +451,8 @@ static const char *opsmenu[] = {
 	"[pwd]     Print current directory   ",
 	"[sync]    Sync filesystems          ",
 	"[panic]   Intentional panic         ",
-	"[q]       Quit and shut down        ",
+	"[dth]		 Enable DB_THREADS debugging msgs",
+	"[q]       Quit and shut down        ",	
 	NULL
 };
 
@@ -549,6 +565,7 @@ static struct {
 	{ "q",		cmd_quit },
 	{ "exit",	cmd_quit },
 	{ "halt",	cmd_quit },
+	{ "dth",  cmd_dth },
 
 #if OPT_SYNCHPROBS
 	/* in-kernel synchronization problem(s) */
