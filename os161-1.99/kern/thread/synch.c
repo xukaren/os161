@@ -47,20 +47,20 @@
 struct semaphore *
 sem_create(const char *name, int initial_count)
 {
-        struct semaphore *sem;
+	struct semaphore *sem;
 
-        KASSERT(initial_count >= 0);
+	KASSERT(initial_count >= 0);
 
-        sem = kmalloc(sizeof(struct semaphore));
-        if (sem == NULL) {
-                return NULL;
-        }
+	sem = kmalloc(sizeof(struct semaphore));
+	if (sem == NULL) {
+		return NULL;
+	}
 
-        sem->sem_name = kstrdup(name);
-        if (sem->sem_name == NULL) {
-                kfree(sem);
-                return NULL;
-        }
+	sem->sem_name = kstrdup(name);
+	if (sem->sem_name == NULL) {
+		kfree(sem);
+		return NULL;
+	}
 
 	sem->sem_wchan = wchan_create(sem->sem_name);
 	if (sem->sem_wchan == NULL) {
@@ -161,20 +161,35 @@ lock_create(const char *name)
         if (lock->lk_name == NULL) {
                 kfree(lock);
                 return NULL;
-        }
-        
-        // add stuff here as needed
-        
-        return lock;
+}
+
+				// added:
+				lock->lk_wchan = wchan_create(lock->lk_name);
+				if(lock->lk_wchan == NULL){
+								kfree(lock->lk_name);
+								//kfree(lock->lk_owner); //needed? 
+								kfree(lock);
+								return NULL;
+				}
+
+				spinlock_init(&lock->lk_spinlock); 
+
+				lock->lk_held = false; 
+				lock->lk_owner = NULL;
+
+				return lock;
 }
 
 void
 lock_destroy(struct lock *lock)
 {
         KASSERT(lock != NULL);
-
-        // add stuff here as needed
-        
+			
+        // added below:
+				/* wchan_cleanup will assert if anyone's waiting on it */
+        spinlock_cleanup(&lock->lk_spinlock); 
+				wchan_destroy(lock->lk_wchan);
+				//note: we do not want to destroy the thread who owns it
         kfree(lock->lk_name);
         kfree(lock);
 }
@@ -182,27 +197,60 @@ lock_destroy(struct lock *lock)
 void
 lock_acquire(struct lock *lock)
 {
-        // Write this
+        // Added
+				KASSERT(lock != NULL);
+				KASSERT(!lock_do_i_hold(lock));
 
-        (void)lock;  // suppress warning until code gets written
+				spinlock_acquire(&lock->lk_spinlock);
+				while(lock->lk_held){
+					wchan_lock(&lock->lk_wchan);
+					spinlock_release(&lock->lk_spinlock);
+					wcchan_sleep(&lock->lk_wchan);
+					spinlock_acquire(&lock->lk_spinlock);
+				}}
+				KASSERT(!lock->lk_held);
+				lock->lk_held = true; 
+				lock->lk_owner = curthread; // where is this global variable defined?
+				spinlock_release(&lock->lk_spinlock);
+
+        //(void)lock;  // suppress warning until code gets written
 }
 
 void
 lock_release(struct lock *lock)
 {
-        // Write this
+				//Added:
+				KASSERT(lock != NULL);
 
-        (void)lock;  // suppress warning until code gets written
+				spinlock_acquire(lock->lk_spinlock);
+				
+				KASSERT(lock->lk_held);
+				KASSERT(lock->lk_thread == curthread);
+				
+				lock->lk_held = false;
+				lock->lk_owner = NULL;
+				
+				KASSERT(!lock->lk_held); 
+				wchan_wakeone(&lock->lk_wchan);
+
+				spinlock_release(&lock->lk_spinlock);
+				
+        //(void)lock;  // suppress warning until code gets written
 }
 
 bool
 lock_do_i_hold(struct lock *lock)
 {
-        // Write this
+				// Added: 
+				KASSERT(lock != NULL);
+				
+				bool do_i_hold = false;
 
-        (void)lock;  // suppress warning until code gets written
+				spinlock_acquire(&lock->lk_spinlock);
+				do_i_hold = lock->lk_held && lock->lk_owner = curthread; 
+				spinlock_release(&lock->lk_spinlock);
 
-        return true; // dummy until code gets written
+        return do_i_hold;
 }
 
 ////////////////////////////////////////////////////////////

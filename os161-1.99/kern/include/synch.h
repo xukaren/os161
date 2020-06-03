@@ -43,18 +43,18 @@
  * The name field is for easier debugging. A copy of the name is made
  * internally.
  */
-struct semaphore {
-        char *sem_name;
+struct semaphore { 
+  char *sem_name;
 	struct wchan *sem_wchan;
 	struct spinlock sem_lock;
-        volatile int sem_count;
+  volatile int sem_count;
 };
 
 struct semaphore *sem_create(const char *name, int initial_count);
 void sem_destroy(struct semaphore *);
 
 /*
- * Operations (both atomic):
+ * Operations (both at}omic):
  *     P (proberen): decrement count. If the count is 0, block until
  *                   the count is 1 again before decrementing.
  *     V (verhogen): increment count.
@@ -74,6 +74,12 @@ void V(struct semaphore *);
  */
 struct lock {
         char *lk_name;
+	
+				volatile bool lk_held;
+				struct thread * lk_owner;
+				struct spinlock lk_spinlock;
+				struct wchan lk_wchan;
+
         // add what you need here
         // (don't forget to mark things volatile as needed)
 };
