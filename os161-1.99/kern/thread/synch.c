@@ -203,11 +203,11 @@ lock_acquire(struct lock *lock)
 
 				spinlock_acquire(&lock->lk_spinlock);
 				while(lock->lk_held){
-					wchan_lock(&lock->lk_wchan);
+					wchan_lock(lock->lk_wchan);
 					spinlock_release(&lock->lk_spinlock);
-					wcchan_sleep(&lock->lk_wchan);
+					wchan_sleep(lock->lk_wchan);
 					spinlock_acquire(&lock->lk_spinlock);
-				}}
+				}
 				KASSERT(!lock->lk_held);
 				lock->lk_held = true; 
 				lock->lk_owner = curthread; // where is this global variable defined?
@@ -222,16 +222,16 @@ lock_release(struct lock *lock)
 				//Added:
 				KASSERT(lock != NULL);
 
-				spinlock_acquire(lock->lk_spinlock);
+				spinlock_acquire(&lock->lk_spinlock);
 				
 				KASSERT(lock->lk_held);
-				KASSERT(lock->lk_thread == curthread);
+				KASSERT(lock->lk_owner == curthread);
 				
 				lock->lk_held = false;
 				lock->lk_owner = NULL;
 				
 				KASSERT(!lock->lk_held); 
-				wchan_wakeone(&lock->lk_wchan);
+				wchan_wakeone(lock->lk_wchan);
 
 				spinlock_release(&lock->lk_spinlock);
 				
@@ -247,7 +247,7 @@ lock_do_i_hold(struct lock *lock)
 				bool do_i_hold = false;
 
 				spinlock_acquire(&lock->lk_spinlock);
-				do_i_hold = lock->lk_held && lock->lk_owner = curthread; 
+				do_i_hold = (lock->lk_held && lock->lk_owner == curthread); 
 				spinlock_release(&lock->lk_spinlock);
 
         return do_i_hold;
