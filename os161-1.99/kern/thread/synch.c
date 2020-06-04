@@ -49,27 +49,27 @@ sem_create(const char *name, int initial_count)
 {
 	struct semaphore *sem;
 
-	KASSERT(initial_count >= 0);
+			KASSERT(initial_count >= 0);
 
-	sem = kmalloc(sizeof(struct semaphore));
-	if (sem == NULL) {
-		return NULL;
-	}
+			sem = kmalloc(sizeof(struct semaphore));
+			if (sem == NULL) {
+					return NULL;
+			}
 
-	sem->sem_name = kstrdup(name);
-	if (sem->sem_name == NULL) {
-		kfree(sem);
-		return NULL;
-	}
+			sem->sem_name = kstrdup(name);
+			if (sem->sem_name == NULL) {
+					kfree(sem);
+					return NULL;
+			}
 
-	sem->sem_wchan = wchan_create(sem->sem_name);
-	if (sem->sem_wchan == NULL) {
-		kfree(sem->sem_name);
-		kfree(sem);
-		return NULL;
-	}
+				sem->sem_wchan = wchan_create(sem->sem_name);
+					if (sem->sem_wchan == NULL) {
+							kfree(sem->sem_name);
+							kfree(sem);
+							return NULL;
+				}
 
-	spinlock_init(&sem->sem_lock);
+				spinlock_init(&sem->sem_lock);
         sem->sem_count = initial_count;
 
         return sem;
@@ -200,6 +200,7 @@ lock_acquire(struct lock *lock)
         // Added
 				KASSERT(lock != NULL);
 				KASSERT(!lock_do_i_hold(lock));
+				// KASSERT(!curthread->t_in_interrupt);
 
 				spinlock_acquire(&lock->lk_spinlock);
 				while(lock->lk_held){
@@ -210,10 +211,9 @@ lock_acquire(struct lock *lock)
 				}
 				KASSERT(!lock->lk_held);
 				lock->lk_held = true; 
-				lock->lk_owner = curthread; // where is this global variable defined?
+				lock->lk_owner = curthread; 
 				spinlock_release(&lock->lk_spinlock);
 
-        //(void)lock;  // suppress warning until code gets written
 }
 
 void
@@ -235,7 +235,6 @@ lock_release(struct lock *lock)
 
 				spinlock_release(&lock->lk_spinlock);
 				
-        //(void)lock;  // suppress warning until code gets written
 }
 
 bool
@@ -274,8 +273,14 @@ cv_create(const char *name)
                 return NULL;
         }
         
-        // add stuff here as needed
-        
+        // Added:  
+				cv->cv_wchan = wchan_create(cv->cv_name); 
+				if(cv->cv_wchan == NULL){
+					kfree(cv->cv_name);
+					kfree(cv);
+					return NULL;
+				}
+				
         return cv;
 }
 
@@ -284,8 +289,9 @@ cv_destroy(struct cv *cv)
 {
         KASSERT(cv != NULL);
 
-        // add stuff here as needed
-        
+        // added:
+				wchan_destroy(cv->cv_wchan);
+
         kfree(cv->cv_name);
         kfree(cv);
 }
@@ -293,23 +299,38 @@ cv_destroy(struct cv *cv)
 void
 cv_wait(struct cv *cv, struct lock *lock)
 {
-        // Write this
-        (void)cv;    // suppress warning until code gets written
-        (void)lock;  // suppress warning until code gets written
+				KASSERT(cv!=NULL);
+				KASSERT(!curthread->t_in_interrupt);
+        
+				// Added:
+				wchan_lock(cv->cv_wchan);
+				lock_release(lock); 
+				wchan_sleep(cv->cv_wchan); 
+				// thread wakes here
+				lock_acquire(lock); 
+			//	wchan_wake(cv->cv_wchan); 
+
 }
 
 void
 cv_signal(struct cv *cv, struct lock *lock)
 {
-        // Write this
-	(void)cv;    // suppress warning until code gets written
-	(void)lock;  // suppress warning until code gets written
+
+	// Added
+	KASSERT(cv != NULL);
+	KASSERT(!curthread->t_in_interrupt);
+	wchan_wakeone(cv->cv_wchan);
+	(void)lock;  // suppress warning 
+	
 }
 
 void
 cv_broadcast(struct cv *cv, struct lock *lock)
 {
-	// Write this
-	(void)cv;    // suppress warning until code gets written
-	(void)lock;  // suppress warning until code gets written
+	//Added:
+	KASSERT(cv != NULL); 
+	KASSERT(!curthread->t_in_interrupt);
+	wchan_wakeall(cv->cv_wchan);
+	(void)lock;  // suppress warning
+
 }

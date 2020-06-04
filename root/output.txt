@@ -1,0 +1,335 @@
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #3)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+OS/161 kernel: sy2
+Starting lock test...
+cleanitems: Destroying sems, locks, and cvs
+Lock test done.
+Operation took 1.985497320 seconds
+OS/161 kernel: q
+Shutting down.
+The system is halted.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #3)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+OS/161 kernel: sy2
+Starting lock test...
+cleanitems: Destroying sems, locks, and cvs
+Lock test done.
+Operation took 1.858006280 seconds
+OS/161 kernel: q
+Shutting down.
+The system is halted.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #3)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+OS/161 kernel: sy2
+Starting lock test...
+cleanitems: Destroying sems, locks, and cvs
+Lock test done.
+Operation took 1.865016120 seconds
+OS/161 kernel: q
+Shutting down.
+The system is halted.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #3)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+OS/161 kernel: sy2
+Starting lock test...
+cleanitems: Destroying sems, locks, and cvs
+Lock test done.
+Operation took 1.928671400 seconds
+OS/161 kernel: q
+Shutting down.
+The system is halted.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #3)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+OS/161 kernel: sy2
+Starting lock test...
+cleanitems: Destroying sems, locks, and cvs
+Lock test done.
+Operation took 2.024744840 seconds
+OS/161 kernel: q
+Shutting down.
+The system is halted.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #3)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+OS/161 kernel: sy2
+Starting lock test...
+cleanitems: Destroying sems, locks, and cvs
+Lock test done.
+Operation took 2.018594000 seconds
+OS/161 kernel: q
+Shutting down.
+The system is halted.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #3)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+OS/161 kernel: sy2
+Starting lock test...
+cleanitems: Destroying sems, locks, and cvs
+Lock test done.
+Operation took 1.778651120 seconds
+OS/161 kernel: q
+Shutting down.
+The system is halted.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #3)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+OS/161 kernel: sy2
+Starting lock test...
+cleanitems: Destroying sems, locks, and cvs
+Lock test done.
+Operation took 1.942194720 seconds
+OS/161 kernel: q
+Shutting down.
+The system is halted.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #3)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+OS/161 kernel: sy2
+Starting lock test...
+cleanitems: Destroying sems, locks, and cvs
+Lock test done.
+Operation took 1.911513240 seconds
+OS/161 kernel: q
+Shutting down.
+The system is halted.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #3)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+OS/161 kernel: sy2
+Starting lock test...
+cleanitems: Destroying sems, locks, and cvs
+Lock test done.
+Operation took 1.913008240 seconds
+OS/161 kernel: q
+Shutting down.
+The system is halted.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #3)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+OS/161 kernel: sy2
+Starting lock test...

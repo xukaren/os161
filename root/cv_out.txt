@@ -1,0 +1,192 @@
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #3)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+OS/161 kernel: sy3
+Starting CV test...
+32 threads should print out in reverse order 5 times.
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+cleanitems: Destroying sems, locks, and cvs
+CV test done
+Operation took 2.526596720 seconds
+OS/161 kernel: q
+Shutting down.
+The system is halted.
