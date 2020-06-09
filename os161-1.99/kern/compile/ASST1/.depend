@@ -354,7 +354,8 @@ traffic_synch.o: ../../synchprobs/traffic_synch.c ../../include/types.h \
   ../../include/kern/types.h includelinks/kern/machine/types.h \
   includelinks/machine/types.h ../../include/lib.h ../../include/cdefs.h \
   opt-noasserts.h ../../include/synchprobs.h ../../include/synch.h \
-  ../../include/spinlock.h includelinks/machine/spinlock.h opt-A1.h
+  ../../include/spinlock.h includelinks/machine/spinlock.h opt-A1.h \
+  ../../include/queue.h
 whalemating.o: ../../synchprobs/whalemating.c ../../include/types.h \
   ../../include/kern/types.h includelinks/kern/machine/types.h \
   includelinks/machine/types.h ../../include/lib.h ../../include/cdefs.h \

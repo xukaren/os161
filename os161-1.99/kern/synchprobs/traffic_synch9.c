@@ -147,28 +147,23 @@ intersection_before_entry(Direction origin, Direction destination)
   kprintf("entering car: %d -> %d\n", origin, destination); 
   
   while(true){
-    // if currDir is unset, set it and go 
-    if(currDir == -1){
-      currDir = (int)origin;
-      break;  //go 
-    
-    // if currDir is equal to origin, go 
-    } else if(currDir == (int)origin){
-      break;  //go 
-      
-    // if intersection belongs to another direction, and no other cars waiting at other 3 directions, 
-    // then take the intersection and go 
-    } else if (numCars[(origin+1)%4] == 0 && numCars[(origin+2)%4] != 0 &&  numCars[(origin+3)%4] != 0){
-      currDir = origin; 
-      break; // go 
-     
-     // if intersection belong to another direction and there are cars at other parts of, then wait 
-    }  else {
-       kprintf("sleeping car: %d -> %d\n", origin, destination); 
-       cv_wait(getCV((int)origin), cv_mutex); // wait
-    }
+  if(currDir == -1){
+  	currDir = (int)origin;
+	break;
+	//go
+  } else if(currDir == (int)origin){
+  	break;
+  	//go 
+  }else { 
+  	// wait 
+  	if (numCars[(origin+1)%4] != 0 || numCars[(origin+2)%4] != 0 || numCars[(origin+3)%4] != 0){
+	  	cv_wait(getCV((int)origin), cv_mutex);
+ 	 }
+	 else {
+	 	break;
+	 }
   }
-
+}
   numCars[(int)origin]++; 	 
   kprintf("N:%d E:%d S:%d W:%d and releasing lock in before\n", (int)numCars[0], (int)numCars[1], (int)numCars[2], (int)numCars[3]);  
   lock_release(cv_mutex);
@@ -201,25 +196,27 @@ intersection_after_exit(Direction origin, Direction destination)
  
   kprintf ("exiting car: %d ->  %d\n", origin, destination);
    
+ // cout << numCars[0;
   numCars[(int)origin]--;
  
    // if no more cars in the current direction, wake up other cars from another direction
-  if(numCars[(int)origin] == 0){
-    currDir = -1; // give up holding intersection 
-
-  	// choose direction to hand off intersection to 
-	  for (int i = 1; i <= 3; i++){
-      int newDir = (origin+i)%4;
-
-		  // find a direction with cars waiting (just one)
+   if(numCars[(int)origin] == 0){
+  	currDir = -1; // reset 
+  	//hand off intersection
+	for (int i = 1; i <= 3; i++){
+ 
+		//kprintf("in for loop\n"); // it is getting here
+   		int newDir = (origin+i)%4;
+		kprintf("%d, %d , %d\n", newDir, numCars[newDir], numCars[(int)newDir]);
+		// hand off a direction with cars waiting 
    		if(numCars[(int)newDir] > 0){
-			  // NEVER GETTING HERE 		
-			  kprintf("waking up cars in %d\n", newDir);
-    		currDir = newDir; 
+			// NEVER GETTING HERE 		
+			kprintf("waking up cars in %d\n", newDir);
+    			currDir = newDir; 
    			cv_broadcast(getCV(newDir), cv_mutex);
-			  break;  // found one 
-    	}
- 	  }
+			break;
+    		}
+ 	 }
   }
   
   kprintf("N:%d E:%d S:%d W:%d and releasing lock in exit\n", numCars[0], numCars[1], numCars[2], numCars[3]);  

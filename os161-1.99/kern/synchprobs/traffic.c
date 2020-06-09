@@ -56,7 +56,6 @@ static int DirectionBias = 0;  // 0 = unbiased, 1 = biased
  * simulation threads are finished.
  */
 static struct semaphore *SimulationWait;
-
 /*
  *
  * shared simulation state
