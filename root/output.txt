@@ -3,7 +3,7 @@ OS/161 base system version 1.99.05
 Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
    President and Fellows of Harvard College.  All rights reserved.
 
-Karen Xu's system version 0 (ASST1 #3)
+Karen Xu's system version 0 (ASST1 #128)
 
 280k physical memory available
 Device probe...
@@ -21,20 +21,367 @@ lser0 at lamebus0
 con0 at lser0
 
 cpu0: MIPS r3000
-OS/161 kernel: sy2
-Starting lock test...
-cleanitems: Destroying sems, locks, and cvs
-Lock test done.
-Operation took 1.985497320 seconds
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	186 vehicles, average wait 0.015 seconds, max wait 0.059 seconds
+E:	220 vehicles, average wait 0.017 seconds, max wait 0.071 seconds
+S:	191 vehicles, average wait 0.017 seconds, max wait 0.059 seconds
+W:	203 vehicles, average wait 0.017 seconds, max wait 0.061 seconds
+all:	800 vehicles, average 0.017 seconds waiting
+Simulation: 2.590 seconds, 800 vehicles
+Operation took 2.698795657 seconds
 OS/161 kernel: q
 Shutting down.
+cpu0: offline.
+cpu2: offline.
+The system is halted.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	188 vehicles, average wait 0.016 seconds, max wait 0.069 seconds
+E:	218 vehicles, average wait 0.015 seconds, max wait 0.051 seconds
+S:	183 vehicles, average wait 0.018 seconds, max wait 0.061 seconds
+W:	211 vehicles, average wait 0.016 seconds, max wait 0.060 seconds
+all:	800 vehicles, average 0.016 seconds waiting
+Simulation: 2.589 seconds, 800 vehicles
+Operation took 2.732063817 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	201 vehicles, average wait 0.017 seconds, max wait 0.070 seconds
+E:	200 vehicles, average wait 0.016 seconds, max wait 0.052 seconds
+S:	219 vehicles, average wait 0.017 seconds, max wait 0.061 seconds
+W:	180 vehicles, average wait 0.019 seconds, max wait 0.069 seconds
+all:	800 vehicles, average 0.017 seconds waiting
+Simulation: 2.611 seconds, 800 vehicles
+Operation took 2.752441097 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	202 vehicles, average wait 0.017 seconds, max wait 0.062 seconds
+E:	201 vehicles, average wait 0.015 seconds, max wait 0.059 seconds
+S:	194 vehicles, average wait 0.017 seconds, max wait 0.052 seconds
+W:	203 vehicles, average wait 0.017 seconds, max wait 0.062 seconds
+all:	800 vehicles, average 0.016 seconds waiting
+Simulation: 2.589 seconds, 800 vehicles
+Operation took 2.699108057 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu3: offline.
+The system is halted.
+cpu2: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	208 vehicles, average wait 0.017 seconds, max wait 0.061 seconds
+E:	201 vehicles, average wait 0.019 seconds, max wait 0.070 seconds
+S:	199 vehicles, average wait 0.015 seconds, max wait 0.052 seconds
+W:	192 vehicles, average wait 0.017 seconds, max wait 0.052 seconds
+all:	800 vehicles, average 0.017 seconds waiting
+Simulation: 2.551 seconds, 800 vehicles
+Operation took 2.695694657 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	172 vehicles, average wait 0.018 seconds, max wait 0.061 seconds
+E:	216 vehicles, average wait 0.015 seconds, max wait 0.051 seconds
+S:	207 vehicles, average wait 0.019 seconds, max wait 0.062 seconds
+W:	205 vehicles, average wait 0.015 seconds, max wait 0.070 seconds
+all:	800 vehicles, average 0.017 seconds waiting
+Simulation: 2.571 seconds, 800 vehicles
+Operation took 2.711881617 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+cpu2: offline.
+The system is halted.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	198 vehicles, average wait 0.016 seconds, max wait 0.052 seconds
+E:	199 vehicles, average wait 0.015 seconds, max wait 0.052 seconds
+S:	199 vehicles, average wait 0.017 seconds, max wait 0.061 seconds
+W:	204 vehicles, average wait 0.016 seconds, max wait 0.059 seconds
+all:	800 vehicles, average 0.016 seconds waiting
+Simulation: 2.568 seconds, 800 vehicles
+Operation took 2.678739577 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	195 vehicles, average wait 0.018 seconds, max wait 0.071 seconds
+E:	203 vehicles, average wait 0.015 seconds, max wait 0.061 seconds
+S:	218 vehicles, average wait 0.014 seconds, max wait 0.059 seconds
+W:	184 vehicles, average wait 0.017 seconds, max wait 0.070 seconds
+all:	800 vehicles, average 0.016 seconds waiting
+Simulation: 2.590 seconds, 800 vehicles
+Operation took 2.700021937 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu3: offline.
+The system is halted.
+cpu2: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	196 vehicles, average wait 0.015 seconds, max wait 0.050 seconds
+E:	200 vehicles, average wait 0.017 seconds, max wait 0.061 seconds
+S:	204 vehicles, average wait 0.018 seconds, max wait 0.061 seconds
+W:	200 vehicles, average wait 0.018 seconds, max wait 0.052 seconds
+all:	800 vehicles, average 0.017 seconds waiting
+Simulation: 2.579 seconds, 800 vehicles
+Operation took 2.689237937 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu3: offline.
+cpu1: offline.
 The system is halted.
 
 OS/161 base system version 1.99.05
 Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
    President and Fellows of Harvard College.  All rights reserved.
 
-Karen Xu's system version 0 (ASST1 #3)
+Karen Xu's system version 0 (ASST1 #128)
 
 280k physical memory available
 Device probe...
@@ -52,20 +399,115 @@ lser0 at lamebus0
 con0 at lser0
 
 cpu0: MIPS r3000
-OS/161 kernel: sy2
-Starting lock test...
-cleanitems: Destroying sems, locks, and cvs
-Lock test done.
-Operation took 1.858006280 seconds
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	199 vehicles, average wait 0.016 seconds, max wait 0.062 seconds
+E:	209 vehicles, average wait 0.016 seconds, max wait 0.051 seconds
+S:	199 vehicles, average wait 0.018 seconds, max wait 0.069 seconds
+W:	193 vehicles, average wait 0.019 seconds, max wait 0.070 seconds
+all:	800 vehicles, average 0.017 seconds waiting
+Simulation: 2.590 seconds, 800 vehicles
+Operation took 2.699074737 seconds
 OS/161 kernel: q
 Shutting down.
+cpu0: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	207 vehicles, average wait 0.016 seconds, max wait 0.051 seconds
+E:	199 vehicles, average wait 0.016 seconds, max wait 0.070 seconds
+S:	182 vehicles, average wait 0.016 seconds, max wait 0.060 seconds
+W:	212 vehicles, average wait 0.016 seconds, max wait 0.059 seconds
+all:	800 vehicles, average 0.016 seconds waiting
+Simulation: 2.600 seconds, 800 vehicles
+Operation took 2.709682777 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu2: offline.
+The system is halted.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	196 vehicles, average wait 0.016 seconds, max wait 0.071 seconds
+E:	220 vehicles, average wait 0.017 seconds, max wait 0.071 seconds
+S:	182 vehicles, average wait 0.019 seconds, max wait 0.061 seconds
+W:	202 vehicles, average wait 0.016 seconds, max wait 0.063 seconds
+all:	800 vehicles, average 0.017 seconds waiting
+Simulation: 2.668 seconds, 800 vehicles
+Operation took 2.810381017 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+cpu2: offline.
+cpu3: offline.
 The system is halted.
 
 OS/161 base system version 1.99.05
 Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
    President and Fellows of Harvard College.  All rights reserved.
 
-Karen Xu's system version 0 (ASST1 #3)
+Karen Xu's system version 0 (ASST1 #128)
 
 280k physical memory available
 Device probe...
@@ -83,20 +525,157 @@ lser0 at lamebus0
 con0 at lser0
 
 cpu0: MIPS r3000
-OS/161 kernel: sy2
-Starting lock test...
-cleanitems: Destroying sems, locks, and cvs
-Lock test done.
-Operation took 1.865016120 seconds
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	220 vehicles, average wait 0.017 seconds, max wait 0.082 seconds
+E:	181 vehicles, average wait 0.019 seconds, max wait 0.071 seconds
+S:	198 vehicles, average wait 0.018 seconds, max wait 0.075 seconds
+W:	201 vehicles, average wait 0.016 seconds, max wait 0.077 seconds
+all:	800 vehicles, average 0.017 seconds waiting
+Simulation: 2.657 seconds, 800 vehicles
+Operation took 2.766861177 seconds
 OS/161 kernel: q
 Shutting down.
+cpu0: offline.
+cpu2: offline.
+The system is halted.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	202 vehicles, average wait 0.018 seconds, max wait 0.062 seconds
+E:	215 vehicles, average wait 0.015 seconds, max wait 0.061 seconds
+S:	157 vehicles, average wait 0.018 seconds, max wait 0.070 seconds
+W:	226 vehicles, average wait 0.018 seconds, max wait 0.071 seconds
+all:	800 vehicles, average 0.017 seconds waiting
+Simulation: 2.601 seconds, 800 vehicles
+Operation took 2.742398217 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	202 vehicles, average wait 0.016 seconds, max wait 0.061 seconds
+E:	184 vehicles, average wait 0.017 seconds, max wait 0.052 seconds
+S:	211 vehicles, average wait 0.017 seconds, max wait 0.071 seconds
+W:	203 vehicles, average wait 0.018 seconds, max wait 0.072 seconds
+all:	800 vehicles, average 0.017 seconds waiting
+Simulation: 2.611 seconds, 800 vehicles
+Operation took 2.720956497 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+The system is halted.
+cpu3: offline.
+cpu2: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	188 vehicles, average wait 0.017 seconds, max wait 0.052 seconds
+E:	208 vehicles, average wait 0.014 seconds, max wait 0.052 seconds
+S:	193 vehicles, average wait 0.019 seconds, max wait 0.062 seconds
+W:	211 vehicles, average wait 0.017 seconds, max wait 0.062 seconds
+all:	800 vehicles, average 0.017 seconds waiting
+Simulation: 2.488 seconds, 800 vehicles
+Operation took 2.600382057 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu3: offline.
+cpu1: offline.
 The system is halted.
 
 OS/161 base system version 1.99.05
 Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
    President and Fellows of Harvard College.  All rights reserved.
 
-Karen Xu's system version 0 (ASST1 #3)
+Karen Xu's system version 0 (ASST1 #128)
 
 280k physical memory available
 Device probe...
@@ -114,20 +693,157 @@ lser0 at lamebus0
 con0 at lser0
 
 cpu0: MIPS r3000
-OS/161 kernel: sy2
-Starting lock test...
-cleanitems: Destroying sems, locks, and cvs
-Lock test done.
-Operation took 1.928671400 seconds
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	218 vehicles, average wait 0.016 seconds, max wait 0.052 seconds
+E:	211 vehicles, average wait 0.017 seconds, max wait 0.059 seconds
+S:	192 vehicles, average wait 0.017 seconds, max wait 0.052 seconds
+W:	179 vehicles, average wait 0.020 seconds, max wait 0.062 seconds
+all:	800 vehicles, average 0.017 seconds waiting
+Simulation: 2.615 seconds, 800 vehicles
+Operation took 2.755739217 seconds
 OS/161 kernel: q
 Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	208 vehicles, average wait 0.017 seconds, max wait 0.070 seconds
+E:	192 vehicles, average wait 0.015 seconds, max wait 0.082 seconds
+S:	199 vehicles, average wait 0.016 seconds, max wait 0.072 seconds
+W:	201 vehicles, average wait 0.017 seconds, max wait 0.052 seconds
+all:	800 vehicles, average 0.016 seconds waiting
+Simulation: 2.592 seconds, 800 vehicles
+Operation took 2.702611017 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu3: offline.
+The system is halted.
+cpu1: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	205 vehicles, average wait 0.016 seconds, max wait 0.062 seconds
+E:	192 vehicles, average wait 0.020 seconds, max wait 0.052 seconds
+S:	204 vehicles, average wait 0.017 seconds, max wait 0.060 seconds
+W:	199 vehicles, average wait 0.017 seconds, max wait 0.060 seconds
+all:	800 vehicles, average 0.017 seconds waiting
+Simulation: 2.630 seconds, 800 vehicles
+Operation took 2.739685377 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu3: offline.
+The system is halted.
+cpu2: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	188 vehicles, average wait 0.017 seconds, max wait 0.060 seconds
+E:	209 vehicles, average wait 0.016 seconds, max wait 0.061 seconds
+S:	189 vehicles, average wait 0.018 seconds, max wait 0.070 seconds
+W:	214 vehicles, average wait 0.018 seconds, max wait 0.060 seconds
+all:	800 vehicles, average 0.017 seconds waiting
+Simulation: 2.629 seconds, 800 vehicles
+Operation took 2.739576137 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu3: offline.
+cpu2: offline.
 The system is halted.
 
 OS/161 base system version 1.99.05
 Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
    President and Fellows of Harvard College.  All rights reserved.
 
-Karen Xu's system version 0 (ASST1 #3)
+Karen Xu's system version 0 (ASST1 #128)
 
 280k physical memory available
 Device probe...
@@ -145,20 +861,199 @@ lser0 at lamebus0
 con0 at lser0
 
 cpu0: MIPS r3000
-OS/161 kernel: sy2
-Starting lock test...
-cleanitems: Destroying sems, locks, and cvs
-Lock test done.
-Operation took 2.024744840 seconds
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	215 vehicles, average wait 0.016 seconds, max wait 0.060 seconds
+E:	201 vehicles, average wait 0.015 seconds, max wait 0.051 seconds
+S:	195 vehicles, average wait 0.017 seconds, max wait 0.052 seconds
+W:	189 vehicles, average wait 0.017 seconds, max wait 0.060 seconds
+all:	800 vehicles, average 0.016 seconds waiting
+Simulation: 2.579 seconds, 800 vehicles
+Operation took 2.722100937 seconds
 OS/161 kernel: q
 Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	210 vehicles, average wait 0.018 seconds, max wait 0.062 seconds
+E:	200 vehicles, average wait 0.017 seconds, max wait 0.052 seconds
+S:	206 vehicles, average wait 0.014 seconds, max wait 0.060 seconds
+W:	184 vehicles, average wait 0.018 seconds, max wait 0.059 seconds
+all:	800 vehicles, average 0.017 seconds waiting
+Simulation: 2.571 seconds, 800 vehicles
+Operation took 2.680022257 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu2: offline.
+The system is halted.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	205 vehicles, average wait 0.016 seconds, max wait 0.050 seconds
+E:	191 vehicles, average wait 0.015 seconds, max wait 0.059 seconds
+S:	209 vehicles, average wait 0.016 seconds, max wait 0.060 seconds
+W:	195 vehicles, average wait 0.017 seconds, max wait 0.062 seconds
+all:	800 vehicles, average 0.016 seconds waiting
+Simulation: 2.478 seconds, 800 vehicles
+Operation took 2.621499097 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	189 vehicles, average wait 0.019 seconds, max wait 0.071 seconds
+E:	221 vehicles, average wait 0.015 seconds, max wait 0.062 seconds
+S:	187 vehicles, average wait 0.017 seconds, max wait 0.060 seconds
+W:	203 vehicles, average wait 0.016 seconds, max wait 0.061 seconds
+all:	800 vehicles, average 0.017 seconds waiting
+Simulation: 2.656 seconds, 800 vehicles
+Operation took 2.766185697 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	205 vehicles, average wait 0.015 seconds, max wait 0.052 seconds
+E:	180 vehicles, average wait 0.018 seconds, max wait 0.059 seconds
+S:	213 vehicles, average wait 0.016 seconds, max wait 0.052 seconds
+W:	202 vehicles, average wait 0.015 seconds, max wait 0.059 seconds
+all:	800 vehicles, average 0.016 seconds waiting
+Simulation: 2.581 seconds, 800 vehicles
+Operation took 2.691031857 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu3: offline.
+cpu1: offline.
 The system is halted.
 
 OS/161 base system version 1.99.05
 Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
    President and Fellows of Harvard College.  All rights reserved.
 
-Karen Xu's system version 0 (ASST1 #3)
+Karen Xu's system version 0 (ASST1 #128)
 
 280k physical memory available
 Device probe...
@@ -176,20 +1071,73 @@ lser0 at lamebus0
 con0 at lser0
 
 cpu0: MIPS r3000
-OS/161 kernel: sy2
-Starting lock test...
-cleanitems: Destroying sems, locks, and cvs
-Lock test done.
-Operation took 2.018594000 seconds
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	200 vehicles, average wait 0.016 seconds, max wait 0.060 seconds
+E:	184 vehicles, average wait 0.018 seconds, max wait 0.072 seconds
+S:	218 vehicles, average wait 0.016 seconds, max wait 0.061 seconds
+W:	198 vehicles, average wait 0.016 seconds, max wait 0.071 seconds
+all:	800 vehicles, average 0.016 seconds waiting
+Simulation: 2.509 seconds, 800 vehicles
+Operation took 2.651601937 seconds
 OS/161 kernel: q
 Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	220 vehicles, average wait 0.013 seconds, max wait 0.060 seconds
+E:	161 vehicles, average wait 0.019 seconds, max wait 0.062 seconds
+S:	205 vehicles, average wait 0.016 seconds, max wait 0.051 seconds
+W:	214 vehicles, average wait 0.016 seconds, max wait 0.059 seconds
+all:	800 vehicles, average 0.016 seconds waiting
+Simulation: 2.516 seconds, 800 vehicles
+Operation took 2.625380657 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu3: offline.
+cpu2: offline.
 The system is halted.
 
 OS/161 base system version 1.99.05
 Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
    President and Fellows of Harvard College.  All rights reserved.
 
-Karen Xu's system version 0 (ASST1 #3)
+Karen Xu's system version 0 (ASST1 #128)
 
 280k physical memory available
 Device probe...
@@ -207,20 +1155,241 @@ lser0 at lamebus0
 con0 at lser0
 
 cpu0: MIPS r3000
-OS/161 kernel: sy2
-Starting lock test...
-cleanitems: Destroying sems, locks, and cvs
-Lock test done.
-Operation took 1.778651120 seconds
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	212 vehicles, average wait 0.015 seconds, max wait 0.052 seconds
+E:	220 vehicles, average wait 0.015 seconds, max wait 0.071 seconds
+S:	183 vehicles, average wait 0.018 seconds, max wait 0.070 seconds
+W:	185 vehicles, average wait 0.019 seconds, max wait 0.070 seconds
+all:	800 vehicles, average 0.016 seconds waiting
+Simulation: 2.562 seconds, 800 vehicles
+Operation took 2.672757497 seconds
 OS/161 kernel: q
 Shutting down.
+cpu0: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	206 vehicles, average wait 0.016 seconds, max wait 0.060 seconds
+E:	200 vehicles, average wait 0.014 seconds, max wait 0.070 seconds
+S:	188 vehicles, average wait 0.018 seconds, max wait 0.061 seconds
+W:	206 vehicles, average wait 0.017 seconds, max wait 0.061 seconds
+all:	800 vehicles, average 0.016 seconds waiting
+Simulation: 2.539 seconds, 800 vehicles
+Operation took 2.681298657 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	208 vehicles, average wait 0.014 seconds, max wait 0.050 seconds
+E:	184 vehicles, average wait 0.016 seconds, max wait 0.059 seconds
+S:	215 vehicles, average wait 0.017 seconds, max wait 0.051 seconds
+W:	193 vehicles, average wait 0.016 seconds, max wait 0.060 seconds
+all:	800 vehicles, average 0.016 seconds waiting
+Simulation: 2.510 seconds, 800 vehicles
+Operation took 2.619386017 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu3: offline.
+The system is halted.
+cpu2: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	207 vehicles, average wait 0.017 seconds, max wait 0.091 seconds
+E:	208 vehicles, average wait 0.016 seconds, max wait 0.052 seconds
+S:	184 vehicles, average wait 0.018 seconds, max wait 0.070 seconds
+W:	201 vehicles, average wait 0.017 seconds, max wait 0.071 seconds
+all:	800 vehicles, average 0.017 seconds waiting
+Simulation: 2.580 seconds, 800 vehicles
+Operation took 2.689042337 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu2: offline.
+The system is halted.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	198 vehicles, average wait 0.015 seconds, max wait 0.070 seconds
+E:	201 vehicles, average wait 0.015 seconds, max wait 0.052 seconds
+S:	189 vehicles, average wait 0.019 seconds, max wait 0.080 seconds
+W:	212 vehicles, average wait 0.015 seconds, max wait 0.051 seconds
+all:	800 vehicles, average 0.016 seconds waiting
+Simulation: 2.549 seconds, 800 vehicles
+Operation took 2.691440777 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	188 vehicles, average wait 0.016 seconds, max wait 0.061 seconds
+E:	228 vehicles, average wait 0.014 seconds, max wait 0.060 seconds
+S:	190 vehicles, average wait 0.020 seconds, max wait 0.071 seconds
+W:	194 vehicles, average wait 0.017 seconds, max wait 0.060 seconds
+all:	800 vehicles, average 0.017 seconds waiting
+Simulation: 2.588 seconds, 800 vehicles
+Operation took 2.697496697 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu3: offline.
+cpu1: offline.
 The system is halted.
 
 OS/161 base system version 1.99.05
 Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
    President and Fellows of Harvard College.  All rights reserved.
 
-Karen Xu's system version 0 (ASST1 #3)
+Karen Xu's system version 0 (ASST1 #128)
 
 280k physical memory available
 Device probe...
@@ -238,20 +1407,73 @@ lser0 at lamebus0
 con0 at lser0
 
 cpu0: MIPS r3000
-OS/161 kernel: sy2
-Starting lock test...
-cleanitems: Destroying sems, locks, and cvs
-Lock test done.
-Operation took 1.942194720 seconds
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	210 vehicles, average wait 0.016 seconds, max wait 0.062 seconds
+E:	217 vehicles, average wait 0.016 seconds, max wait 0.061 seconds
+S:	161 vehicles, average wait 0.017 seconds, max wait 0.061 seconds
+W:	212 vehicles, average wait 0.017 seconds, max wait 0.057 seconds
+all:	800 vehicles, average 0.016 seconds waiting
+Simulation: 2.561 seconds, 800 vehicles
+Operation took 2.670990137 seconds
 OS/161 kernel: q
 Shutting down.
+cpu0: offline.
+cpu3: offline.
+The system is halted.
+cpu2: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	203 vehicles, average wait 0.017 seconds, max wait 0.052 seconds
+E:	216 vehicles, average wait 0.017 seconds, max wait 0.061 seconds
+S:	218 vehicles, average wait 0.015 seconds, max wait 0.051 seconds
+W:	163 vehicles, average wait 0.018 seconds, max wait 0.062 seconds
+all:	800 vehicles, average 0.017 seconds waiting
+Simulation: 2.513 seconds, 800 vehicles
+Operation took 2.622033777 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu3: offline.
+cpu1: offline.
 The system is halted.
 
 OS/161 base system version 1.99.05
 Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
    President and Fellows of Harvard College.  All rights reserved.
 
-Karen Xu's system version 0 (ASST1 #3)
+Karen Xu's system version 0 (ASST1 #128)
 
 280k physical memory available
 Device probe...
@@ -269,20 +1491,115 @@ lser0 at lamebus0
 con0 at lser0
 
 cpu0: MIPS r3000
-OS/161 kernel: sy2
-Starting lock test...
-cleanitems: Destroying sems, locks, and cvs
-Lock test done.
-Operation took 1.911513240 seconds
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	212 vehicles, average wait 0.017 seconds, max wait 0.051 seconds
+E:	188 vehicles, average wait 0.017 seconds, max wait 0.060 seconds
+S:	192 vehicles, average wait 0.017 seconds, max wait 0.061 seconds
+W:	208 vehicles, average wait 0.014 seconds, max wait 0.051 seconds
+all:	800 vehicles, average 0.016 seconds waiting
+Simulation: 2.552 seconds, 800 vehicles
+Operation took 2.694854017 seconds
 OS/161 kernel: q
 Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	212 vehicles, average wait 0.015 seconds, max wait 0.061 seconds
+E:	197 vehicles, average wait 0.017 seconds, max wait 0.053 seconds
+S:	195 vehicles, average wait 0.018 seconds, max wait 0.062 seconds
+W:	196 vehicles, average wait 0.017 seconds, max wait 0.051 seconds
+all:	800 vehicles, average 0.017 seconds waiting
+Simulation: 2.622 seconds, 800 vehicles
+Operation took 2.731705617 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu2: offline.
+The system is halted.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	164 vehicles, average wait 0.017 seconds, max wait 0.051 seconds
+E:	202 vehicles, average wait 0.015 seconds, max wait 0.051 seconds
+S:	229 vehicles, average wait 0.015 seconds, max wait 0.069 seconds
+W:	205 vehicles, average wait 0.017 seconds, max wait 0.052 seconds
+all:	800 vehicles, average 0.016 seconds waiting
+Simulation: 2.528 seconds, 800 vehicles
+Operation took 2.638063817 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu1: offline.
+cpu2: offline.
 The system is halted.
 
 OS/161 base system version 1.99.05
 Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
    President and Fellows of Harvard College.  All rights reserved.
 
-Karen Xu's system version 0 (ASST1 #3)
+Karen Xu's system version 0 (ASST1 #128)
 
 280k physical memory available
 Device probe...
@@ -300,20 +1617,283 @@ lser0 at lamebus0
 con0 at lser0
 
 cpu0: MIPS r3000
-OS/161 kernel: sy2
-Starting lock test...
-cleanitems: Destroying sems, locks, and cvs
-Lock test done.
-Operation took 1.913008240 seconds
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	225 vehicles, average wait 0.015 seconds, max wait 0.052 seconds
+E:	200 vehicles, average wait 0.015 seconds, max wait 0.051 seconds
+S:	192 vehicles, average wait 0.018 seconds, max wait 0.062 seconds
+W:	183 vehicles, average wait 0.016 seconds, max wait 0.061 seconds
+all:	800 vehicles, average 0.016 seconds waiting
+Simulation: 2.588 seconds, 800 vehicles
+Operation took 2.698007257 seconds
 OS/161 kernel: q
 Shutting down.
+cpu0: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	185 vehicles, average wait 0.016 seconds, max wait 0.051 seconds
+E:	208 vehicles, average wait 0.018 seconds, max wait 0.061 seconds
+S:	202 vehicles, average wait 0.016 seconds, max wait 0.052 seconds
+W:	205 vehicles, average wait 0.017 seconds, max wait 0.060 seconds
+all:	800 vehicles, average 0.017 seconds waiting
+Simulation: 2.623 seconds, 800 vehicles
+Operation took 2.733986697 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu3: offline.
+The system is halted.
+cpu2: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	220 vehicles, average wait 0.018 seconds, max wait 0.060 seconds
+E:	204 vehicles, average wait 0.016 seconds, max wait 0.060 seconds
+S:	184 vehicles, average wait 0.017 seconds, max wait 0.061 seconds
+W:	192 vehicles, average wait 0.017 seconds, max wait 0.071 seconds
+all:	800 vehicles, average 0.017 seconds waiting
+Simulation: 2.581 seconds, 800 vehicles
+Operation took 2.723322057 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	219 vehicles, average wait 0.017 seconds, max wait 0.071 seconds
+E:	193 vehicles, average wait 0.017 seconds, max wait 0.064 seconds
+S:	186 vehicles, average wait 0.018 seconds, max wait 0.061 seconds
+W:	202 vehicles, average wait 0.017 seconds, max wait 0.061 seconds
+all:	800 vehicles, average 0.017 seconds waiting
+Simulation: 2.666 seconds, 800 vehicles
+Operation took 2.775496737 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu3: offline.
+The system is halted.
+cpu2: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	195 vehicles, average wait 0.017 seconds, max wait 0.060 seconds
+E:	213 vehicles, average wait 0.017 seconds, max wait 0.060 seconds
+S:	182 vehicles, average wait 0.016 seconds, max wait 0.071 seconds
+W:	210 vehicles, average wait 0.015 seconds, max wait 0.061 seconds
+all:	800 vehicles, average 0.017 seconds waiting
+Simulation: 2.579 seconds, 800 vehicles
+Operation took 2.689255537 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu3: offline.
+The system is halted.
+cpu2: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	185 vehicles, average wait 0.017 seconds, max wait 0.062 seconds
+E:	195 vehicles, average wait 0.018 seconds, max wait 0.061 seconds
+S:	226 vehicles, average wait 0.016 seconds, max wait 0.061 seconds
+W:	194 vehicles, average wait 0.016 seconds, max wait 0.061 seconds
+all:	800 vehicles, average 0.017 seconds waiting
+Simulation: 2.560 seconds, 800 vehicles
+Operation took 2.668808457 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu2: offline.
+The system is halted.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	207 vehicles, average wait 0.016 seconds, max wait 0.060 seconds
+E:	194 vehicles, average wait 0.019 seconds, max wait 0.061 seconds
+S:	190 vehicles, average wait 0.016 seconds, max wait 0.060 seconds
+W:	209 vehicles, average wait 0.016 seconds, max wait 0.051 seconds
+all:	800 vehicles, average 0.017 seconds waiting
+Simulation: 2.696 seconds, 800 vehicles
+Operation took 2.806729697 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu1: offline.
+cpu2: offline.
 The system is halted.
 
 OS/161 base system version 1.99.05
 Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
    President and Fellows of Harvard College.  All rights reserved.
 
-Karen Xu's system version 0 (ASST1 #3)
+Karen Xu's system version 0 (ASST1 #128)
 
 280k physical memory available
 Device probe...
@@ -331,5 +1911,2108 @@ lser0 at lamebus0
 con0 at lser0
 
 cpu0: MIPS r3000
-OS/161 kernel: sy2
-Starting lock test...
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	200 vehicles, average wait 0.016 seconds, max wait 0.052 seconds
+E:	192 vehicles, average wait 0.016 seconds, max wait 0.061 seconds
+S:	197 vehicles, average wait 0.016 seconds, max wait 0.061 seconds
+W:	211 vehicles, average wait 0.014 seconds, max wait 0.051 seconds
+all:	800 vehicles, average 0.016 seconds waiting
+Simulation: 2.509 seconds, 800 vehicles
+Operation took 2.617475937 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu1: offline.
+The system is halted.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	191 vehicles, average wait 0.018 seconds, max wait 0.059 seconds
+E:	216 vehicles, average wait 0.016 seconds, max wait 0.053 seconds
+S:	193 vehicles, average wait 0.016 seconds, max wait 0.051 seconds
+W:	200 vehicles, average wait 0.017 seconds, max wait 0.060 seconds
+all:	800 vehicles, average 0.017 seconds waiting
+Simulation: 2.647 seconds, 800 vehicles
+Operation took 2.789780737 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+cpu2: offline.
+cpu3: offline.
+The system is halted.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	198 vehicles, average wait 0.019 seconds, max wait 0.069 seconds
+E:	210 vehicles, average wait 0.019 seconds, max wait 0.070 seconds
+S:	196 vehicles, average wait 0.019 seconds, max wait 0.063 seconds
+W:	196 vehicles, average wait 0.015 seconds, max wait 0.069 seconds
+all:	800 vehicles, average 0.018 seconds waiting
+Simulation: 2.680 seconds, 800 vehicles
+Operation took 2.789870617 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu3: offline.
+cpu2: offline.
+The system is halted.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	225 vehicles, average wait 0.015 seconds, max wait 0.072 seconds
+E:	195 vehicles, average wait 0.017 seconds, max wait 0.061 seconds
+S:	188 vehicles, average wait 0.018 seconds, max wait 0.071 seconds
+W:	192 vehicles, average wait 0.016 seconds, max wait 0.061 seconds
+all:	800 vehicles, average 0.017 seconds waiting
+Simulation: 2.610 seconds, 800 vehicles
+Operation took 2.720255457 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu3: offline.
+cpu1: offline.
+The system is halted.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	195 vehicles, average wait 0.015 seconds, max wait 0.060 seconds
+E:	195 vehicles, average wait 0.016 seconds, max wait 0.060 seconds
+S:	221 vehicles, average wait 0.016 seconds, max wait 0.061 seconds
+W:	189 vehicles, average wait 0.018 seconds, max wait 0.059 seconds
+all:	800 vehicles, average 0.016 seconds waiting
+Simulation: 2.514 seconds, 800 vehicles
+Operation took 2.624291617 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu3: offline.
+cpu1: offline.
+The system is halted.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	202 vehicles, average wait 0.017 seconds, max wait 0.061 seconds
+E:	190 vehicles, average wait 0.018 seconds, max wait 0.069 seconds
+S:	210 vehicles, average wait 0.015 seconds, max wait 0.072 seconds
+W:	198 vehicles, average wait 0.016 seconds, max wait 0.051 seconds
+all:	800 vehicles, average 0.016 seconds waiting
+Simulation: 2.530 seconds, 800 vehicles
+Operation took 2.669676137 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	208 vehicles, average wait 0.018 seconds, max wait 0.060 seconds
+E:	221 vehicles, average wait 0.015 seconds, max wait 0.063 seconds
+S:	189 vehicles, average wait 0.018 seconds, max wait 0.062 seconds
+W:	182 vehicles, average wait 0.017 seconds, max wait 0.061 seconds
+all:	800 vehicles, average 0.017 seconds waiting
+Simulation: 2.640 seconds, 800 vehicles
+Operation took 2.749519897 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu3: offline.
+cpu1: offline.
+The system is halted.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	205 vehicles, average wait 0.014 seconds, max wait 0.051 seconds
+E:	190 vehicles, average wait 0.016 seconds, max wait 0.060 seconds
+S:	191 vehicles, average wait 0.016 seconds, max wait 0.051 seconds
+W:	214 vehicles, average wait 0.017 seconds, max wait 0.060 seconds
+all:	800 vehicles, average 0.016 seconds waiting
+Simulation: 2.528 seconds, 800 vehicles
+Operation took 2.638217897 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu3: offline.
+cpu1: offline.
+The system is halted.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	190 vehicles, average wait 0.017 seconds, max wait 0.050 seconds
+E:	208 vehicles, average wait 0.015 seconds, max wait 0.061 seconds
+S:	185 vehicles, average wait 0.018 seconds, max wait 0.059 seconds
+W:	217 vehicles, average wait 0.016 seconds, max wait 0.051 seconds
+all:	800 vehicles, average 0.016 seconds waiting
+Simulation: 2.583 seconds, 800 vehicles
+Operation took 2.693973337 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu1: offline.
+The system is halted.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	198 vehicles, average wait 0.017 seconds, max wait 0.052 seconds
+E:	192 vehicles, average wait 0.018 seconds, max wait 0.068 seconds
+S:	212 vehicles, average wait 0.015 seconds, max wait 0.061 seconds
+W:	198 vehicles, average wait 0.017 seconds, max wait 0.052 seconds
+all:	800 vehicles, average 0.016 seconds waiting
+Simulation: 2.630 seconds, 800 vehicles
+Operation took 2.739821457 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu3: offline.
+The system is halted.
+cpu2: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	193 vehicles, average wait 0.017 seconds, max wait 0.061 seconds
+E:	198 vehicles, average wait 0.017 seconds, max wait 0.061 seconds
+S:	216 vehicles, average wait 0.016 seconds, max wait 0.061 seconds
+W:	193 vehicles, average wait 0.015 seconds, max wait 0.060 seconds
+all:	800 vehicles, average 0.016 seconds waiting
+Simulation: 2.540 seconds, 800 vehicles
+Operation took 2.649474537 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	224 vehicles, average wait 0.015 seconds, max wait 0.055 seconds
+E:	184 vehicles, average wait 0.017 seconds, max wait 0.069 seconds
+S:	189 vehicles, average wait 0.016 seconds, max wait 0.059 seconds
+W:	203 vehicles, average wait 0.015 seconds, max wait 0.051 seconds
+all:	800 vehicles, average 0.016 seconds waiting
+Simulation: 2.495 seconds, 800 vehicles
+Operation took 2.604897457 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu3: offline.
+cpu1: offline.
+The system is halted.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	208 vehicles, average wait 0.014 seconds, max wait 0.060 seconds
+E:	204 vehicles, average wait 0.017 seconds, max wait 0.059 seconds
+S:	192 vehicles, average wait 0.019 seconds, max wait 0.061 seconds
+W:	196 vehicles, average wait 0.017 seconds, max wait 0.071 seconds
+all:	800 vehicles, average 0.016 seconds waiting
+Simulation: 2.590 seconds, 800 vehicles
+Operation took 2.698664097 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu3: offline.
+The system is halted.
+cpu1: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	206 vehicles, average wait 0.015 seconds, max wait 0.051 seconds
+E:	198 vehicles, average wait 0.018 seconds, max wait 0.062 seconds
+S:	186 vehicles, average wait 0.018 seconds, max wait 0.061 seconds
+W:	210 vehicles, average wait 0.016 seconds, max wait 0.070 seconds
+all:	800 vehicles, average 0.017 seconds waiting
+Simulation: 2.540 seconds, 800 vehicles
+Operation took 2.649395937 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu3: offline.
+The system is halted.
+cpu2: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	200 vehicles, average wait 0.017 seconds, max wait 0.052 seconds
+E:	191 vehicles, average wait 0.015 seconds, max wait 0.061 seconds
+S:	228 vehicles, average wait 0.018 seconds, max wait 0.059 seconds
+W:	181 vehicles, average wait 0.018 seconds, max wait 0.061 seconds
+all:	800 vehicles, average 0.017 seconds waiting
+Simulation: 2.600 seconds, 800 vehicles
+Operation took 2.743114177 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	211 vehicles, average wait 0.017 seconds, max wait 0.061 seconds
+E:	199 vehicles, average wait 0.015 seconds, max wait 0.061 seconds
+S:	221 vehicles, average wait 0.017 seconds, max wait 0.062 seconds
+W:	169 vehicles, average wait 0.018 seconds, max wait 0.071 seconds
+all:	800 vehicles, average 0.017 seconds waiting
+Simulation: 2.610 seconds, 800 vehicles
+Operation took 2.721071857 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu1: offline.
+cpu2: offline.
+The system is halted.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	210 vehicles, average wait 0.018 seconds, max wait 0.051 seconds
+E:	195 vehicles, average wait 0.019 seconds, max wait 0.071 seconds
+S:	177 vehicles, average wait 0.017 seconds, max wait 0.071 seconds
+W:	218 vehicles, average wait 0.015 seconds, max wait 0.050 seconds
+all:	800 vehicles, average 0.017 seconds waiting
+Simulation: 2.671 seconds, 800 vehicles
+Operation took 2.812743537 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	204 vehicles, average wait 0.016 seconds, max wait 0.052 seconds
+E:	192 vehicles, average wait 0.015 seconds, max wait 0.052 seconds
+S:	191 vehicles, average wait 0.016 seconds, max wait 0.051 seconds
+W:	213 vehicles, average wait 0.016 seconds, max wait 0.051 seconds
+all:	800 vehicles, average 0.016 seconds waiting
+Simulation: 2.498 seconds, 800 vehicles
+Operation took 2.641804377 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	197 vehicles, average wait 0.018 seconds, max wait 0.052 seconds
+E:	202 vehicles, average wait 0.015 seconds, max wait 0.050 seconds
+S:	198 vehicles, average wait 0.017 seconds, max wait 0.061 seconds
+W:	203 vehicles, average wait 0.016 seconds, max wait 0.062 seconds
+all:	800 vehicles, average 0.016 seconds waiting
+Simulation: 2.570 seconds, 800 vehicles
+Operation took 2.679286937 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+The system is halted.
+cpu3: offline.
+cpu2: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	179 vehicles, average wait 0.018 seconds, max wait 0.070 seconds
+E:	206 vehicles, average wait 0.015 seconds, max wait 0.052 seconds
+S:	215 vehicles, average wait 0.017 seconds, max wait 0.061 seconds
+W:	200 vehicles, average wait 0.018 seconds, max wait 0.072 seconds
+all:	800 vehicles, average 0.017 seconds waiting
+Simulation: 2.555 seconds, 800 vehicles
+Operation took 2.665877697 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu3: offline.
+cpu2: offline.
+The system is halted.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	194 vehicles, average wait 0.017 seconds, max wait 0.061 seconds
+E:	200 vehicles, average wait 0.016 seconds, max wait 0.060 seconds
+S:	204 vehicles, average wait 0.016 seconds, max wait 0.052 seconds
+W:	202 vehicles, average wait 0.014 seconds, max wait 0.051 seconds
+all:	800 vehicles, average 0.016 seconds waiting
+Simulation: 2.529 seconds, 800 vehicles
+Operation took 2.640040897 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu3: offline.
+cpu1: offline.
+The system is halted.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	229 vehicles, average wait 0.016 seconds, max wait 0.052 seconds
+E:	175 vehicles, average wait 0.016 seconds, max wait 0.051 seconds
+S:	205 vehicles, average wait 0.018 seconds, max wait 0.061 seconds
+W:	191 vehicles, average wait 0.016 seconds, max wait 0.061 seconds
+all:	800 vehicles, average 0.017 seconds waiting
+Simulation: 2.503 seconds, 800 vehicles
+Operation took 2.612849017 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu3: offline.
+The system is halted.
+cpu2: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	196 vehicles, average wait 0.016 seconds, max wait 0.061 seconds
+E:	204 vehicles, average wait 0.017 seconds, max wait 0.070 seconds
+S:	185 vehicles, average wait 0.017 seconds, max wait 0.060 seconds
+W:	215 vehicles, average wait 0.016 seconds, max wait 0.059 seconds
+all:	800 vehicles, average 0.016 seconds waiting
+Simulation: 2.554 seconds, 800 vehicles
+Operation took 2.664851537 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu3: offline.
+cpu1: offline.
+The system is halted.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	180 vehicles, average wait 0.017 seconds, max wait 0.081 seconds
+E:	222 vehicles, average wait 0.016 seconds, max wait 0.070 seconds
+S:	202 vehicles, average wait 0.017 seconds, max wait 0.061 seconds
+W:	196 vehicles, average wait 0.015 seconds, max wait 0.058 seconds
+all:	800 vehicles, average 0.016 seconds waiting
+Simulation: 2.591 seconds, 800 vehicles
+Operation took 2.699589697 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu3: offline.
+The system is halted.
+cpu2: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	211 vehicles, average wait 0.016 seconds, max wait 0.062 seconds
+E:	202 vehicles, average wait 0.016 seconds, max wait 0.062 seconds
+S:	194 vehicles, average wait 0.015 seconds, max wait 0.061 seconds
+W:	193 vehicles, average wait 0.017 seconds, max wait 0.062 seconds
+all:	800 vehicles, average 0.016 seconds waiting
+Simulation: 2.582 seconds, 800 vehicles
+Operation took 2.724128817 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	209 vehicles, average wait 0.017 seconds, max wait 0.059 seconds
+E:	186 vehicles, average wait 0.017 seconds, max wait 0.052 seconds
+S:	200 vehicles, average wait 0.016 seconds, max wait 0.061 seconds
+W:	205 vehicles, average wait 0.014 seconds, max wait 0.051 seconds
+all:	800 vehicles, average 0.016 seconds waiting
+Simulation: 2.602 seconds, 800 vehicles
+Operation took 2.709529337 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu3: offline.
+The system is halted.
+cpu2: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	199 vehicles, average wait 0.018 seconds, max wait 0.069 seconds
+E:	198 vehicles, average wait 0.017 seconds, max wait 0.071 seconds
+S:	181 vehicles, average wait 0.017 seconds, max wait 0.061 seconds
+W:	222 vehicles, average wait 0.015 seconds, max wait 0.060 seconds
+all:	800 vehicles, average 0.017 seconds waiting
+Simulation: 2.571 seconds, 800 vehicles
+Operation took 2.679892257 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu3: offline.
+The system is halted.
+cpu2: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	196 vehicles, average wait 0.017 seconds, max wait 0.060 seconds
+E:	199 vehicles, average wait 0.018 seconds, max wait 0.071 seconds
+S:	212 vehicles, average wait 0.016 seconds, max wait 0.061 seconds
+W:	193 vehicles, average wait 0.016 seconds, max wait 0.051 seconds
+all:	800 vehicles, average 0.017 seconds waiting
+Simulation: 2.580 seconds, 800 vehicles
+Operation took 2.690038697 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu1: offline.
+cpu2: offline.
+The system is halted.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	194 vehicles, average wait 0.016 seconds, max wait 0.060 seconds
+E:	217 vehicles, average wait 0.017 seconds, max wait 0.060 seconds
+S:	200 vehicles, average wait 0.018 seconds, max wait 0.061 seconds
+W:	189 vehicles, average wait 0.017 seconds, max wait 0.069 seconds
+all:	800 vehicles, average 0.017 seconds waiting
+Simulation: 2.649 seconds, 800 vehicles
+Operation took 2.757742457 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu3: offline.
+The system is halted.
+cpu2: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	199 vehicles, average wait 0.015 seconds, max wait 0.071 seconds
+E:	193 vehicles, average wait 0.016 seconds, max wait 0.071 seconds
+S:	217 vehicles, average wait 0.015 seconds, max wait 0.053 seconds
+W:	191 vehicles, average wait 0.017 seconds, max wait 0.052 seconds
+all:	800 vehicles, average 0.016 seconds waiting
+Simulation: 2.547 seconds, 800 vehicles
+Operation took 2.692387777 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	223 vehicles, average wait 0.018 seconds, max wait 0.060 seconds
+E:	175 vehicles, average wait 0.017 seconds, max wait 0.054 seconds
+S:	212 vehicles, average wait 0.016 seconds, max wait 0.069 seconds
+W:	190 vehicles, average wait 0.018 seconds, max wait 0.080 seconds
+all:	800 vehicles, average 0.017 seconds waiting
+Simulation: 2.635 seconds, 800 vehicles
+Operation took 2.744673977 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu2: offline.
+The system is halted.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	185 vehicles, average wait 0.017 seconds, max wait 0.050 seconds
+E:	207 vehicles, average wait 0.017 seconds, max wait 0.061 seconds
+S:	197 vehicles, average wait 0.016 seconds, max wait 0.069 seconds
+W:	211 vehicles, average wait 0.017 seconds, max wait 0.052 seconds
+all:	800 vehicles, average 0.017 seconds waiting
+Simulation: 2.603 seconds, 800 vehicles
+Operation took 2.712692377 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu2: offline.
+The system is halted.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	204 vehicles, average wait 0.015 seconds, max wait 0.052 seconds
+E:	191 vehicles, average wait 0.018 seconds, max wait 0.070 seconds
+S:	221 vehicles, average wait 0.015 seconds, max wait 0.056 seconds
+W:	184 vehicles, average wait 0.017 seconds, max wait 0.051 seconds
+all:	800 vehicles, average 0.016 seconds waiting
+Simulation: 2.502 seconds, 800 vehicles
+Operation took 2.645909617 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	210 vehicles, average wait 0.012 seconds, max wait 0.053 seconds
+E:	194 vehicles, average wait 0.018 seconds, max wait 0.052 seconds
+S:	212 vehicles, average wait 0.019 seconds, max wait 0.061 seconds
+W:	184 vehicles, average wait 0.018 seconds, max wait 0.060 seconds
+all:	800 vehicles, average 0.017 seconds waiting
+Simulation: 2.560 seconds, 800 vehicles
+Operation took 2.703718057 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	208 vehicles, average wait 0.018 seconds, max wait 0.062 seconds
+E:	220 vehicles, average wait 0.015 seconds, max wait 0.052 seconds
+S:	166 vehicles, average wait 0.017 seconds, max wait 0.070 seconds
+W:	206 vehicles, average wait 0.017 seconds, max wait 0.060 seconds
+all:	800 vehicles, average 0.017 seconds waiting
+Simulation: 2.605 seconds, 800 vehicles
+Operation took 2.748003737 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+cpu2: offline.
+The system is halted.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	199 vehicles, average wait 0.016 seconds, max wait 0.051 seconds
+E:	195 vehicles, average wait 0.015 seconds, max wait 0.051 seconds
+S:	197 vehicles, average wait 0.020 seconds, max wait 0.070 seconds
+W:	209 vehicles, average wait 0.017 seconds, max wait 0.043 seconds
+all:	800 vehicles, average 0.017 seconds waiting
+Simulation: 2.629 seconds, 800 vehicles
+Operation took 2.739827617 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu3: offline.
+cpu1: offline.
+The system is halted.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	206 vehicles, average wait 0.017 seconds, max wait 0.052 seconds
+E:	216 vehicles, average wait 0.014 seconds, max wait 0.061 seconds
+S:	208 vehicles, average wait 0.016 seconds, max wait 0.060 seconds
+W:	170 vehicles, average wait 0.019 seconds, max wait 0.071 seconds
+all:	800 vehicles, average 0.016 seconds waiting
+Simulation: 2.526 seconds, 800 vehicles
+Operation took 2.635436057 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu3: offline.
+The system is halted.
+cpu2: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	208 vehicles, average wait 0.015 seconds, max wait 0.051 seconds
+E:	199 vehicles, average wait 0.016 seconds, max wait 0.052 seconds
+S:	218 vehicles, average wait 0.016 seconds, max wait 0.051 seconds
+W:	175 vehicles, average wait 0.016 seconds, max wait 0.051 seconds
+all:	800 vehicles, average 0.016 seconds waiting
+Simulation: 2.541 seconds, 800 vehicles
+Operation took 2.651266297 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	209 vehicles, average wait 0.016 seconds, max wait 0.060 seconds
+E:	206 vehicles, average wait 0.016 seconds, max wait 0.061 seconds
+S:	176 vehicles, average wait 0.017 seconds, max wait 0.060 seconds
+W:	209 vehicles, average wait 0.016 seconds, max wait 0.052 seconds
+all:	800 vehicles, average 0.016 seconds waiting
+Simulation: 2.540 seconds, 800 vehicles
+Operation took 2.649227697 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu3: offline.
+cpu2: offline.
+The system is halted.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	203 vehicles, average wait 0.015 seconds, max wait 0.060 seconds
+E:	207 vehicles, average wait 0.017 seconds, max wait 0.052 seconds
+S:	200 vehicles, average wait 0.017 seconds, max wait 0.071 seconds
+W:	190 vehicles, average wait 0.018 seconds, max wait 0.051 seconds
+all:	800 vehicles, average 0.017 seconds waiting
+Simulation: 2.600 seconds, 800 vehicles
+Operation took 2.743126097 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	192 vehicles, average wait 0.017 seconds, max wait 0.063 seconds
+E:	207 vehicles, average wait 0.018 seconds, max wait 0.062 seconds
+S:	207 vehicles, average wait 0.016 seconds, max wait 0.060 seconds
+W:	194 vehicles, average wait 0.016 seconds, max wait 0.059 seconds
+all:	800 vehicles, average 0.017 seconds waiting
+Simulation: 2.531 seconds, 800 vehicles
+Operation took 2.673719017 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	193 vehicles, average wait 0.015 seconds, max wait 0.060 seconds
+E:	183 vehicles, average wait 0.018 seconds, max wait 0.060 seconds
+S:	208 vehicles, average wait 0.016 seconds, max wait 0.059 seconds
+W:	216 vehicles, average wait 0.015 seconds, max wait 0.052 seconds
+all:	800 vehicles, average 0.016 seconds waiting
+Simulation: 2.461 seconds, 800 vehicles
+Operation took 2.602519817 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	190 vehicles, average wait 0.015 seconds, max wait 0.059 seconds
+E:	201 vehicles, average wait 0.017 seconds, max wait 0.061 seconds
+S:	214 vehicles, average wait 0.016 seconds, max wait 0.051 seconds
+W:	195 vehicles, average wait 0.018 seconds, max wait 0.070 seconds
+all:	800 vehicles, average 0.017 seconds waiting
+Simulation: 2.595 seconds, 800 vehicles
+Operation took 2.739287457 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu3: offline.
+cpu2: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	185 vehicles, average wait 0.017 seconds, max wait 0.061 seconds
+E:	201 vehicles, average wait 0.017 seconds, max wait 0.060 seconds
+S:	200 vehicles, average wait 0.016 seconds, max wait 0.061 seconds
+W:	214 vehicles, average wait 0.015 seconds, max wait 0.061 seconds
+all:	800 vehicles, average 0.016 seconds waiting
+Simulation: 2.583 seconds, 800 vehicles
+Operation took 2.692483217 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu3: offline.
+The system is halted.
+cpu2: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	194 vehicles, average wait 0.014 seconds, max wait 0.060 seconds
+E:	226 vehicles, average wait 0.016 seconds, max wait 0.051 seconds
+S:	185 vehicles, average wait 0.016 seconds, max wait 0.070 seconds
+W:	195 vehicles, average wait 0.017 seconds, max wait 0.062 seconds
+all:	800 vehicles, average 0.016 seconds waiting
+Simulation: 2.490 seconds, 800 vehicles
+Operation took 2.600787937 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu3: offline.
+cpu1: offline.
+The system is halted.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	206 vehicles, average wait 0.016 seconds, max wait 0.060 seconds
+E:	205 vehicles, average wait 0.017 seconds, max wait 0.062 seconds
+S:	193 vehicles, average wait 0.015 seconds, max wait 0.051 seconds
+W:	196 vehicles, average wait 0.015 seconds, max wait 0.061 seconds
+all:	800 vehicles, average 0.016 seconds waiting
+Simulation: 2.490 seconds, 800 vehicles
+Operation took 2.599836457 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu1: offline.
+The system is halted.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	201 vehicles, average wait 0.015 seconds, max wait 0.052 seconds
+E:	196 vehicles, average wait 0.016 seconds, max wait 0.051 seconds
+S:	192 vehicles, average wait 0.019 seconds, max wait 0.060 seconds
+W:	211 vehicles, average wait 0.017 seconds, max wait 0.062 seconds
+all:	800 vehicles, average 0.016 seconds waiting
+Simulation: 2.575 seconds, 800 vehicles
+Operation took 2.715021937 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	197 vehicles, average wait 0.016 seconds, max wait 0.059 seconds
+E:	212 vehicles, average wait 0.016 seconds, max wait 0.061 seconds
+S:	190 vehicles, average wait 0.015 seconds, max wait 0.070 seconds
+W:	201 vehicles, average wait 0.015 seconds, max wait 0.053 seconds
+all:	800 vehicles, average 0.016 seconds waiting
+Simulation: 2.508 seconds, 800 vehicles
+Operation took 2.618747257 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+The system is halted.
+cpu3: offline.
+cpu2: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	190 vehicles, average wait 0.017 seconds, max wait 0.062 seconds
+E:	209 vehicles, average wait 0.015 seconds, max wait 0.060 seconds
+S:	202 vehicles, average wait 0.017 seconds, max wait 0.069 seconds
+W:	199 vehicles, average wait 0.017 seconds, max wait 0.051 seconds
+all:	800 vehicles, average 0.017 seconds waiting
+Simulation: 2.554 seconds, 800 vehicles
+Operation took 2.663447897 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu3: offline.
+cpu1: offline.
+The system is halted.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+max permitted wait:	0.090 seconds
+N:	199 vehicles, average wait 0.018 seconds, max wait 0.061 seconds
+E:	192 vehicles, average wait 0.018 seconds, max wait 0.061 seconds
+S:	200 vehicles, average wait 0.015 seconds, max wait 0.070 seconds
+W:	209 vehicles, average wait 0.015 seconds, max wait 0.069 seconds
+all:	800 vehicles, average 0.016 seconds waiting
+Simulation: 2.581 seconds, 800 vehicles
+Operation took 2.724621017 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST1 #128)
+
+280k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sp3 10 80 0 1 0 
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no

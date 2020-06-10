@@ -49,59 +49,59 @@ sem_create(const char *name, int initial_count)
 {
 	struct semaphore *sem;
 
-			KASSERT(initial_count >= 0);
+	KASSERT(initial_count >= 0);
 
-			sem = kmalloc(sizeof(struct semaphore));
-			if (sem == NULL) {
-					return NULL;
-			}
+	sem = kmalloc(sizeof(struct semaphore));
+	if (sem == NULL) {
+			return NULL;
+	}
 
-			sem->sem_name = kstrdup(name);
-			if (sem->sem_name == NULL) {
-					kfree(sem);
-					return NULL;
-			}
+	sem->sem_name = kstrdup(name);
+	if (sem->sem_name == NULL) {
+			kfree(sem);
+			return NULL;
+	}
 
-				sem->sem_wchan = wchan_create(sem->sem_name);
-					if (sem->sem_wchan == NULL) {
-							kfree(sem->sem_name);
-							kfree(sem);
-							return NULL;
-				}
+	sem->sem_wchan = wchan_create(sem->sem_name);
+		if (sem->sem_wchan == NULL) {
+				kfree(sem->sem_name);
+				kfree(sem);
+				return NULL;
+	}
 
-				spinlock_init(&sem->sem_lock);
-        sem->sem_count = initial_count;
+	spinlock_init(&sem->sem_lock);
+	sem->sem_count = initial_count;
 
-        return sem;
+    return sem;
 }
 
 void
 sem_destroy(struct semaphore *sem)
 {
-        KASSERT(sem != NULL);
+    KASSERT(sem != NULL);
 
 	/* wchan_cleanup will assert if anyone's waiting on it */
 	spinlock_cleanup(&sem->sem_lock);
 	wchan_destroy(sem->sem_wchan);
-        kfree(sem->sem_name);
-        kfree(sem);
+    kfree(sem->sem_name);
+    kfree(sem);
 }
 
 void 
 P(struct semaphore *sem)
 {
-        KASSERT(sem != NULL);
+	KASSERT(sem != NULL);
 
-        /*
-         * May not block in an interrupt handler.
-         *
-         * For robustness, always check, even if we can actually
-         * complete the P without blocking.
-         */
-        KASSERT(curthread->t_in_interrupt == false);
+	/*
+		* May not block in an interrupt handler.
+		*
+		* For robustness, always check, even if we can actually
+		* complete the P without blocking.
+		*/
+	KASSERT(curthread->t_in_interrupt == false);
 
 	spinlock_acquire(&sem->sem_lock);
-        while (sem->sem_count == 0) {
+	while (sem->sem_count == 0) {
 		/*
 		 * Bridge to the wchan lock, so if someone else comes
 		 * along in V right this instant the wakeup can't go
@@ -120,12 +120,13 @@ P(struct semaphore *sem)
 		 */
 		wchan_lock(sem->sem_wchan);
 		spinlock_release(&sem->sem_lock);
-                wchan_sleep(sem->sem_wchan);
+        wchan_sleep(sem->sem_wchan);
 
 		spinlock_acquire(&sem->sem_lock);
-        }
-        KASSERT(sem->sem_count > 0);
-        sem->sem_count--;
+    }
+
+	KASSERT(sem->sem_count > 0);
+	sem->sem_count--;
 	spinlock_release(&sem->sem_lock);
 }
 
@@ -150,26 +151,26 @@ V(struct semaphore *sem)
 struct lock *
 lock_create(const char *name)
 {
-        struct lock *lock;
+	struct lock *lock;
 
-        lock = kmalloc(sizeof(struct lock));
-        if (lock == NULL) {
-                return NULL;
-        }
+	lock = kmalloc(sizeof(struct lock));
+	if (lock == NULL) {
+			return NULL;
+	}
 
-        lock->lk_name = kstrdup(name);
-        if (lock->lk_name == NULL) {
-                kfree(lock);
-                return NULL;
-}
+	lock->lk_name = kstrdup(name);
+	if (lock->lk_name == NULL) {
+			kfree(lock);
+			return NULL;
+	}
 
-	// added:
+	// :
 	lock->lk_wchan = wchan_create(lock->lk_name);
 	if(lock->lk_wchan == NULL){
-					kfree(lock->lk_name);
-					//kfree(lock->lk_owner); //needed? 
-					kfree(lock);
-					return NULL;
+		kfree(lock->lk_name);
+		//kfree(lock->lk_owner); //needed? 
+		kfree(lock);
+		return NULL;
 	}
 
 	spinlock_init(&lock->lk_spinlock); 
@@ -185,11 +186,10 @@ lock_destroy(struct lock *lock)
 {
 	KASSERT(lock != NULL);
 		
-	// added below:
-			/* wchan_cleanup will assert if anyone's waiting on it */
+	/* wchan_cleanup will assert if anyone's waiting on it */
 	spinlock_cleanup(&lock->lk_spinlock); 
-			wchan_destroy(lock->lk_wchan);
-			//note: we do not want to destroy the thread who owns it
+	wchan_destroy(lock->lk_wchan);
+	//note: we do not want to destroy the thread who owns it
 	kfree(lock->lk_name);
 	kfree(lock);
 }
@@ -237,7 +237,6 @@ lock_release(struct lock *lock)
 bool
 lock_do_i_hold(struct lock *lock)
 {
-	// Added: 
 	KASSERT(lock != NULL);
 	
 	bool do_i_hold = false;
@@ -285,7 +284,6 @@ cv_destroy(struct cv *cv)
 {
     KASSERT(cv != NULL);
 
-	// added:
 	wchan_destroy(cv->cv_wchan);
 
 	kfree(cv->cv_name);
@@ -296,15 +294,14 @@ void
 cv_wait(struct cv *cv, struct lock *lock)
 {
 	KASSERT(cv!=NULL);
+	KASSERT(lock!=NULL);
 	KASSERT(!curthread->t_in_interrupt);
 
-	// Added:
 	wchan_lock(cv->cv_wchan);
 	lock_release(lock); 
 	wchan_sleep(cv->cv_wchan); 
-	// thread wakes here
+	// thread wakes here 
 	lock_acquire(lock); 
-//	wchan_wake(cv->cv_wchan); 
 
 }
 
@@ -312,9 +309,10 @@ void
 cv_signal(struct cv *cv, struct lock *lock)
 {
 	KASSERT(cv != NULL);
+	KASSERT(lock != NULL);
 	KASSERT(!curthread->t_in_interrupt);
 	wchan_wakeone(cv->cv_wchan);
-	(void)lock;  // suppress warning 
+	(void)lock;   
 	
 }
 
@@ -322,8 +320,9 @@ void
 cv_broadcast(struct cv *cv, struct lock *lock)
 {
 	KASSERT(cv != NULL); 
+	KASSERT(lock != NULL); 
 	KASSERT(!curthread->t_in_interrupt);
 	wchan_wakeall(cv->cv_wchan);
-	(void)lock;  // suppress warning
+	(void)lock;  
 
 }

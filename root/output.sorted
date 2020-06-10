@@ -1,0 +1,210 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+280k physical memory available
+280k physical memory available
+280k physical memory available
+280k physical memory available
+280k physical memory available
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+Device probe...
+Device probe...
+Device probe...
+Device probe...
+Device probe...
+E:	192 vehicles, average wait 0.018 seconds, max wait 0.061 seconds
+E:	195 vehicles, average wait 0.017 seconds, max wait 0.062 seconds
+E:	196 vehicles, average wait 0.015 seconds, max wait 0.052 seconds
+E:	204 vehicles, average wait 0.017 seconds, max wait 0.072 seconds
+E:	207 vehicles, average wait 0.017 seconds, max wait 0.061 seconds
+Karen Xu's system version 0 (ASST1 #128)
+Karen Xu's system version 0 (ASST1 #128)
+Karen Xu's system version 0 (ASST1 #128)
+Karen Xu's system version 0 (ASST1 #128)
+Karen Xu's system version 0 (ASST1 #128)
+N:	179 vehicles, average wait 0.019 seconds, max wait 0.062 seconds
+N:	190 vehicles, average wait 0.016 seconds, max wait 0.059 seconds
+N:	200 vehicles, average wait 0.019 seconds, max wait 0.059 seconds
+N:	201 vehicles, average wait 0.016 seconds, max wait 0.051 seconds
+N:	203 vehicles, average wait 0.016 seconds, max wait 0.061 seconds
+OS/161 base system version 1.99.05
+OS/161 base system version 1.99.05
+OS/161 base system version 1.99.05
+OS/161 base system version 1.99.05
+OS/161 base system version 1.99.05
+OS/161 kernel: q
+OS/161 kernel: q
+OS/161 kernel: q
+OS/161 kernel: q
+OS/161 kernel: q
+OS/161 kernel: sp3 10 80 0 1 0 
+OS/161 kernel: sp3 10 80 0 1 0 
+OS/161 kernel: sp3 10 80 0 1 0 
+OS/161 kernel: sp3 10 80 0 1 0 
+OS/161 kernel: sp3 10 80 0 1 0 
+Operation took 2.632178217 seconds
+Operation took 2.648265017 seconds
+Operation took 2.672952697 seconds
+Operation took 2.682012497 seconds
+Operation took 2.713211537 seconds
+Shutting down.
+Shutting down.
+Shutting down.
+Shutting down.
+Shutting down.
+Simulation: 2.489 seconds, 800 vehicles
+Simulation: 2.537 seconds, 800 vehicles
+Simulation: 2.539 seconds, 800 vehicles
+Simulation: 2.562 seconds, 800 vehicles
+Simulation: 2.603 seconds, 800 vehicles
+S:	191 vehicles, average wait 0.017 seconds, max wait 0.052 seconds
+S:	203 vehicles, average wait 0.016 seconds, max wait 0.061 seconds
+S:	206 vehicles, average wait 0.018 seconds, max wait 0.060 seconds
+S:	214 vehicles, average wait 0.016 seconds, max wait 0.071 seconds
+S:	219 vehicles, average wait 0.014 seconds, max wait 0.050 seconds
+The system is halted.
+The system is halted.
+The system is halted.
+The system is halted.
+The system is halted.
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+Threads: 10 Iterations: 80 Interarrival time: 0  Service time: 1  Bias?: no
+W:	186 vehicles, average wait 0.015 seconds, max wait 0.052 seconds
+W:	201 vehicles, average wait 0.016 seconds, max wait 0.053 seconds
+W:	201 vehicles, average wait 0.016 seconds, max wait 0.060 seconds
+W:	202 vehicles, average wait 0.015 seconds, max wait 0.052 seconds
+W:	210 vehicles, average wait 0.018 seconds, max wait 0.060 seconds
+all:	800 vehicles, average 0.016 seconds waiting
+all:	800 vehicles, average 0.016 seconds waiting
+all:	800 vehicles, average 0.016 seconds waiting
+all:	800 vehicles, average 0.016 seconds waiting
+all:	800 vehicles, average 0.017 seconds waiting
+beep0 at ltimer0
+beep0 at ltimer0
+beep0 at ltimer0
+beep0 at ltimer0
+beep0 at ltimer0
+con0 at lser0
+con0 at lser0
+con0 at lser0
+con0 at lser0
+con0 at lser0
+cpu0: MIPS r3000
+cpu0: MIPS r3000
+cpu0: MIPS r3000
+cpu0: MIPS r3000
+cpu0: MIPS r3000
+cpu0: offline.
+cpu0: offline.
+cpu0: offline.
+cpu1: MIPS r3000
+cpu1: MIPS r3000
+cpu1: MIPS r3000
+cpu1: MIPS r3000
+cpu1: MIPS r3000
+cpu1: offline.
+cpu1: offline.
+cpu1: offline.
+cpu2: MIPS r3000
+cpu2: MIPS r3000
+cpu2: MIPS r3000
+cpu2: MIPS r3000
+cpu2: MIPS r3000
+cpu2: offline.
+cpu2: offline.
+cpu2: offline.
+cpu2: offline.
+cpu3: MIPS r3000
+cpu3: MIPS r3000
+cpu3: MIPS r3000
+cpu3: MIPS r3000
+cpu3: MIPS r3000
+cpu3: offline.
+cpu3: offline.
+cpu3: offline.
+cpu3: offline.
+cpu3: offline.
+emu0 at lamebus0
+emu0 at lamebus0
+emu0 at lamebus0
+emu0 at lamebus0
+emu0 at lamebus0
+lamebus0 (system main bus)
+lamebus0 (system main bus)
+lamebus0 (system main bus)
+lamebus0 (system main bus)
+lamebus0 (system main bus)
+lhd0 at lamebus0
+lhd0 at lamebus0
+lhd0 at lamebus0
+lhd0 at lamebus0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lhd1 at lamebus0
+lhd1 at lamebus0
+lhd1 at lamebus0
+lhd1 at lamebus0
+lrandom0 at lamebus0
+lrandom0 at lamebus0
+lrandom0 at lamebus0
+lrandom0 at lamebus0
+lrandom0 at lamebus0
+lser0 at lamebus0
+lser0 at lamebus0
+lser0 at lamebus0
+lser0 at lamebus0
+lser0 at lamebus0
+ltimer0 at lamebus0
+ltimer0 at lamebus0
+ltimer0 at lamebus0
+ltimer0 at lamebus0
+ltimer0 at lamebus0
+ltrace0 at lamebus0
+ltrace0 at lamebus0
+ltrace0 at lamebus0
+ltrace0 at lamebus0
+ltrace0 at lamebus0
+max permitted wait:	0.090 seconds
+max permitted wait:	0.090 seconds
+max permitted wait:	0.090 seconds
+max permitted wait:	0.090 seconds
+max permitted wait:	0.090 seconds
+random0 at lrandom0
+random0 at lrandom0
+random0 at lrandom0
+random0 at lrandom0
+random0 at lrandom0
+rtclock0 at ltimer0
+rtclock0 at ltimer0
+rtclock0 at ltimer0
+rtclock0 at ltimer0
+rtclock0 at ltimer0
+   President and Fellows of Harvard College.  All rights reserved.
+   President and Fellows of Harvard College.  All rights reserved.
+   President and Fellows of Harvard College.  All rights reserved.
+   President and Fellows of Harvard College.  All rights reserved.
+   President and Fellows of Harvard College.  All rights reserved.

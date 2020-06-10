@@ -32,6 +32,11 @@ static int volatile currDir;
 static int volatile numCars; // numCars in currDir
 static int volatile waitingCars[4]; 
 
+// queue 
+// static int volatile waitQueue[4];  //volatile
+static struct queue * waitQueue;  //volatile
+static bool volatile inQueue [4];
+
 struct cv * getCV(int cv_num);
 
 struct cv * getCV(int cv_num){
@@ -84,7 +89,18 @@ intersection_sync_init(void)
   if(lk_mutex == NULL){
   	panic("could not create lk_mutex lock\n");
   }
+
+  // for(int i = 0; i < 3; i++){
+  //   queue[i] = -1; 
+  // }
+  waitQueue = q_create(4);
+  if(waitQueue == NULL){
+    panic("could not create waitQueue queue\n");
+  }
+
   currDir = -1; // -1 means unset 
+  
+  // queueSize = 0; 
 
   //kprintf("done initializing\n"); 
   return;
@@ -106,14 +122,16 @@ intersection_sync_cleanup(void)
   KASSERT(cv_2 != NULL);
   KASSERT(cv_3 != NULL); 
   KASSERT(lk_mutex != NULL);
+  KASSERT(waitQueue != NULL);
 
   cv_destroy(cv_0); 
   cv_destroy(cv_1);
   cv_destroy(cv_2); 
   cv_destroy(cv_3);   
   lock_destroy(lk_mutex);
+  q_destroy(waitQueue);
 
-  //kprintf("ending cleanup\n");
+  // kprintf("ending cleanup\n");
   return; 
 
 }
@@ -141,27 +159,55 @@ intersection_before_entry(Direction origin, Direction destination)
   KASSERT(cv_2 != NULL);
   KASSERT(cv_3 != NULL);
   KASSERT(lk_mutex != NULL);
-  
+  // KASSERT(waitQueue != NULL);
+
   lock_acquire(lk_mutex);
   
   // kprintf("before entry from %d :  %d cars", (int)origin, numCars);  
+
+  //kprintf("entering car: %d -> %d\n", origin, destination); 
+
   // case 1: can go right now since intersection is unset 
   if(currDir == -1){
       currDir = origin; 
-      //go 
+      // go 
 
   // case 2: can go right now since current direction of intersection matches vehicle direction 
   } else if (currDir == (int)origin){
-    //go 
+    // go 
 
   // case 3: must wait until it is woken up by another car leaving the intersection (from another direction) that hands off the intersection to current car's direction
   } else {
    
     // go to sleep 
     waitingCars[(int)origin]++;
+
+    // add to queue if not already in it
+    if(!inQueue[(int)origin]){
+
+      int* dir = (int *)kmalloc(sizeof(int));
+      *dir = (int)origin; 
+      q_addtail(waitQueue, (void*)(dir));
+      inQueue[(int)origin] = true; 
+      // kprintf("adding: queue length: %d,  head: %d \n", q_len(waitQueue), *dir);
+    }
+
     cv_wait(getCV((int)origin), lk_mutex); // wait
     //kprintf("waiting for intersection to clear: %d -> %d\n", origin, destination); 
+
     waitingCars[(int)origin]--;
+
+    // remove from queue if no more cars in that direction 
+    if(!q_empty(waitQueue)){
+      int* dir = (int *)q_peek(waitQueue);    // need to free this?
+
+      if(waitingCars[*dir] == 0){
+        q_remhead(waitQueue);
+        // kprintf("removing: queue length: %d,  head: %d \n", q_len(waitQueue), *dir);
+        inQueue[*dir] = false; 
+        kfree(dir);   
+      }
+    }
   }
 
   // at this point, car is able to go through now 
@@ -186,31 +232,50 @@ intersection_before_entry(Direction origin, Direction destination)
 void
 intersection_after_exit(Direction origin, Direction destination) 
 {
-  (void) destination;
+  (void)origin;
+  (void)destination;
   KASSERT(cv_0 != NULL);
   KASSERT(cv_1 != NULL);
   KASSERT(cv_2 != NULL);
   KASSERT(cv_3 != NULL);
   KASSERT(lk_mutex != NULL);
+  KASSERT(waitQueue != NULL);
 
-  lock_acquire(lk_mutex);   
+  lock_acquire(lk_mutex); 
+  //kprintf ("exiting car: %d ->  %d\n", origin, destination);
+  
   numCars--; 
 
   if(numCars == 0){
-    // kprintf("handing off intersection from %d\n", (int)origin);
     currDir = -1;
+    // kprintf("handing off intersection from %d\n", (int)origin);
+
+    
+    if(!q_empty(waitQueue)){
+
+      int* dir = (int *)q_peek(waitQueue);    // need to free this?
+      // kprintf("handing off intersection to %d\n", *dir);
+      
+      currDir = *dir; 
+      cv_broadcast(getCV(currDir), lk_mutex);
+      // kprintf("waking up all cars in %d\n", currDir);  
+    }
+
+    /*
     for (int i = 1; i <= 3; i++){
       if(waitingCars[(origin+i)%4] > 0){
         currDir = (origin+i)%4;
         cv_broadcast(getCV(currDir), lk_mutex);
-        // kprintf("waking up all cars in %d\n", currDir);  
+        //kprintf("waking up all cars in %d\n", currDir);  
         break;
       }
-    } 
+    } */
   }
   
   // //kprintf("after exit: %d remaining from %d \n",  numCars, (int)origin);  
   lock_release(lk_mutex); 
   return;
+
+
 }
  
