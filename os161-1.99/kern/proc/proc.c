@@ -50,7 +50,10 @@
 #include <vfs.h>
 #include <synch.h>
 #include <kern/fcntl.h>  
-
+#include "opt-A2.h"
+#if OPT_A2
+//	#include <mips/trapframe.h>
+#endif
 /*
  * The process for the kernel; this holds all the kernel-only threads.
  */
@@ -67,17 +70,32 @@ static volatile unsigned int proc_count;
 static struct semaphore *proc_count_mutex;
 /* used to signal the kernel menu thread when there are no processes */
 struct semaphore *no_proc_sem;   
-#endif  // UW
 
+#if OPT_A2
+	static volatile pid_t pid_counter;	// min 1, max 64 (for a2a) 
+	static struct lock *pid_counter_lk; 
+	static volatile bool first_PID; //
+
+#endif
+
+#endif  // UW
 
 
 /*
  * Create a proc structure.
  */
+
+ // added pid_counter incrementing 
 static
 struct proc *
 proc_create(const char *name)
 {
+	//kprintf("proc_create on proc with pid %d\n", pid_counter);
+
+	#if OPT_A2
+		KASSERT(pid_counter > 0); 	
+	#endif 
+
 	struct proc *proc;
 
 	proc = kmalloc(sizeof(*proc));
@@ -92,6 +110,33 @@ proc_create(const char *name)
 
 	threadarray_init(&proc->p_threads);
 	spinlock_init(&proc->p_lock);
+
+	#if OPT_A2
+	
+		// assign pid to new proc 
+		if(first_PID){
+			proc->pid = pid_counter; 
+			pid_counter++; //
+
+		} else {
+			lock_acquire(pid_counter_lk);
+			proc->pid = pid_counter; 
+			pid_counter++; 
+			lock_release(pid_counter_lk);
+
+		} 
+
+		// initialize other proc fields 
+		proc->parent = NULL;
+		proc->child_procs = array_create(); 
+		proc->lk_child_procs = lock_create("child_procs_lk");
+		proc->cv_exiting = cv_create("child cv_exiting");
+		proc->exit_code = -1; 			// default ok?
+		// proc->tf = NULL;				// possible overwriting? 
+		// proc->waitpid_called = false;
+		proc->exited = false; 
+
+	#endif 
 
 	/* VM fields */
 	proc->p_addrspace = NULL;
@@ -112,6 +157,8 @@ proc_create(const char *name)
 void
 proc_destroy(struct proc *proc)
 {
+	//kprintf("proc_destroy on proc with pid %d\n", proc->pid);
+
 	/*
          * note: some parts of the process structure, such as the address space,
          *  are destroyed in sys_exit, before we get here
@@ -130,12 +177,47 @@ proc_destroy(struct proc *proc)
 	 * incorrect to destroy it.)
 	 */
 
+
 	/* VFS fields */
 	if (proc->p_cwd) {
 		VOP_DECREF(proc->p_cwd);
 		proc->p_cwd = NULL;
 	}
 
+	#if OPT_A2
+		lock_acquire(proc->lk_child_procs);
+		//kprintf("destroying child array of proc with pid %d\n", proc->pid);
+		for (int i = array_num(proc->child_procs) - 1; i >= 0; i--){
+			//kprintf("destroying child index %d for pid %d\n", i, proc->pid);
+
+			// if child exit code is success, you can destroy it 
+			struct proc * c = (struct proc * ) array_get(proc->child_procs, i);
+			// cleanup zombie 
+			
+			if (c->exited){
+				proc_destroy(c); 
+			}
+			// lock_acquire(c->lk_child_procs);
+
+			c->parent = NULL;
+			// lock_release(c->lk_child_procs);
+
+			array_remove(proc->child_procs, i);
+		}
+		//kprintf("about to destroy array\n");
+
+		KASSERT((int)array_num(proc->child_procs) == 0);
+
+		array_destroy(proc->child_procs);
+		// //kprintf("after destroying array\n");
+
+		lock_release(proc->lk_child_procs);
+
+		cv_destroy(proc->cv_exiting);
+		lock_destroy(proc->lk_child_procs);
+		//kprintf("proc_destroy complete\n");
+
+	#endif
 
 #ifndef UW  // in the UW version, space destruction occurs in sys_exit, not here
 	if (proc->p_addrspace) {
@@ -167,6 +249,13 @@ proc_destroy(struct proc *proc)
 	spinlock_cleanup(&proc->p_lock);
 
 	kfree(proc->p_name);
+	
+#if OPT_A2
+	if(proc->tf != NULL){
+		kfree(proc->tf);
+	}
+#endif
+
 	kfree(proc);
 
 #ifdef UW
@@ -193,10 +282,26 @@ proc_destroy(struct proc *proc)
 void
 proc_bootstrap(void)
 {
+	//kprintf("bootstrap (kernel) on proc with pid %d\n", pid_counter);
+
+	// initialize pid counter 
+	#if OPT_A2
+		first_PID = true;
+		pid_counter = 1; // can't be 0
+		pid_counter_lk = lock_create("pid_counter_lk");
+		if(pid_counter_lk == NULL){
+			panic("could not create pid_counter_lk \n");
+			// return;
+			// return ENOMEM;
+		}
+		
+	#endif
   kproc = proc_create("[kernel]");
   if (kproc == NULL) {
     panic("proc_create for kproc failed\n");
   }
+  first_PID = false;
+
 #ifdef UW
   proc_count = 0;
   proc_count_mutex = sem_create("proc_count_mutex",1);
@@ -219,6 +324,8 @@ proc_bootstrap(void)
 struct proc *
 proc_create_runprogram(const char *name)
 {
+	//kprintf("proc_runprogram on proc with pid %d\n", pid_counter);
+
 	struct proc *proc;
 	char *console_path;
 
