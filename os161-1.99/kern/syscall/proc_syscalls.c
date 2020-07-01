@@ -26,7 +26,6 @@ void sys__exit(int exitcode) {
  
   /* for now, just include this to keep the compiler from complaining about
     an unused variable */
-  (void)exitcode;
 
   // cause the current process to exit 
   DEBUG(DB_SYSCALL,"Syscall: _exit(%d)\n",exitcode);
@@ -43,38 +42,39 @@ void sys__exit(int exitcode) {
   as = curproc_setas(NULL);
   as_destroy(as);
 
+  proc_remthread(curthread);
 
 
   /* if this is the last user process in the system, proc_destroy()
      will wake up the kernel menu thread */
   #if OPT_A2
+    p->exited = true; 
+    p->exit_code = _MKWAIT_EXIT(exitcode);
 
-     // case 1: parent exists, update exit code and wake parent (in case parent called waitpid on you)
-    if(curproc->parent){
-      //kprintf("parent exists, update exit code\n");
-      lock_acquire(curproc->lk_child_procs);
+    //kprintf("parent exists, update exit code\n");
+    lock_acquire(p->lk_child_procs);
+    cv_broadcast(p->cv_exiting, p->lk_child_procs); // tell the parent the child that it is waiting for is exiting (if parent called waitpid) 
+    //kprintf("broadcasted to parent\n"
+    lock_release(p->lk_child_procs);
+    
 
-      curproc->exited = true; 
-      curproc->exit_code = exitcode;  
-      cv_broadcast(curproc->cv_exiting, curproc->lk_child_procs); // tell the parent the child that it is waiting for is exiting (if parent called waitpid) 
-      //kprintf("broadcasted to parent\n");
+    // case 1: parent exists, update exit code and wake parent (in case parent called waitpid on you)
 
-      lock_release(curproc->lk_child_procs);
-      
-      proc_remthread(curthread);
+    if(p->parent != NULL) {
 
-    // case 2: no parent, destroy everything 
     } else {
+      // case 2: no parent, destroy everything 
+
       //kprintf("in sys_exit: no parent, before destroy\n");
-      proc_remthread(curthread);
       proc_destroy(p);    // detaches your children too 
       //kprintf("in sys_exit: no parent, after destroy\n");
     }
 
   #else 
+    (void)exitcode;
+
     /* detach this thread from its process */
     /* note: curproc cannot be used after this call */
-    proc_remthread(curthread);
     proc_destroy(p);
   #endif 
 
@@ -118,6 +118,7 @@ sys_waitpid(pid_t pid,
   int result;
 
   if (options != 0) {
+    *retval = -1;
     return(EINVAL);
   }
   
@@ -125,8 +126,8 @@ sys_waitpid(pid_t pid,
     if ((int)array_num(curproc->child_procs) == 0){
       return ESRCH; // no children 
     }
-    // necessary?
-    if(status == NULL){
+    if(status == NULL){  
+      *retval = -1;
       return EFAULT;
     }
 
@@ -170,11 +171,11 @@ sys_waitpid(pid_t pid,
           //kprintf("in while after cv wait\n");
 
         }  
-
         //kprintf("done \n");
 
-        exitstatus = _MKWAIT_EXIT(c->exit_code);
         lock_release(c->lk_child_procs); 
+
+        exitstatus = c->exit_code;
 
         //kprintf("exit status after cv_wait on pid %d is %d\n", pid, exitstatus);
         break; 
@@ -183,7 +184,7 @@ sys_waitpid(pid_t pid,
     // error if waitpid called on a valid pid but not a valid child  
     if(!found){
       //kprintf("valid pid, but no such child of it with that pid exists \n");
-      lock_release(curproc->lk_child_procs); 
+      // lock_release(curproc->lk_child_procs); 
       *retval = -1;    
       return ECHILD;  // or ESRCH ? 
     }
@@ -217,7 +218,7 @@ sys_waitpid(pid_t pid,
 #if OPT_A2
 
 int sys_fork(struct trapframe *tf, pid_t * retval){
-  // 1: create a process structure for child process ( assign PID to child process  too)
+  // create a process structure for child process ( assign PID to child process  too)
 
   struct proc * child_fork = proc_create_runprogram(curproc->p_name);
 
@@ -241,7 +242,7 @@ int sys_fork(struct trapframe *tf, pid_t * retval){
     return ENOMEM;
   } 
   
-  // clone a trapframe for the child's  stack and modify it so it returns the current value 
+  // clone a trapframe for the child's stack and modify it so it returns the current value 
   child_fork->tf = kmalloc(sizeof(struct trapframe));
   KASSERT(child_fork->tf != NULL);
   memcpy((void *)child_fork->tf, (const void *) tf, sizeof(struct trapframe));   // args: (dest, src, length)

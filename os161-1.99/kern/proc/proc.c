@@ -104,39 +104,12 @@ proc_create(const char *name)
 	}
 	proc->p_name = kstrdup(name);
 	if (proc->p_name == NULL) {
-		kfree(proc);
+		// kfree(proc);
 		return NULL;
 	}
 
 	threadarray_init(&proc->p_threads);
 	spinlock_init(&proc->p_lock);
-
-	#if OPT_A2
-	
-		// assign pid to new proc 
-		if(first_PID){
-			proc->pid = pid_counter; 
-			pid_counter++; //
-
-		} else {
-			lock_acquire(pid_counter_lk);
-			proc->pid = pid_counter; 
-			pid_counter++; 
-			lock_release(pid_counter_lk);
-
-		} 
-
-		// initialize other proc fields 
-		proc->parent = NULL;
-		proc->child_procs = array_create(); 
-		proc->lk_child_procs = lock_create("child_procs_lk");
-		proc->cv_exiting = cv_create("child cv_exiting");
-		proc->exit_code = -1; 			// default ok?
-		// proc->tf = NULL;				// possible overwriting? 
-		// proc->waitpid_called = false;
-		proc->exited = false; 
-
-	#endif 
 
 	/* VM fields */
 	proc->p_addrspace = NULL;
@@ -147,6 +120,50 @@ proc_create(const char *name)
 #ifdef UW
 	proc->console = NULL;
 #endif // UW
+
+#if OPT_A2
+
+	// assign pid to new proc 
+	if(first_PID){
+		proc->pid = pid_counter; 
+		pid_counter++; //
+
+	} else {
+		lock_acquire(pid_counter_lk);
+		proc->pid = pid_counter; 
+		pid_counter++; 
+		lock_release(pid_counter_lk);
+
+	} 
+
+	// initialize other proc fields 
+	proc->parent = NULL;
+
+	proc->child_procs = array_create(); 
+	array_init(proc->child_procs);
+
+	proc->lk_child_procs = lock_create("child_procs_lk");
+	if(proc->lk_child_procs == NULL){
+		kfree(proc->p_name); 
+		kfree(proc);
+		return NULL;
+	}
+
+	proc->cv_exiting = cv_create("child cv_exiting");
+	if(proc->cv_exiting == NULL){
+		kfree(proc->lk_child_procs);
+		kfree(proc->p_name);
+		kfree(proc); 
+		return NULL;
+	}
+
+	proc->exit_code = 0; 			// default ok?
+	// proc->tf = NULL;				// possible overwriting? 
+	// proc->waitpid_called = false;
+	proc->exited = false; 
+
+#endif 
+
 
 	return proc;
 }
@@ -184,41 +201,7 @@ proc_destroy(struct proc *proc)
 		proc->p_cwd = NULL;
 	}
 
-	#if OPT_A2
-		lock_acquire(proc->lk_child_procs);
-		//kprintf("destroying child array of proc with pid %d\n", proc->pid);
-		for (int i = array_num(proc->child_procs) - 1; i >= 0; i--){
-			//kprintf("destroying child index %d for pid %d\n", i, proc->pid);
-
-			// if child exit code is success, you can destroy it 
-			struct proc * c = (struct proc * ) array_get(proc->child_procs, i);
-			// cleanup zombie 
-			
-			if (c->exited){
-				proc_destroy(c); 
-			}
-			// lock_acquire(c->lk_child_procs);
-
-			c->parent = NULL;
-			// lock_release(c->lk_child_procs);
-
-			array_remove(proc->child_procs, i);
-		}
-		//kprintf("about to destroy array\n");
-
-		KASSERT((int)array_num(proc->child_procs) == 0);
-
-		array_destroy(proc->child_procs);
-		// //kprintf("after destroying array\n");
-
-		lock_release(proc->lk_child_procs);
-
-		cv_destroy(proc->cv_exiting);
-		lock_destroy(proc->lk_child_procs);
-		//kprintf("proc_destroy complete\n");
-
-	#endif
-
+	
 #ifndef UW  // in the UW version, space destruction occurs in sys_exit, not here
 	if (proc->p_addrspace) {
 		/*
@@ -248,13 +231,43 @@ proc_destroy(struct proc *proc)
 	threadarray_cleanup(&proc->p_threads);
 	spinlock_cleanup(&proc->p_lock);
 
+	#if OPT_A2
+		lock_acquire(proc->lk_child_procs);
+		//kprintf("destroying child array of proc with pid %d\n", proc->pid);
+		for (int i = array_num(proc->child_procs) - 1; i >= 0; i--){
+			//kprintf("destroying child index %d for pid %d\n", i, proc->pid);
+
+			// if child exit code is success, you can destroy it 
+			struct proc * c = array_get(proc->child_procs, i);
+			// cleanup zombie 
+			lock_acquire(c->lk_child_procs);
+			c->parent = NULL;
+			array_remove(proc->child_procs, i);
+
+
+			lock_release(c->lk_child_procs);
+
+			if (c->exited){
+				proc_destroy(c); 
+			}
+
+		}
+		//kprintf("about to destroy array\n");
+
+		// KASSERT((int)array_num(proc->child_procs) == 0);
+
+		array_destroy(proc->child_procs);		//???
+		// //kprintf("after destroying array\n");
+		cv_destroy(proc->cv_exiting);
+
+		lock_release(proc->lk_child_procs);
+		lock_destroy(proc->lk_child_procs);
+		//kprintf("proc_destroy complete\n");
+
+	#endif
+
+
 	kfree(proc->p_name);
-	
-#if OPT_A2
-	if(proc->tf != NULL){
-		kfree(proc->tf);
-	}
-#endif
 
 	kfree(proc);
 
