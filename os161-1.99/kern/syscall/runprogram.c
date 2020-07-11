@@ -44,6 +44,10 @@
 #include <vfs.h>
 #include <syscall.h>
 #include <test.h>
+#include <opt-A2.h>
+// #if OPT_A2
+#include<copyinout.h>
+// #endif
 
 /*
  * Load program "progname" and start running it in usermode.
@@ -51,8 +55,12 @@
  *
  * Calls vfs_open on progname and thus may destroy it.
  */
+ #if OPT_A2
+int runprogram(char *progname, int numArgs, char **args)
+ #else 
 int
 runprogram(char *progname)
+#endif
 {
 	struct addrspace *as;
 	struct vnode *v;
@@ -66,7 +74,7 @@ runprogram(char *progname)
 	}
 
 	/* We should be a new process. */
-	KASSERT(curproc_getas() == NULL);
+	// KASSERT(curproc_getas() == NULL);
 
 	/* Create a new address space. */
 	as = as_create();
@@ -75,8 +83,19 @@ runprogram(char *progname)
 		return ENOMEM;
 	}
 
+#if OPT_A2
+	// deactivite curr proc if exists
+	// if(currproc_getas() != NULL){
+	// 	as_deactivate();
+	// }
 	/* Switch to it and activate it. */
+	struct addrspace * oldas = curproc_setas(as);
+	// if(as_old != NULL){
+	// 	as_destroy(as_old);
+	// }
+#else
 	curproc_setas(as);
+#endif
 	as_activate();
 
 	/* Load the executable. */
@@ -96,12 +115,45 @@ runprogram(char *progname)
 		/* p_addrspace will go away when curproc is destroyed */
 		return result;
 	}
+	// 
+#if OPT_A2
 
+	vaddr_t currStackPtr = stackptr;  
+  	vaddr_t * sArgs = kmalloc((numArgs+1) * sizeof(vaddr_t));
+
+	char **argv = args;	//prevly 
+
+	sArgs[numArgs] = (vaddr_t)NULL;
+	for(int i = numArgs-1; i>= 0; i--){
+		const size_t requiredLen = 128;   //HARDCODED 
+		size_t argSize = requiredLen * sizeof(char); 
+		currStackPtr -= argSize; 
+		int err = copyout((void*) argv[i], (userptr_t) currStackPtr, requiredLen);
+		if(err){
+			return err; 
+		}
+		sArgs[i] = currStackPtr;
+	}
+
+	for (int i = numArgs; i >= 0; i--){
+		size_t sp_size = sizeof(vaddr_t); 
+		currStackPtr -= sp_size;
+		int err = copyout((void*) &sArgs[i], (userptr_t) currStackPtr, sp_size);
+		if(err){
+			return err;
+		}
+	}
+	// copied from execv^ 
+
+	enter_new_process(numArgs, (userptr_t) currStackPtr, currStackPtr, entrypoint);		// roundup not needed unless hardcoded value of 128 changes
+	as_destroy(oldas);
+#else 
 	/* Warp to user mode. */
 	enter_new_process(0 /*argc*/, NULL /*userspace addr of argv*/,
 			  stackptr, entrypoint);
 	
 	/* enter_new_process does not return. */
+#endif
 	panic("enter_new_process returned\n");
 	return EINVAL;
 }

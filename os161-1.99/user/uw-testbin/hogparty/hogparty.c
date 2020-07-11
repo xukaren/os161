@@ -1,7 +1,7 @@
 /*
  * hogparty
  *
- * 	create some talking hogs
+ * 	create ssme talking hogs
  *
  *   relies on fork, _exit, stdout and stderr, and execv
  *

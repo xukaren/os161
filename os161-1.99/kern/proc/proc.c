@@ -122,6 +122,9 @@ proc_create(const char *name)
 #endif // UW
 
 #if OPT_A2
+	if(proc->tf){
+		proc->tf = NULL; 
+	}
 
 	// assign pid to new proc 
 	if(first_PID){

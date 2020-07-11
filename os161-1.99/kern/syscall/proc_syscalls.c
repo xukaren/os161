@@ -9,8 +9,11 @@
 #include <thread.h>
 #include <addrspace.h>
 #include <copyinout.h>
+
 #if OPT_A2
  #include <mips/trapframe.h>
+ #include <vfs.h>
+ #include <kern/fcntl.h>
 #endif
 #include "opt-A2.h"
 
@@ -249,6 +252,7 @@ int sys_fork(struct trapframe *tf, pid_t * retval){
   curproc->tf = child_fork->tf;
   
   // create a thread for child process 
+  // curproc->tf?
   int err2 = thread_fork(child_fork->p_name, child_fork, (void*) &enter_forked_process, child_fork->tf, 0); // what # other than -234? 
 
   if (err2) {
@@ -258,4 +262,151 @@ int sys_fork(struct trapframe *tf, pid_t * retval){
   *retval = child_fork->pid;
   return(0);
 }
+
+int sys_execv (const char * progname, char ** args, int *retval){
+  (void)args;
+
+	struct addrspace *as;
+	struct vnode *v;
+	vaddr_t entrypoint, stackptr;
+	int result;
+
+  // copy program name and path from user space into the kernel 
+  size_t nameLength = sizeof(char) * (strlen(progname)+1);
+  char * kernel_progname = kmalloc(nameLength);
+  if(kernel_progname == NULL){
+    *retval = -1; 
+    return ENOMEM; 
+  }
+  int res1 = copyin((const_userptr_t) progname, (void*)kernel_progname, nameLength);
+  // kprintf("%s\n", kernel_progname);
+  if(res1){
+    kfree(kernel_progname); 
+    *retval = -1;
+    return res1;
+  }
+
+  // count arguments  
+  int numArgs = 0; 
+  while(args[numArgs] != NULL){
+    numArgs++; 
+  }
+  // kprintf("%d\n", numArgs);      
+
+  // copy arguments TO KERNEL
+  char ** argv = kmalloc((numArgs+1) * sizeof(char*));
+  if(argv == NULL){
+    kfree(kernel_progname); 
+    *retval = -1; 
+    return ENOMEM;
+  }
+  
+  for (int i = 0; i < numArgs; i++){
+    const size_t argLength = 128; // HARDCODED 
+    argv[i] = kmalloc(argLength * sizeof(char));
+    
+    if(argv[i] == NULL){
+      kfree(kernel_progname); 
+      for (int j = 0; j < i ; j++){
+        kfree(argv[j]);
+      }
+      kfree(argv);
+      *retval = -1; 
+      return ENOMEM; 
+    }
+    result = copyin((const_userptr_t) args[i], argv[i], argLength * sizeof(char));
+    if(result){
+      kfree(kernel_progname);
+      for (int j = 0; j <= i ; j++){
+        kfree(argv[j]);
+      }
+      kfree(argv);
+      *retval = -1; 
+      return result; 
+    }  
+  }
+
+  argv[numArgs] = NULL;   // last arg is NULL
+
+  for (int i = 0; i < numArgs; i++){
+    // kprintf("%s\n", argv[i]);
+  }
+
+	/* Open the file. */
+	result = vfs_open(kernel_progname, O_RDONLY, 0, &v);
+	if (result) {
+		return result;
+	}
+
+	/* We should be a new process. */
+	// KASSERT(curproc_getas() == NULL);
+
+	/* Create a new address space. */
+	as = as_create();
+	if (as ==NULL) {
+		vfs_close(v);
+		return ENOMEM;
+	}
+
+	/* Switch to it and activate it. */
+	struct addrspace * oldas = curproc_setas(as);    // switch 
+	as_activate();      // mark current TLB entries invalid 
+
+	/* Load the executable. */
+	result = load_elf(v, &entrypoint);
+	if (result) {
+		/* p_addrspace will go away when curproc is destroyed */
+		vfs_close(v);
+		return result;
+	}
+
+	/* Done with the file now. */
+	vfs_close(v);
+
+	/* Define the user stack in the address space */
+	result = as_define_stack(as, &stackptr);
+	if (result) {
+		/* p_addrspace will go away when curproc is destroyed */
+		return result;
+	}
+
+  // copy args TO USER STACK
+  vaddr_t currStackPtr = stackptr;  
+  vaddr_t * sArgs = kmalloc((numArgs+1) * sizeof(vaddr_t));
+
+  sArgs[numArgs] = (vaddr_t) NULL;
+  for(int i = numArgs-1; i>= 0; i--){
+    const size_t requiredLen = 128;   // HARDCODED 
+    size_t argSize = requiredLen * sizeof(char); 
+    currStackPtr -= argSize; 
+    int err = copyout((void*) argv[i], (userptr_t) currStackPtr, requiredLen);
+    if(err){
+      return err; 
+    }
+    sArgs[i] = currStackPtr;
+  }
+
+  for (int i = numArgs; i >= 0; i--){
+    size_t sp_size = sizeof(vaddr_t); 
+    currStackPtr -= sp_size;
+    int err = copyout((void*) &sArgs[i], (userptr_t) currStackPtr, sp_size);
+    if(err){
+      return err; 
+    }
+  }
+
+  as_destroy(oldas); 
+  kfree(kernel_progname); 
+  
+
+	/* Warp to user mode. */
+	enter_new_process(numArgs /*argc*/, (userptr_t) currStackPtr /*userspace addr of argv*/,
+			  currStackPtr, entrypoint);
+	
+	/* enter_new_process does not return. */
+	panic("enter_new_process returned\n");
+	return EINVAL;  
+
+}
+
 #endif
