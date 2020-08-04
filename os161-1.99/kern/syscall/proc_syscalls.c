@@ -23,7 +23,7 @@
 void sys__exit(int exitcode) {
   struct addrspace *as;
   struct proc *p = curproc;
-  //kprintf("exiting proc %d \n", p->pid); 
+  // // // // kprint("exiting proc %d \n", p->pid); 
     // before proc_destroy, pass the exit code to the parent process (if exists)
     // (proc_destroy is the one that detaches children when proc is exiting) 
  
@@ -51,26 +51,30 @@ void sys__exit(int exitcode) {
   /* if this is the last user process in the system, proc_destroy()
      will wake up the kernel menu thread */
   #if OPT_A2
-    p->exited = true; 
-    p->exit_code = _MKWAIT_EXIT(exitcode);
-
-    //kprintf("parent exists, update exit code\n");
-    lock_acquire(p->lk_child_procs);
-    cv_broadcast(p->cv_exiting, p->lk_child_procs); // tell the parent the child that it is waiting for is exiting (if parent called waitpid) 
-    //kprintf("broadcasted to parent\n"
-    lock_release(p->lk_child_procs);
-    
+ 
 
     // case 1: parent exists, update exit code and wake parent (in case parent called waitpid on you)
 
-    if(p->parent != NULL) {
+    if(p->parent) {
+      p->exited = true; 
+      p->exit_code = _MKWAIT_EXIT(exitcode);
+      // kprint("setting exitcode to %d for %d \n", p->exit_code, p->pid);
 
+      //// // // kprint("parent exists, update exit code\n");
+              // kprint("acquired lock %d  in sys_exit 1 \n", p->pid);
+
+      lock_acquire(p->lk_child_procs);
+      cv_broadcast(p->cv_exiting, p->lk_child_procs); // tell the parent the child that it is waiting for is exiting (if parent called waitpid) 
+      // kprint("%d broadcasted to parents\n", p->pid);
+        // kprint("released lock %d in sys_exit 2\n", p->pid);
+
+      lock_release(p->lk_child_procs);
     } else {
-      // case 2: no parent, destroy everything 
+      // case 2: no parent, destroy self
 
-      //kprintf("in sys_exit: no parent, before destroy\n");
+      //// // // kprint("in sys_exit: no parent, before destroy\n");
       proc_destroy(p);    // detaches your children too 
-      //kprintf("in sys_exit: no parent, after destroy\n");
+      //// // // kprint("in sys_exit: no parent, after destroy\n");
     }
 
   #else 
@@ -81,7 +85,7 @@ void sys__exit(int exitcode) {
     proc_destroy(p);
   #endif 
 
-  //kprintf("in sys_exit: returned from proc_destroy \n");
+  //// // // kprint("in sys_exit: returned from proc_destroy \n");
 
   thread_exit();
   /* thread_exit() does not return, so we should never get here */
@@ -94,7 +98,7 @@ void sys__exit(int exitcode) {
 int
 sys_getpid(pid_t *retval)
 {
-  // //kprintf("in getpid\n");
+  // //// // // kprint("in getpid\n");
   #if OPT_A2
     *retval = curproc->pid;
   #else 
@@ -115,9 +119,9 @@ sys_waitpid(pid_t pid,
 	    int options,
 	    pid_t *retval)
 {
-  //kprintf("in waitpid with waitpid proc pid # %d\n", pid); 
+  //// // // kprint("in waitpid with waitpid proc pid # %d\n", pid); 
 
-  int exitstatus = -1;
+  int exitstatus;
   int result;
 
   if (options != 0) {
@@ -141,56 +145,62 @@ sys_waitpid(pid_t pid,
     //change later so system handles error (below:)
 
    if (pid < 1 || curproc->pid == pid){    
-      //kprintf("invalid pid"); 
+      //// // // kprint("invalid pid"); 
       *retval = -1; //  has to be something less than 0 otherwise warning will not be issiued 
-      lock_release(curproc->lk_child_procs); 
+      // lock_release(curproc->lk_child_procs); 
       return EINVAL;  // err code for "no such process"
     }  
+      // kprint("acquired lock %d  in WP 1\n", curproc->pid );
 
     lock_acquire(curproc->lk_child_procs);  
-    // curproc->waitpid_called = true;
+ // curproc->waitpid_called = true;
 
     bool found = false; 
 
     // check if is an existing child of the process 
 		for (int i = array_num(curproc->child_procs) - 1; i >= 0; i--){
-      //kprintf("waitpid looping through children: %d\n", i);
+      //// // // kprint("waitpid looping through children: %d\n", i);
 
       struct proc * c = (struct proc *) array_get(curproc->child_procs, i);
 
       // if child is found, wait for child to exit 
 			if(c->pid == pid){
 
-        //kprintf("found child with pid %d in waitPid at index %d \n", pid, i);
+        //// // // kprint("found child with pid %d in waitPid at index %d \n", pid, i);
         found = true;
         
         // curproc->parent->waitpid_called = true; 
+            // kprint("acquired lock %d in WP 2\n", c->pid);
 
         lock_acquire(c->lk_child_procs); 
-        
+
         while (!c->exited){
-          //kprintf("in while before cv wait\n");
+          //// // // kprint("in while before cv wait\n");
           cv_wait(c->cv_exiting, c->lk_child_procs);  // changes the child's exit code 
-          //kprintf("in while after cv wait\n");
+          // // // kprint("parent waiting for child %d to exit \n", c->pid);
 
         }  
-        //kprintf("done \n");
+        //// // // kprint("done \n");
+        // kprint("released lock %d in WP 3.5\n", curproc->pid);
 
         lock_release(c->lk_child_procs); 
 
-        exitstatus = c->exit_code;
-
-        //kprintf("exit status after cv_wait on pid %d is %d\n", pid, exitstatus);
+        exitstatus = c->exit_code; 
+        //// // // kprint("exit status after cv_wait on pid %d is %d\n", pid, exitstatus);
         break; 
       }
 		}
     // error if waitpid called on a valid pid but not a valid child  
     if(!found){
-      //kprintf("valid pid, but no such child of it with that pid exists \n");
-      // lock_release(curproc->lk_child_procs); 
+      //// // // kprint("valid pid, but no such child of it with that pid exists \n");
+        // kprint("released lock %d in WP 3\n", curproc->pid);
+
+      lock_release(curproc->lk_child_procs); 
+
       *retval = -1;    
       return ECHILD;  // or ESRCH ? 
     }
+      // kprint("released lock %d in WP 4\n", curproc->pid);
 
     lock_release(curproc->lk_child_procs); 
 
@@ -221,7 +231,8 @@ sys_waitpid(pid_t pid,
 #if OPT_A2
 
 int sys_fork(struct trapframe *tf, pid_t * retval){
-  // create a process structure for child process ( assign PID to child process  too)
+  // // create a process structure for child process ( assign PID to child process  too)
+  // // // // kprint("sys_fork\n");
 
   struct proc * child_fork = proc_create_runprogram(curproc->p_name);
 
@@ -266,6 +277,7 @@ int sys_fork(struct trapframe *tf, pid_t * retval){
 int sys_execv (const char * progname, char ** args, int *retval){
   (void)args;
 
+  // // // // kprint("sys_execv\n");
 	struct addrspace *as;
 	struct vnode *v;
 	vaddr_t entrypoint, stackptr;
@@ -279,7 +291,7 @@ int sys_execv (const char * progname, char ** args, int *retval){
     return ENOMEM; 
   }
   int res1 = copyin((const_userptr_t) progname, (void*)kernel_progname, nameLength);
-  // kprintf("%s\n", kernel_progname);
+  // // // // kprint("%s\n", kernel_progname);
   if(res1){
     kfree(kernel_progname); 
     *retval = -1;
@@ -291,7 +303,7 @@ int sys_execv (const char * progname, char ** args, int *retval){
   while(args[numArgs] != NULL){
     numArgs++; 
   }
-  // kprintf("%d\n", numArgs);      
+  // // // // kprint("%d\n", numArgs);      
 
   // copy arguments TO KERNEL
   char ** argv = kmalloc((numArgs+1) * sizeof(char*));
@@ -329,7 +341,7 @@ int sys_execv (const char * progname, char ** args, int *retval){
   argv[numArgs] = NULL;   // last arg is NULL
 
   for (int i = 0; i < numArgs; i++){
-    // kprintf("%s\n", argv[i]);
+    // // // // kprint("%s\n", argv[i]);
   }
 
 	/* Open the file. */

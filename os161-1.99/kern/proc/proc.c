@@ -90,7 +90,7 @@ static
 struct proc *
 proc_create(const char *name)
 {
-	//kprintf("proc_create on proc with pid %d\n", pid_counter);
+	//// kprint("proc_create on proc with pid %d\n", pid_counter);
 
 	#if OPT_A2
 		KASSERT(pid_counter > 0); 	
@@ -162,7 +162,6 @@ proc_create(const char *name)
 
 	proc->exit_code = 0; 			// default ok?
 	// proc->tf = NULL;				// possible overwriting? 
-	// proc->waitpid_called = false;
 	proc->exited = false; 
 
 #endif 
@@ -177,7 +176,7 @@ proc_create(const char *name)
 void
 proc_destroy(struct proc *proc)
 {
-	//kprintf("proc_destroy on proc with pid %d\n", proc->pid);
+	// kprint("proc_destroy on proc with pid %d\n", proc->pid);
 
 	/*
          * note: some parts of the process structure, such as the address space,
@@ -235,37 +234,55 @@ proc_destroy(struct proc *proc)
 	spinlock_cleanup(&proc->p_lock);
 
 	#if OPT_A2
+			// kprint("acquired lock %d in PD 1 \n", proc->pid);
+
 		lock_acquire(proc->lk_child_procs);
-		//kprintf("destroying child array of proc with pid %d\n", proc->pid);
+
+		// kprint("destroying child array of proc with pid %d\n", proc->pid);
 		for (int i = array_num(proc->child_procs) - 1; i >= 0; i--){
-			//kprintf("destroying child index %d for pid %d\n", i, proc->pid);
 
 			// if child exit code is success, you can destroy it 
 			struct proc * c = array_get(proc->child_procs, i);
 			// cleanup zombie 
+
+						// kprint("destroying child %d for pid %d\n", c->pid, proc->pid);
+
+			 // kprint("acquired lock %d in PD 2 \n", c->pid);
+
 			lock_acquire(c->lk_child_procs);
+
 			c->parent = NULL;
 			array_remove(proc->child_procs, i);
 
 
-			lock_release(c->lk_child_procs);
+				// // kprint("destroying\n");
 
 			if (c->exited){
+				// // kprint("released lock %d in PD 3 \n", proc->pid);
+				lock_release(c->lk_child_procs);
+				// // kprint("child pid %d is exited = %d \n", c->pid, c->exited);
+
 				proc_destroy(c); 
+
+			}
+			else{
+				lock_release(c->lk_child_procs);
 			}
 
 		}
-		//kprintf("about to destroy array\n");
+		// // kprint("about to destroy child array of %d \n", proc->pid );
 
 		// KASSERT((int)array_num(proc->child_procs) == 0);
 
 		array_destroy(proc->child_procs);		//???
-		// //kprintf("after destroying array\n");
+		// //// kprint("after destroying array\n");
 		cv_destroy(proc->cv_exiting);
+			// kprint("released lock %d in PD 4\n", proc->pid);
 
 		lock_release(proc->lk_child_procs);
+
 		lock_destroy(proc->lk_child_procs);
-		//kprintf("proc_destroy complete\n");
+		// kprint("proc_destroy %d complete\n", proc->pid);
 
 	#endif
 
@@ -298,7 +315,7 @@ proc_destroy(struct proc *proc)
 void
 proc_bootstrap(void)
 {
-	//kprintf("bootstrap (kernel) on proc with pid %d\n", pid_counter);
+	//// kprint("bootstrap (kernel) on proc with pid %d\n", pid_counter);
 
 	// initialize pid counter 
 	#if OPT_A2
@@ -340,7 +357,7 @@ proc_bootstrap(void)
 struct proc *
 proc_create_runprogram(const char *name)
 {
-	//kprintf("proc_runprogram on proc with pid %d\n", pid_counter);
+	//// kprint("proc_runprogram on proc with pid %d\n", pid_counter);
 
 	struct proc *proc;
 	char *console_path;

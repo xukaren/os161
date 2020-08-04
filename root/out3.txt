@@ -1,0 +1,46 @@
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST3 #65)
+
+1832k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+coresize = 451
+cpu0: MIPS r3000
+OS/161 kernel: p testbin/sort
+looking for 1 pages from COREMAP
+found 1 page at 3d000, putting into coremap[1]
+looking for 3 pages from COREMAP
+found a sequence of 3 free pages at 3e000, puttin into coremap[?] to coremap[5]
+looking for 289 pages from COREMAP
+found a sequence of 289 free pages at 41000, puttin into coremap[?] to coremap[294]
+looking for 12 pages from COREMAP
+found a sequence of 12 free pages at 162000, puttin into coremap[?] to coremap[306]
+testbin/sort: Passed.
+freeing block of pages starting at  8003d000, index 1 in coremap 
+freed 1 pages from coremap
+Operation took 3.915385577 seconds
+OS/161 kernel:  p testbin/sort
+looking for 1 pages from COREMAP
+found 1 page at 3d000, putting into coremap[1]
+looking for 3 pages from COREMAP
+found a sequence of 3 free pages at 16e000, puttin into coremap[?] to coremap[309]
+looking for 289 pages from COREMAP
+not found
+Running program testbin/sort failed: Out of memory
+panic: Assertion failed: curproc == kproc || curproc == NULL, at ../../thread/thread.c:790 (thread_exit)

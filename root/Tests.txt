@@ -1,0 +1,49 @@
+================================
+sys161 kernel "p testbin/sort; q"
+
+sys161 kernel "p testbin/sort; p testbin/sort; p testbin/sort; p testbin/sort; p testbin/sort; p testbin/sort; p testbin/sort; p testbin/sort; p testbin/sort; p testbin/sort; p testbin/sort; p testbin/sort; p testbin/sort; p testbin/sort; p testbin/sort; q" > out4.txt
+
+
+sys161 kernel "p testbin/sort; p testbin/sort; p testbin/sort; p testbin/sort; p testbin/sort; p testbin/sort; p testbin/sort; p testbin/sort; p testbin/sort; p testbin/sort; p testbin/sort; p testbin/sort; p testbin/sort;p testbin/sort; p testbin/sort; p testbin/sort; p testbin/sort; p testbin/sort; p testbin/sort; p testbin/sort; p testbin/sort; p testbin/sort; p testbin/sort; p testbin/sort; p testbin/sort; p testbin/sort; p testbin/sort; p testbin/sort; p testbin/sort;p testbin/sort; p testbin/sort; p testbin/sort; p testbin/sort; q"
+================================
+
+
+---- 0.5MB
+sys161 kernel "p uw-testbin/vm-data1; q"
+
+sys161 kernel "p uw-testbin/vm-data3; q"
+
+sys161 kernel "p uw-testbin/romemwrite; q"
+
+sys161 kernel "p uw-testbin/vm-crash2; q"
+
+sys161 kernel "p uw-testbin/vm-data1; p uw-testbin/vm-data1; p uw-testbin/vm-data1; p uw-testbin/vm-data1; p uw-testbin/vm-data1; p uw-testbin/vm-data1; p uw-testbin/vm-data1; p uw-testbin/vm-data1; p uw-testbin/vm-data1; p uw-testbin/vm-data1; p uw-testbin/vm-data1; p uw-testbin/vm-data1; p uw-testbin/vm-data1; p uw-testbin/vm-data1; p uw-testbin/vm-data1; q"
+
+================================
+
+sys161 kernel "p testbin/matmult; q"
+ 
+sys161 kernel "p testbin/matmult; p testbin/matmult; p testbin/matmult;  q"
+
+sys161 kernel "p testbin/matmult; p testbin/matmult; p testbin/matmult; p testbin/matmult; p testbin/matmult; p testbin/matmult;  q"
+
+
+sys161 kernel "p testbin/matmult; p testbin/matmult; p testbin/matmult; p testbin/matmult; p testbin/matmult; p testbin/matmult; p testbin/matmult; p testbin/matmult; p testbin/matmult; p testbin/matmult; p testbin/matmult; p testbin/matmult; p testbin/matmult; p testbin/matmult; p testbin/matmult; p testbin/matmult; p testbin/matmult;  q"
+
+ p testbin/sort; p testbin/sort; p testbin/sort; p testbin/sort;  q"
+
+
+ sys161 kernel "p uw-testbin/romemwrite; p uw-testbin/romemwrite; p uw-testbin/romemwrite; p uw-testbin/romemwrite; p uw-testbin/romemwrite; p uw-testbin/romemwrite; p uw-testbin/romemwrite; p uw-testbin/romemwrite; p uw-testbin/romemwrite; p uw-testbin/romemwrite; p uw-testbin/romemwrite; p uw-testbin/romemwrite; p uw-testbin/romemwrite; p uw-testbin/romemwrite; p uw-testbin/romemwrite; p uw-testbin/romemwrite; p uw-testbin/romemwrite; p uw-testbin/romemwrite; p uw-testbin/romemwrite; p uw-testbin/romemwrite; p uw-testbin/romemwrite; p uw-testbin/romemwrite; p uw-testbin/romemwrite; p uw-testbin/romemwrite; p uw-testbin/romemwrite; p uw-testbin/romemwrite; p uw-testbin/romemwrite; p uw-testbin/romemwrite; p uw-testbin/romemwrite; p uw-testbin/romemwrite;  q"
+
+
+
+=======
+sys161 kernel "p uw-testbin/widefork; q"
+
+sys161 kernel "p uw-testbin/hogparty; q"
+
+sys161 kernel " p uw-testbin/hogparty; p uw-testbin/hogparty; p uw-testbin/hogparty; p uw-testbin/hogparty; p uw-testbin/hogparty; p uw-testbin/hogparty; p uw-testbin/hogparty;p uw-testbin/hogparty; p uw-testbin/hogparty; p uw-testbin/hogparty;p uw-testbin/hogparty; p uw-testbin/hogparty; p uw-testbin/hogparty;p uw-testbin/hogparty; p uw-testbin/hogparty; p uw-testbin/hogparty; q"
+
+sys161 kernel "p uw-testbin/widefork; q"
+
+sys161 kernel "p uw-testbin/widefork; p uw-testbin/widefork; p uw-testbin/widefork; p uw-testbin/widefork; p uw-testbin/widefork;p uw-testbin/widefork; p uw-testbin/widefork; p uw-testbin/widefork;p uw-testbin/widefork; p uw-testbin/widefork; p uw-testbin/widefork;p uw-testbin/widefork; p uw-testbin/widefork; p uw-testbin/widefork; q"
