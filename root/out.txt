@@ -1,400 +1,1977 @@
-N:	215 vehicles, average wait 0.014 seconds, max wait 0.050 seconds
-E:	190 vehicles, average wait 0.015 seconds, max wait 0.050 seconds
-S:	215 vehicles, average wait 0.017 seconds, max wait 0.051 seconds
-W:	180 vehicles, average wait 0.016 seconds, max wait 0.052 seconds
-N:	184 vehicles, average wait 0.019 seconds, max wait 0.070 seconds
-E:	202 vehicles, average wait 0.018 seconds, max wait 0.060 seconds
-S:	203 vehicles, average wait 0.016 seconds, max wait 0.061 seconds
-W:	211 vehicles, average wait 0.016 seconds, max wait 0.061 seconds
-N:	184 vehicles, average wait 0.017 seconds, max wait 0.070 seconds
-E:	233 vehicles, average wait 0.014 seconds, max wait 0.060 seconds
-S:	219 vehicles, average wait 0.016 seconds, max wait 0.070 seconds
-W:	164 vehicles, average wait 0.018 seconds, max wait 0.061 seconds
-N:	206 vehicles, average wait 0.018 seconds, max wait 0.061 seconds
-E:	192 vehicles, average wait 0.018 seconds, max wait 0.071 seconds
-S:	199 vehicles, average wait 0.016 seconds, max wait 0.051 seconds
-W:	203 vehicles, average wait 0.014 seconds, max wait 0.052 seconds
-N:	198 vehicles, average wait 0.016 seconds, max wait 0.064 seconds
-E:	205 vehicles, average wait 0.015 seconds, max wait 0.053 seconds
-S:	196 vehicles, average wait 0.016 seconds, max wait 0.060 seconds
-W:	201 vehicles, average wait 0.016 seconds, max wait 0.060 seconds
-N:	193 vehicles, average wait 0.019 seconds, max wait 0.061 seconds
-E:	217 vehicles, average wait 0.018 seconds, max wait 0.061 seconds
-S:	180 vehicles, average wait 0.018 seconds, max wait 0.061 seconds
-W:	210 vehicles, average wait 0.016 seconds, max wait 0.070 seconds
-N:	213 vehicles, average wait 0.016 seconds, max wait 0.058 seconds
-E:	204 vehicles, average wait 0.016 seconds, max wait 0.062 seconds
-S:	194 vehicles, average wait 0.017 seconds, max wait 0.052 seconds
-W:	189 vehicles, average wait 0.016 seconds, max wait 0.061 seconds
-N:	173 vehicles, average wait 0.017 seconds, max wait 0.059 seconds
-E:	207 vehicles, average wait 0.017 seconds, max wait 0.050 seconds
-S:	220 vehicles, average wait 0.016 seconds, max wait 0.059 seconds
-W:	200 vehicles, average wait 0.015 seconds, max wait 0.051 seconds
-N:	210 vehicles, average wait 0.017 seconds, max wait 0.061 seconds
-E:	200 vehicles, average wait 0.017 seconds, max wait 0.061 seconds
-S:	198 vehicles, average wait 0.018 seconds, max wait 0.072 seconds
-W:	192 vehicles, average wait 0.017 seconds, max wait 0.071 seconds
-N:	203 vehicles, average wait 0.015 seconds, max wait 0.060 seconds
-E:	187 vehicles, average wait 0.019 seconds, max wait 0.071 seconds
-S:	222 vehicles, average wait 0.016 seconds, max wait 0.060 seconds
-W:	188 vehicles, average wait 0.018 seconds, max wait 0.061 seconds
-N:	211 vehicles, average wait 0.018 seconds, max wait 0.072 seconds
-E:	206 vehicles, average wait 0.015 seconds, max wait 0.051 seconds
-S:	177 vehicles, average wait 0.016 seconds, max wait 0.070 seconds
-W:	206 vehicles, average wait 0.015 seconds, max wait 0.061 seconds
-N:	185 vehicles, average wait 0.019 seconds, max wait 0.061 seconds
-E:	197 vehicles, average wait 0.018 seconds, max wait 0.071 seconds
-S:	199 vehicles, average wait 0.016 seconds, max wait 0.060 seconds
-W:	219 vehicles, average wait 0.015 seconds, max wait 0.062 seconds
-N:	215 vehicles, average wait 0.017 seconds, max wait 0.071 seconds
-E:	198 vehicles, average wait 0.018 seconds, max wait 0.060 seconds
-S:	194 vehicles, average wait 0.016 seconds, max wait 0.062 seconds
-W:	193 vehicles, average wait 0.015 seconds, max wait 0.060 seconds
-N:	208 vehicles, average wait 0.017 seconds, max wait 0.050 seconds
-E:	188 vehicles, average wait 0.015 seconds, max wait 0.050 seconds
-S:	196 vehicles, average wait 0.017 seconds, max wait 0.061 seconds
-W:	208 vehicles, average wait 0.015 seconds, max wait 0.060 seconds
-N:	220 vehicles, average wait 0.016 seconds, max wait 0.069 seconds
-E:	196 vehicles, average wait 0.015 seconds, max wait 0.051 seconds
-S:	192 vehicles, average wait 0.018 seconds, max wait 0.060 seconds
-W:	192 vehicles, average wait 0.017 seconds, max wait 0.061 seconds
-N:	197 vehicles, average wait 0.016 seconds, max wait 0.059 seconds
-E:	208 vehicles, average wait 0.014 seconds, max wait 0.061 seconds
-S:	195 vehicles, average wait 0.015 seconds, max wait 0.061 seconds
-W:	200 vehicles, average wait 0.016 seconds, max wait 0.061 seconds
-N:	188 vehicles, average wait 0.018 seconds, max wait 0.062 seconds
-E:	202 vehicles, average wait 0.018 seconds, max wait 0.060 seconds
-S:	209 vehicles, average wait 0.016 seconds, max wait 0.062 seconds
-W:	201 vehicles, average wait 0.016 seconds, max wait 0.060 seconds
-N:	188 vehicles, average wait 0.016 seconds, max wait 0.052 seconds
-E:	214 vehicles, average wait 0.017 seconds, max wait 0.060 seconds
-S:	198 vehicles, average wait 0.019 seconds, max wait 0.051 seconds
-W:	200 vehicles, average wait 0.019 seconds, max wait 0.052 seconds
-N:	208 vehicles, average wait 0.016 seconds, max wait 0.060 seconds
-E:	203 vehicles, average wait 0.018 seconds, max wait 0.061 seconds
-S:	198 vehicles, average wait 0.020 seconds, max wait 0.081 seconds
-W:	191 vehicles, average wait 0.016 seconds, max wait 0.069 seconds
-N:	190 vehicles, average wait 0.017 seconds, max wait 0.063 seconds
-E:	194 vehicles, average wait 0.016 seconds, max wait 0.060 seconds
-S:	186 vehicles, average wait 0.017 seconds, max wait 0.050 seconds
-W:	230 vehicles, average wait 0.014 seconds, max wait 0.061 seconds
-N:	234 vehicles, average wait 0.015 seconds, max wait 0.060 seconds
-E:	190 vehicles, average wait 0.017 seconds, max wait 0.052 seconds
-S:	183 vehicles, average wait 0.017 seconds, max wait 0.070 seconds
-W:	193 vehicles, average wait 0.017 seconds, max wait 0.059 seconds
-N:	196 vehicles, average wait 0.018 seconds, max wait 0.059 seconds
-E:	183 vehicles, average wait 0.020 seconds, max wait 0.081 seconds
-S:	212 vehicles, average wait 0.015 seconds, max wait 0.070 seconds
-W:	209 vehicles, average wait 0.017 seconds, max wait 0.063 seconds
-N:	216 vehicles, average wait 0.017 seconds, max wait 0.052 seconds
-E:	189 vehicles, average wait 0.019 seconds, max wait 0.072 seconds
-S:	209 vehicles, average wait 0.017 seconds, max wait 0.051 seconds
-W:	186 vehicles, average wait 0.017 seconds, max wait 0.070 seconds
-N:	206 vehicles, average wait 0.016 seconds, max wait 0.051 seconds
-E:	202 vehicles, average wait 0.017 seconds, max wait 0.061 seconds
-S:	198 vehicles, average wait 0.017 seconds, max wait 0.080 seconds
-W:	194 vehicles, average wait 0.017 seconds, max wait 0.059 seconds
-N:	211 vehicles, average wait 0.016 seconds, max wait 0.060 seconds
-E:	196 vehicles, average wait 0.017 seconds, max wait 0.062 seconds
-S:	210 vehicles, average wait 0.018 seconds, max wait 0.061 seconds
-W:	183 vehicles, average wait 0.017 seconds, max wait 0.071 seconds
-N:	205 vehicles, average wait 0.016 seconds, max wait 0.061 seconds
-E:	189 vehicles, average wait 0.016 seconds, max wait 0.052 seconds
-S:	208 vehicles, average wait 0.016 seconds, max wait 0.052 seconds
-W:	198 vehicles, average wait 0.016 seconds, max wait 0.061 seconds
-N:	189 vehicles, average wait 0.018 seconds, max wait 0.070 seconds
-E:	228 vehicles, average wait 0.015 seconds, max wait 0.061 seconds
-S:	190 vehicles, average wait 0.019 seconds, max wait 0.070 seconds
-W:	193 vehicles, average wait 0.016 seconds, max wait 0.070 seconds
-N:	195 vehicles, average wait 0.016 seconds, max wait 0.052 seconds
-E:	191 vehicles, average wait 0.016 seconds, max wait 0.060 seconds
-S:	221 vehicles, average wait 0.018 seconds, max wait 0.061 seconds
-W:	193 vehicles, average wait 0.016 seconds, max wait 0.050 seconds
-N:	200 vehicles, average wait 0.016 seconds, max wait 0.070 seconds
-E:	207 vehicles, average wait 0.016 seconds, max wait 0.069 seconds
-S:	207 vehicles, average wait 0.017 seconds, max wait 0.069 seconds
-W:	186 vehicles, average wait 0.016 seconds, max wait 0.058 seconds
-N:	193 vehicles, average wait 0.017 seconds, max wait 0.060 seconds
-E:	189 vehicles, average wait 0.020 seconds, max wait 0.061 seconds
-S:	221 vehicles, average wait 0.015 seconds, max wait 0.062 seconds
-W:	197 vehicles, average wait 0.016 seconds, max wait 0.061 seconds
-N:	198 vehicles, average wait 0.015 seconds, max wait 0.062 seconds
-E:	213 vehicles, average wait 0.016 seconds, max wait 0.070 seconds
-S:	175 vehicles, average wait 0.018 seconds, max wait 0.061 seconds
-W:	214 vehicles, average wait 0.017 seconds, max wait 0.050 seconds
-N:	188 vehicles, average wait 0.018 seconds, max wait 0.059 seconds
-E:	195 vehicles, average wait 0.015 seconds, max wait 0.060 seconds
-S:	233 vehicles, average wait 0.015 seconds, max wait 0.063 seconds
-W:	184 vehicles, average wait 0.018 seconds, max wait 0.080 seconds
-N:	191 vehicles, average wait 0.018 seconds, max wait 0.071 seconds
-E:	219 vehicles, average wait 0.017 seconds, max wait 0.071 seconds
-S:	184 vehicles, average wait 0.015 seconds, max wait 0.061 seconds
-W:	206 vehicles, average wait 0.015 seconds, max wait 0.052 seconds
-N:	203 vehicles, average wait 0.018 seconds, max wait 0.060 seconds
-E:	202 vehicles, average wait 0.017 seconds, max wait 0.062 seconds
-S:	194 vehicles, average wait 0.015 seconds, max wait 0.059 seconds
-W:	201 vehicles, average wait 0.015 seconds, max wait 0.060 seconds
-N:	222 vehicles, average wait 0.016 seconds, max wait 0.060 seconds
-E:	172 vehicles, average wait 0.017 seconds, max wait 0.061 seconds
-S:	200 vehicles, average wait 0.017 seconds, max wait 0.060 seconds
-W:	206 vehicles, average wait 0.016 seconds, max wait 0.069 seconds
-N:	198 vehicles, average wait 0.017 seconds, max wait 0.060 seconds
-E:	188 vehicles, average wait 0.015 seconds, max wait 0.060 seconds
-S:	195 vehicles, average wait 0.017 seconds, max wait 0.059 seconds
-W:	219 vehicles, average wait 0.016 seconds, max wait 0.061 seconds
-N:	201 vehicles, average wait 0.017 seconds, max wait 0.051 seconds
-E:	191 vehicles, average wait 0.016 seconds, max wait 0.059 seconds
-S:	213 vehicles, average wait 0.016 seconds, max wait 0.059 seconds
-W:	195 vehicles, average wait 0.018 seconds, max wait 0.060 seconds
-N:	213 vehicles, average wait 0.014 seconds, max wait 0.052 seconds
-E:	205 vehicles, average wait 0.017 seconds, max wait 0.081 seconds
-S:	188 vehicles, average wait 0.018 seconds, max wait 0.079 seconds
-W:	194 vehicles, average wait 0.016 seconds, max wait 0.062 seconds
-N:	190 vehicles, average wait 0.017 seconds, max wait 0.062 seconds
-E:	198 vehicles, average wait 0.016 seconds, max wait 0.061 seconds
-S:	201 vehicles, average wait 0.017 seconds, max wait 0.070 seconds
-W:	211 vehicles, average wait 0.015 seconds, max wait 0.071 seconds
-N:	197 vehicles, average wait 0.017 seconds, max wait 0.071 seconds
-E:	200 vehicles, average wait 0.017 seconds, max wait 0.070 seconds
-S:	197 vehicles, average wait 0.018 seconds, max wait 0.070 seconds
-W:	206 vehicles, average wait 0.017 seconds, max wait 0.071 seconds
-N:	169 vehicles, average wait 0.018 seconds, max wait 0.070 seconds
-E:	208 vehicles, average wait 0.017 seconds, max wait 0.060 seconds
-S:	217 vehicles, average wait 0.016 seconds, max wait 0.062 seconds
-W:	206 vehicles, average wait 0.015 seconds, max wait 0.061 seconds
-N:	190 vehicles, average wait 0.015 seconds, max wait 0.051 seconds
-E:	222 vehicles, average wait 0.017 seconds, max wait 0.061 seconds
-S:	203 vehicles, average wait 0.016 seconds, max wait 0.060 seconds
-W:	185 vehicles, average wait 0.016 seconds, max wait 0.059 seconds
-N:	187 vehicles, average wait 0.018 seconds, max wait 0.062 seconds
-E:	216 vehicles, average wait 0.016 seconds, max wait 0.061 seconds
-S:	191 vehicles, average wait 0.016 seconds, max wait 0.060 seconds
-W:	206 vehicles, average wait 0.017 seconds, max wait 0.061 seconds
-N:	189 vehicles, average wait 0.018 seconds, max wait 0.060 seconds
-E:	206 vehicles, average wait 0.016 seconds, max wait 0.057 seconds
-S:	202 vehicles, average wait 0.017 seconds, max wait 0.051 seconds
-W:	203 vehicles, average wait 0.016 seconds, max wait 0.061 seconds
-N:	199 vehicles, average wait 0.016 seconds, max wait 0.060 seconds
-E:	223 vehicles, average wait 0.015 seconds, max wait 0.061 seconds
-S:	167 vehicles, average wait 0.016 seconds, max wait 0.062 seconds
-W:	211 vehicles, average wait 0.016 seconds, max wait 0.059 seconds
-N:	205 vehicles, average wait 0.017 seconds, max wait 0.052 seconds
-E:	204 vehicles, average wait 0.019 seconds, max wait 0.060 seconds
-S:	193 vehicles, average wait 0.016 seconds, max wait 0.060 seconds
-W:	198 vehicles, average wait 0.016 seconds, max wait 0.062 seconds
-N:	198 vehicles, average wait 0.017 seconds, max wait 0.050 seconds
-E:	204 vehicles, average wait 0.015 seconds, max wait 0.053 seconds
-S:	196 vehicles, average wait 0.017 seconds, max wait 0.052 seconds
-W:	202 vehicles, average wait 0.017 seconds, max wait 0.051 seconds
-N:	190 vehicles, average wait 0.016 seconds, max wait 0.059 seconds
-E:	218 vehicles, average wait 0.016 seconds, max wait 0.060 seconds
-S:	191 vehicles, average wait 0.018 seconds, max wait 0.061 seconds
-W:	201 vehicles, average wait 0.016 seconds, max wait 0.061 seconds
-N:	220 vehicles, average wait 0.018 seconds, max wait 0.061 seconds
-E:	188 vehicles, average wait 0.017 seconds, max wait 0.062 seconds
-S:	204 vehicles, average wait 0.017 seconds, max wait 0.061 seconds
-W:	188 vehicles, average wait 0.019 seconds, max wait 0.061 seconds
-N:	192 vehicles, average wait 0.017 seconds, max wait 0.062 seconds
-E:	218 vehicles, average wait 0.015 seconds, max wait 0.059 seconds
-S:	220 vehicles, average wait 0.015 seconds, max wait 0.071 seconds
-W:	170 vehicles, average wait 0.018 seconds, max wait 0.060 seconds
-N:	182 vehicles, average wait 0.017 seconds, max wait 0.061 seconds
-E:	197 vehicles, average wait 0.018 seconds, max wait 0.080 seconds
-S:	198 vehicles, average wait 0.017 seconds, max wait 0.062 seconds
-W:	223 vehicles, average wait 0.017 seconds, max wait 0.072 seconds
-N:	184 vehicles, average wait 0.015 seconds, max wait 0.051 seconds
-E:	212 vehicles, average wait 0.016 seconds, max wait 0.051 seconds
-S:	217 vehicles, average wait 0.016 seconds, max wait 0.052 seconds
-W:	187 vehicles, average wait 0.016 seconds, max wait 0.062 seconds
-N:	198 vehicles, average wait 0.017 seconds, max wait 0.060 seconds
-E:	197 vehicles, average wait 0.015 seconds, max wait 0.053 seconds
-S:	199 vehicles, average wait 0.017 seconds, max wait 0.061 seconds
-W:	206 vehicles, average wait 0.017 seconds, max wait 0.061 seconds
-N:	179 vehicles, average wait 0.017 seconds, max wait 0.061 seconds
-E:	198 vehicles, average wait 0.016 seconds, max wait 0.060 seconds
-S:	220 vehicles, average wait 0.017 seconds, max wait 0.060 seconds
-W:	203 vehicles, average wait 0.017 seconds, max wait 0.060 seconds
-N:	202 vehicles, average wait 0.016 seconds, max wait 0.061 seconds
-E:	199 vehicles, average wait 0.017 seconds, max wait 0.061 seconds
-S:	209 vehicles, average wait 0.014 seconds, max wait 0.061 seconds
-W:	190 vehicles, average wait 0.017 seconds, max wait 0.060 seconds
-N:	197 vehicles, average wait 0.016 seconds, max wait 0.062 seconds
-E:	212 vehicles, average wait 0.018 seconds, max wait 0.060 seconds
-S:	193 vehicles, average wait 0.018 seconds, max wait 0.070 seconds
-W:	198 vehicles, average wait 0.018 seconds, max wait 0.052 seconds
-N:	210 vehicles, average wait 0.016 seconds, max wait 0.061 seconds
-E:	217 vehicles, average wait 0.017 seconds, max wait 0.052 seconds
-S:	192 vehicles, average wait 0.016 seconds, max wait 0.062 seconds
-W:	181 vehicles, average wait 0.016 seconds, max wait 0.060 seconds
-N:	209 vehicles, average wait 0.016 seconds, max wait 0.051 seconds
-E:	205 vehicles, average wait 0.015 seconds, max wait 0.061 seconds
-S:	201 vehicles, average wait 0.016 seconds, max wait 0.069 seconds
-W:	185 vehicles, average wait 0.018 seconds, max wait 0.052 seconds
-N:	216 vehicles, average wait 0.016 seconds, max wait 0.052 seconds
-E:	213 vehicles, average wait 0.016 seconds, max wait 0.052 seconds
-S:	183 vehicles, average wait 0.017 seconds, max wait 0.062 seconds
-W:	188 vehicles, average wait 0.016 seconds, max wait 0.061 seconds
-N:	212 vehicles, average wait 0.015 seconds, max wait 0.060 seconds
-E:	177 vehicles, average wait 0.018 seconds, max wait 0.059 seconds
-S:	205 vehicles, average wait 0.016 seconds, max wait 0.051 seconds
-W:	206 vehicles, average wait 0.014 seconds, max wait 0.052 seconds
-N:	196 vehicles, average wait 0.017 seconds, max wait 0.060 seconds
-E:	203 vehicles, average wait 0.016 seconds, max wait 0.070 seconds
-S:	198 vehicles, average wait 0.017 seconds, max wait 0.061 seconds
-W:	203 vehicles, average wait 0.017 seconds, max wait 0.060 seconds
-N:	207 vehicles, average wait 0.015 seconds, max wait 0.060 seconds
-E:	220 vehicles, average wait 0.020 seconds, max wait 0.060 seconds
-S:	180 vehicles, average wait 0.016 seconds, max wait 0.071 seconds
-W:	193 vehicles, average wait 0.014 seconds, max wait 0.061 seconds
-N:	193 vehicles, average wait 0.017 seconds, max wait 0.060 seconds
-E:	201 vehicles, average wait 0.018 seconds, max wait 0.070 seconds
-S:	194 vehicles, average wait 0.018 seconds, max wait 0.060 seconds
-W:	212 vehicles, average wait 0.016 seconds, max wait 0.053 seconds
-N:	204 vehicles, average wait 0.015 seconds, max wait 0.060 seconds
-E:	207 vehicles, average wait 0.016 seconds, max wait 0.062 seconds
-S:	204 vehicles, average wait 0.014 seconds, max wait 0.059 seconds
-W:	185 vehicles, average wait 0.019 seconds, max wait 0.080 seconds
-N:	210 vehicles, average wait 0.016 seconds, max wait 0.071 seconds
-E:	227 vehicles, average wait 0.016 seconds, max wait 0.053 seconds
-S:	174 vehicles, average wait 0.018 seconds, max wait 0.061 seconds
-W:	189 vehicles, average wait 0.017 seconds, max wait 0.060 seconds
-N:	212 vehicles, average wait 0.016 seconds, max wait 0.051 seconds
-E:	177 vehicles, average wait 0.018 seconds, max wait 0.060 seconds
-S:	205 vehicles, average wait 0.015 seconds, max wait 0.051 seconds
-W:	206 vehicles, average wait 0.017 seconds, max wait 0.061 seconds
-N:	195 vehicles, average wait 0.017 seconds, max wait 0.070 seconds
-E:	199 vehicles, average wait 0.018 seconds, max wait 0.061 seconds
-S:	202 vehicles, average wait 0.016 seconds, max wait 0.060 seconds
-W:	204 vehicles, average wait 0.016 seconds, max wait 0.051 seconds
-N:	210 vehicles, average wait 0.017 seconds, max wait 0.052 seconds
-E:	195 vehicles, average wait 0.016 seconds, max wait 0.060 seconds
-S:	183 vehicles, average wait 0.017 seconds, max wait 0.050 seconds
-W:	212 vehicles, average wait 0.017 seconds, max wait 0.060 seconds
-N:	186 vehicles, average wait 0.016 seconds, max wait 0.051 seconds
-E:	195 vehicles, average wait 0.015 seconds, max wait 0.051 seconds
-S:	203 vehicles, average wait 0.017 seconds, max wait 0.060 seconds
-W:	216 vehicles, average wait 0.015 seconds, max wait 0.050 seconds
-N:	180 vehicles, average wait 0.019 seconds, max wait 0.060 seconds
-E:	198 vehicles, average wait 0.018 seconds, max wait 0.061 seconds
-S:	214 vehicles, average wait 0.015 seconds, max wait 0.061 seconds
-W:	208 vehicles, average wait 0.017 seconds, max wait 0.062 seconds
-N:	202 vehicles, average wait 0.018 seconds, max wait 0.060 seconds
-E:	202 vehicles, average wait 0.016 seconds, max wait 0.059 seconds
-S:	209 vehicles, average wait 0.016 seconds, max wait 0.050 seconds
-W:	187 vehicles, average wait 0.015 seconds, max wait 0.061 seconds
-N:	190 vehicles, average wait 0.018 seconds, max wait 0.061 seconds
-E:	186 vehicles, average wait 0.015 seconds, max wait 0.061 seconds
-S:	218 vehicles, average wait 0.017 seconds, max wait 0.061 seconds
-W:	206 vehicles, average wait 0.016 seconds, max wait 0.060 seconds
-N:	205 vehicles, average wait 0.015 seconds, max wait 0.052 seconds
-E:	209 vehicles, average wait 0.016 seconds, max wait 0.061 seconds
-S:	197 vehicles, average wait 0.015 seconds, max wait 0.061 seconds
-W:	189 vehicles, average wait 0.016 seconds, max wait 0.060 seconds
-N:	201 vehicles, average wait 0.015 seconds, max wait 0.070 seconds
-E:	204 vehicles, average wait 0.016 seconds, max wait 0.063 seconds
-S:	181 vehicles, average wait 0.019 seconds, max wait 0.079 seconds
-W:	214 vehicles, average wait 0.015 seconds, max wait 0.061 seconds
-N:	207 vehicles, average wait 0.017 seconds, max wait 0.071 seconds
-E:	216 vehicles, average wait 0.015 seconds, max wait 0.080 seconds
-S:	201 vehicles, average wait 0.016 seconds, max wait 0.051 seconds
-W:	176 vehicles, average wait 0.018 seconds, max wait 0.081 seconds
-N:	205 vehicles, average wait 0.019 seconds, max wait 0.071 seconds
-E:	200 vehicles, average wait 0.014 seconds, max wait 0.063 seconds
-S:	196 vehicles, average wait 0.018 seconds, max wait 0.061 seconds
-W:	199 vehicles, average wait 0.018 seconds, max wait 0.070 seconds
-N:	191 vehicles, average wait 0.014 seconds, max wait 0.059 seconds
-E:	217 vehicles, average wait 0.016 seconds, max wait 0.060 seconds
-S:	195 vehicles, average wait 0.018 seconds, max wait 0.060 seconds
-W:	197 vehicles, average wait 0.017 seconds, max wait 0.060 seconds
-N:	207 vehicles, average wait 0.016 seconds, max wait 0.061 seconds
-E:	187 vehicles, average wait 0.018 seconds, max wait 0.070 seconds
-S:	199 vehicles, average wait 0.017 seconds, max wait 0.061 seconds
-W:	207 vehicles, average wait 0.015 seconds, max wait 0.060 seconds
-N:	198 vehicles, average wait 0.017 seconds, max wait 0.062 seconds
-E:	204 vehicles, average wait 0.017 seconds, max wait 0.051 seconds
-S:	216 vehicles, average wait 0.015 seconds, max wait 0.061 seconds
-W:	182 vehicles, average wait 0.016 seconds, max wait 0.060 seconds
-N:	181 vehicles, average wait 0.017 seconds, max wait 0.051 seconds
-E:	187 vehicles, average wait 0.018 seconds, max wait 0.061 seconds
-S:	222 vehicles, average wait 0.016 seconds, max wait 0.059 seconds
-W:	210 vehicles, average wait 0.017 seconds, max wait 0.051 seconds
-N:	198 vehicles, average wait 0.016 seconds, max wait 0.053 seconds
-E:	214 vehicles, average wait 0.016 seconds, max wait 0.060 seconds
-S:	198 vehicles, average wait 0.018 seconds, max wait 0.060 seconds
-W:	190 vehicles, average wait 0.018 seconds, max wait 0.071 seconds
-N:	191 vehicles, average wait 0.018 seconds, max wait 0.061 seconds
-E:	201 vehicles, average wait 0.016 seconds, max wait 0.051 seconds
-S:	214 vehicles, average wait 0.018 seconds, max wait 0.061 seconds
-W:	194 vehicles, average wait 0.016 seconds, max wait 0.050 seconds
-N:	214 vehicles, average wait 0.018 seconds, max wait 0.052 seconds
-E:	195 vehicles, average wait 0.017 seconds, max wait 0.061 seconds
-S:	184 vehicles, average wait 0.016 seconds, max wait 0.060 seconds
-W:	207 vehicles, average wait 0.015 seconds, max wait 0.051 seconds
-N:	214 vehicles, average wait 0.017 seconds, max wait 0.052 seconds
-E:	191 vehicles, average wait 0.017 seconds, max wait 0.051 seconds
-S:	206 vehicles, average wait 0.019 seconds, max wait 0.057 seconds
-W:	189 vehicles, average wait 0.017 seconds, max wait 0.059 seconds
-N:	199 vehicles, average wait 0.018 seconds, max wait 0.071 seconds
-E:	185 vehicles, average wait 0.015 seconds, max wait 0.051 seconds
-S:	189 vehicles, average wait 0.018 seconds, max wait 0.060 seconds
-W:	227 vehicles, average wait 0.016 seconds, max wait 0.052 seconds
-N:	221 vehicles, average wait 0.016 seconds, max wait 0.051 seconds
-E:	189 vehicles, average wait 0.016 seconds, max wait 0.052 seconds
-S:	180 vehicles, average wait 0.016 seconds, max wait 0.050 seconds
-W:	210 vehicles, average wait 0.017 seconds, max wait 0.070 seconds
-N:	208 vehicles, average wait 0.015 seconds, max wait 0.059 seconds
-E:	194 vehicles, average wait 0.015 seconds, max wait 0.061 seconds
-S:	199 vehicles, average wait 0.019 seconds, max wait 0.061 seconds
-W:	199 vehicles, average wait 0.018 seconds, max wait 0.051 seconds
-N:	207 vehicles, average wait 0.015 seconds, max wait 0.052 seconds
-E:	187 vehicles, average wait 0.020 seconds, max wait 0.080 seconds
-S:	192 vehicles, average wait 0.017 seconds, max wait 0.051 seconds
-W:	214 vehicles, average wait 0.017 seconds, max wait 0.051 seconds
-N:	218 vehicles, average wait 0.015 seconds, max wait 0.060 seconds
-E:	198 vehicles, average wait 0.017 seconds, max wait 0.082 seconds
-S:	192 vehicles, average wait 0.019 seconds, max wait 0.061 seconds
-W:	192 vehicles, average wait 0.019 seconds, max wait 0.081 seconds
-N:	166 vehicles, average wait 0.018 seconds, max wait 0.060 seconds
-E:	218 vehicles, average wait 0.017 seconds, max wait 0.072 seconds
-S:	212 vehicles, average wait 0.015 seconds, max wait 0.051 seconds
-W:	204 vehicles, average wait 0.017 seconds, max wait 0.071 seconds
-N:	223 vehicles, average wait 0.016 seconds, max wait 0.061 seconds
-E:	187 vehicles, average wait 0.016 seconds, max wait 0.051 seconds
-S:	205 vehicles, average wait 0.017 seconds, max wait 0.060 seconds
-W:	185 vehicles, average wait 0.017 seconds, max wait 0.061 seconds
-N:	185 vehicles, average wait 0.017 seconds, max wait 0.062 seconds
-E:	196 vehicles, average wait 0.015 seconds, max wait 0.051 seconds
-S:	216 vehicles, average wait 0.015 seconds, max wait 0.060 seconds
-W:	203 vehicles, average wait 0.017 seconds, max wait 0.060 seconds
-N:	207 vehicles, average wait 0.015 seconds, max wait 0.051 seconds
-E:	221 vehicles, average wait 0.017 seconds, max wait 0.081 seconds
-S:	193 vehicles, average wait 0.017 seconds, max wait 0.061 seconds
-W:	179 vehicles, average wait 0.019 seconds, max wait 0.091 seconds
-N:	190 vehicles, average wait 0.016 seconds, max wait 0.052 seconds
-E:	205 vehicles, average wait 0.016 seconds, max wait 0.062 seconds
-S:	217 vehicles, average wait 0.017 seconds, max wait 0.061 seconds
-W:	188 vehicles, average wait 0.016 seconds, max wait 0.071 seconds
-N:	194 vehicles, average wait 0.017 seconds, max wait 0.060 seconds
-E:	186 vehicles, average wait 0.018 seconds, max wait 0.061 seconds
-S:	214 vehicles, average wait 0.017 seconds, max wait 0.059 seconds
-W:	206 vehicles, average wait 0.013 seconds, max wait 0.061 seconds
-N:	191 vehicles, average wait 0.018 seconds, max wait 0.071 seconds
-E:	207 vehicles, average wait 0.014 seconds, max wait 0.051 seconds
-S:	195 vehicles, average wait 0.016 seconds, max wait 0.061 seconds
-W:	207 vehicles, average wait 0.016 seconds, max wait 0.052 seconds
-N:	200 vehicles, average wait 0.016 seconds, max wait 0.051 seconds
-E:	220 vehicles, average wait 0.015 seconds, max wait 0.052 seconds
-S:	176 vehicles, average wait 0.016 seconds, max wait 0.061 seconds
-W:	204 vehicles, average wait 0.018 seconds, max wait 0.052 seconds
-N:	198 vehicles, average wait 0.015 seconds, max wait 0.059 seconds
-E:	199 vehicles, average wait 0.016 seconds, max wait 0.062 seconds
-S:	207 vehicles, average wait 0.015 seconds, max wait 0.060 seconds
-W:	196 vehicles, average wait 0.018 seconds, max wait 0.061 seconds
-N:	210 vehicles, average wait 0.017 seconds, max wait 0.091 seconds
-E:	226 vehicles, average wait 0.017 seconds, max wait 0.071 seconds
-S:	169 vehicles, average wait 0.017 seconds, max wait 0.080 seconds
-W:	195 vehicles, average wait 0.018 seconds, max wait 0.061 seconds
-N:	207 vehicles, average wait 0.016 seconds, max wait 0.060 seconds
-E:	190 vehicles, average wait 0.017 seconds, max wait 0.051 seconds
-S:	194 vehicles, average wait 0.018 seconds, max wait 0.061 seconds
-W:	209 vehicles, average wait 0.015 seconds, max wait 0.060 seconds
+
+OS/161 base system version 1.99.05
+Copyright (c) 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009
+   President and Fellows of Harvard College.  All rights reserved.
+
+Karen Xu's system version 0 (ASST3 #64)
+
+1832k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+coresize = 451
+cpu0: MIPS r3000
+OS/161 kernel: p uw-testbin/romemwrite
+looking for 1 pages from COREMAP
+found 1 page at 3d000, putting into coremap[1]
+looking for 1 pages from COREMAP
+found 1 page at 3e000, putting into coremap[2]
+looking for 1 pages from COREMAP
+found 1 page at 3f000, putting into coremap[3]
+looking for 1 pages from COREMAP
+found 1 page at 40000, putting into coremap[4]
+looking for 1 pages from COREMAP
+found 1 page at 41000, putting into coremap[5]
+looking for 1 pages from COREMAP
+found 1 page at 42000, putting into coremap[6]
+looking for 1 pages from COREMAP
+found 1 page at 43000, putting into coremap[7]
+looking for 1 pages from COREMAP
+found 1 page at 44000, putting into coremap[8]
+looking for 1 pages from COREMAP
+found 1 page at 45000, putting into coremap[9]
+looking for 1 pages from COREMAP
+found 1 page at 46000, putting into coremap[10]
+looking for 1 pages from COREMAP
+found 1 page at 47000, putting into coremap[11]
+looking for 1 pages from COREMAP
+found 1 page at 48000, putting into coremap[12]
+looking for 1 pages from COREMAP
+found 1 page at 49000, putting into coremap[13]
+looking for 1 pages from COREMAP
+found 1 page at 4a000, putting into coremap[14]
+looking for 1 pages from COREMAP
+found 1 page at 4b000, putting into coremap[15]
+Trying to write to the text segment
+This program should fail if the text segment is read-only.
+However, the kernel should not crash...
+freeing block of pages starting at  8003e000, index 2 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003f000, index 3 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80040000, index 4 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80041000, index 5 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80042000, index 6 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80043000, index 7 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80044000, index 8 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80045000, index 9 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80046000, index 10 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80047000, index 11 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80048000, index 12 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80049000, index 13 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004a000, index 14 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004b000, index 15 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003d000, index 1 in cormap 
+freed 1 pages from coremap
+Operation took 0.251204577 seconds
+OS/161 kernel:  p uw-testbin/romemwrite
+looking for 1 pages from COREMAP
+found 1 page at 3d000, putting into coremap[1]
+looking for 1 pages from COREMAP
+found 1 page at 3e000, putting into coremap[2]
+looking for 1 pages from COREMAP
+found 1 page at 3f000, putting into coremap[3]
+looking for 1 pages from COREMAP
+found 1 page at 40000, putting into coremap[4]
+looking for 1 pages from COREMAP
+found 1 page at 41000, putting into coremap[5]
+looking for 1 pages from COREMAP
+found 1 page at 42000, putting into coremap[6]
+looking for 1 pages from COREMAP
+found 1 page at 43000, putting into coremap[7]
+looking for 1 pages from COREMAP
+found 1 page at 44000, putting into coremap[8]
+looking for 1 pages from COREMAP
+found 1 page at 45000, putting into coremap[9]
+looking for 1 pages from COREMAP
+found 1 page at 46000, putting into coremap[10]
+looking for 1 pages from COREMAP
+found 1 page at 47000, putting into coremap[11]
+looking for 1 pages from COREMAP
+found 1 page at 48000, putting into coremap[12]
+looking for 1 pages from COREMAP
+found 1 page at 49000, putting into coremap[13]
+looking for 1 pages from COREMAP
+found 1 page at 4a000, putting into coremap[14]
+looking for 1 pages from COREMAP
+found 1 page at 4b000, putting into coremap[15]
+Trying to write to the text segment
+This program should fail if the text segment is read-only.
+However, the kernel should not crash...
+freeing block of pages starting at  8003e000, index 2 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003f000, index 3 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80040000, index 4 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80041000, index 5 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80042000, index 6 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80043000, index 7 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80044000, index 8 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80045000, index 9 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80046000, index 10 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80047000, index 11 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80048000, index 12 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80049000, index 13 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004a000, index 14 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004b000, index 15 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003d000, index 1 in cormap 
+freed 1 pages from coremap
+Operation took 0.251119160 seconds
+OS/161 kernel:  p uw-testbin/romemwrite
+looking for 1 pages from COREMAP
+found 1 page at 3d000, putting into coremap[1]
+looking for 1 pages from COREMAP
+found 1 page at 3e000, putting into coremap[2]
+looking for 1 pages from COREMAP
+found 1 page at 3f000, putting into coremap[3]
+looking for 1 pages from COREMAP
+found 1 page at 40000, putting into coremap[4]
+looking for 1 pages from COREMAP
+found 1 page at 41000, putting into coremap[5]
+looking for 1 pages from COREMAP
+found 1 page at 42000, putting into coremap[6]
+looking for 1 pages from COREMAP
+found 1 page at 43000, putting into coremap[7]
+looking for 1 pages from COREMAP
+found 1 page at 44000, putting into coremap[8]
+looking for 1 pages from COREMAP
+found 1 page at 45000, putting into coremap[9]
+looking for 1 pages from COREMAP
+found 1 page at 46000, putting into coremap[10]
+looking for 1 pages from COREMAP
+found 1 page at 47000, putting into coremap[11]
+looking for 1 pages from COREMAP
+found 1 page at 48000, putting into coremap[12]
+looking for 1 pages from COREMAP
+found 1 page at 49000, putting into coremap[13]
+looking for 1 pages from COREMAP
+found 1 page at 4a000, putting into coremap[14]
+looking for 1 pages from COREMAP
+found 1 page at 4b000, putting into coremap[15]
+Trying to write to the text segment
+This program should fail if the text segment is read-only.
+However, the kernel should not crash...
+freeing block of pages starting at  8003e000, index 2 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003f000, index 3 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80040000, index 4 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80041000, index 5 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80042000, index 6 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80043000, index 7 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80044000, index 8 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80045000, index 9 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80046000, index 10 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80047000, index 11 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80048000, index 12 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80049000, index 13 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004a000, index 14 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004b000, index 15 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003d000, index 1 in cormap 
+freed 1 pages from coremap
+Operation took 0.251108920 seconds
+OS/161 kernel:  p uw-testbin/romemwrite
+looking for 1 pages from COREMAP
+found 1 page at 3d000, putting into coremap[1]
+looking for 1 pages from COREMAP
+found 1 page at 3e000, putting into coremap[2]
+looking for 1 pages from COREMAP
+found 1 page at 3f000, putting into coremap[3]
+looking for 1 pages from COREMAP
+found 1 page at 40000, putting into coremap[4]
+looking for 1 pages from COREMAP
+found 1 page at 41000, putting into coremap[5]
+looking for 1 pages from COREMAP
+found 1 page at 42000, putting into coremap[6]
+looking for 1 pages from COREMAP
+found 1 page at 43000, putting into coremap[7]
+looking for 1 pages from COREMAP
+found 1 page at 44000, putting into coremap[8]
+looking for 1 pages from COREMAP
+found 1 page at 45000, putting into coremap[9]
+looking for 1 pages from COREMAP
+found 1 page at 46000, putting into coremap[10]
+looking for 1 pages from COREMAP
+found 1 page at 47000, putting into coremap[11]
+looking for 1 pages from COREMAP
+found 1 page at 48000, putting into coremap[12]
+looking for 1 pages from COREMAP
+found 1 page at 49000, putting into coremap[13]
+looking for 1 pages from COREMAP
+found 1 page at 4a000, putting into coremap[14]
+looking for 1 pages from COREMAP
+found 1 page at 4b000, putting into coremap[15]
+Trying to write to the text segment
+This program should fail if the text segment is read-only.
+However, the kernel should not crash...
+freeing block of pages starting at  8003e000, index 2 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003f000, index 3 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80040000, index 4 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80041000, index 5 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80042000, index 6 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80043000, index 7 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80044000, index 8 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80045000, index 9 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80046000, index 10 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80047000, index 11 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80048000, index 12 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80049000, index 13 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004a000, index 14 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004b000, index 15 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003d000, index 1 in cormap 
+freed 1 pages from coremap
+Operation took 0.251177440 seconds
+OS/161 kernel:  p uw-testbin/romemwrite
+looking for 1 pages from COREMAP
+found 1 page at 3d000, putting into coremap[1]
+looking for 1 pages from COREMAP
+found 1 page at 3e000, putting into coremap[2]
+looking for 1 pages from COREMAP
+found 1 page at 3f000, putting into coremap[3]
+looking for 1 pages from COREMAP
+found 1 page at 40000, putting into coremap[4]
+looking for 1 pages from COREMAP
+found 1 page at 41000, putting into coremap[5]
+looking for 1 pages from COREMAP
+found 1 page at 42000, putting into coremap[6]
+looking for 1 pages from COREMAP
+found 1 page at 43000, putting into coremap[7]
+looking for 1 pages from COREMAP
+found 1 page at 44000, putting into coremap[8]
+looking for 1 pages from COREMAP
+found 1 page at 45000, putting into coremap[9]
+looking for 1 pages from COREMAP
+found 1 page at 46000, putting into coremap[10]
+looking for 1 pages from COREMAP
+found 1 page at 47000, putting into coremap[11]
+looking for 1 pages from COREMAP
+found 1 page at 48000, putting into coremap[12]
+looking for 1 pages from COREMAP
+found 1 page at 49000, putting into coremap[13]
+looking for 1 pages from COREMAP
+found 1 page at 4a000, putting into coremap[14]
+looking for 1 pages from COREMAP
+found 1 page at 4b000, putting into coremap[15]
+Trying to write to the text segment
+This program should fail if the text segment is read-only.
+However, the kernel should not crash...
+freeing block of pages starting at  8003e000, index 2 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003f000, index 3 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80040000, index 4 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80041000, index 5 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80042000, index 6 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80043000, index 7 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80044000, index 8 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80045000, index 9 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80046000, index 10 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80047000, index 11 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80048000, index 12 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80049000, index 13 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004a000, index 14 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004b000, index 15 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003d000, index 1 in cormap 
+freed 1 pages from coremap
+Operation took 0.251239720 seconds
+OS/161 kernel:  p uw-testbin/romemwrite
+looking for 1 pages from COREMAP
+found 1 page at 3d000, putting into coremap[1]
+looking for 1 pages from COREMAP
+found 1 page at 3e000, putting into coremap[2]
+looking for 1 pages from COREMAP
+found 1 page at 3f000, putting into coremap[3]
+looking for 1 pages from COREMAP
+found 1 page at 40000, putting into coremap[4]
+looking for 1 pages from COREMAP
+found 1 page at 41000, putting into coremap[5]
+looking for 1 pages from COREMAP
+found 1 page at 42000, putting into coremap[6]
+looking for 1 pages from COREMAP
+found 1 page at 43000, putting into coremap[7]
+looking for 1 pages from COREMAP
+found 1 page at 44000, putting into coremap[8]
+looking for 1 pages from COREMAP
+found 1 page at 45000, putting into coremap[9]
+looking for 1 pages from COREMAP
+found 1 page at 46000, putting into coremap[10]
+looking for 1 pages from COREMAP
+found 1 page at 47000, putting into coremap[11]
+looking for 1 pages from COREMAP
+found 1 page at 48000, putting into coremap[12]
+looking for 1 pages from COREMAP
+found 1 page at 49000, putting into coremap[13]
+looking for 1 pages from COREMAP
+found 1 page at 4a000, putting into coremap[14]
+looking for 1 pages from COREMAP
+found 1 page at 4b000, putting into coremap[15]
+Trying to write to the text segment
+This program should fail if the text segment is read-only.
+However, the kernel should not crash...
+freeing block of pages starting at  8003e000, index 2 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003f000, index 3 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80040000, index 4 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80041000, index 5 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80042000, index 6 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80043000, index 7 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80044000, index 8 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80045000, index 9 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80046000, index 10 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80047000, index 11 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80048000, index 12 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80049000, index 13 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004a000, index 14 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004b000, index 15 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003d000, index 1 in cormap 
+freed 1 pages from coremap
+Operation took 0.251129000 seconds
+OS/161 kernel:  p uw-testbin/romemwrite
+looking for 1 pages from COREMAP
+found 1 page at 3d000, putting into coremap[1]
+looking for 1 pages from COREMAP
+found 1 page at 3e000, putting into coremap[2]
+looking for 1 pages from COREMAP
+found 1 page at 3f000, putting into coremap[3]
+looking for 1 pages from COREMAP
+found 1 page at 40000, putting into coremap[4]
+looking for 1 pages from COREMAP
+found 1 page at 41000, putting into coremap[5]
+looking for 1 pages from COREMAP
+found 1 page at 42000, putting into coremap[6]
+looking for 1 pages from COREMAP
+found 1 page at 43000, putting into coremap[7]
+looking for 1 pages from COREMAP
+found 1 page at 44000, putting into coremap[8]
+looking for 1 pages from COREMAP
+found 1 page at 45000, putting into coremap[9]
+looking for 1 pages from COREMAP
+found 1 page at 46000, putting into coremap[10]
+looking for 1 pages from COREMAP
+found 1 page at 47000, putting into coremap[11]
+looking for 1 pages from COREMAP
+found 1 page at 48000, putting into coremap[12]
+looking for 1 pages from COREMAP
+found 1 page at 49000, putting into coremap[13]
+looking for 1 pages from COREMAP
+found 1 page at 4a000, putting into coremap[14]
+looking for 1 pages from COREMAP
+found 1 page at 4b000, putting into coremap[15]
+Trying to write to the text segment
+This program should fail if the text segment is read-only.
+However, the kernel should not crash...
+freeing block of pages starting at  8003e000, index 2 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003f000, index 3 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80040000, index 4 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80041000, index 5 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80042000, index 6 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80043000, index 7 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80044000, index 8 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80045000, index 9 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80046000, index 10 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80047000, index 11 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80048000, index 12 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80049000, index 13 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004a000, index 14 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004b000, index 15 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003d000, index 1 in cormap 
+freed 1 pages from coremap
+Operation took 0.251193960 seconds
+OS/161 kernel:  p uw-testbin/romemwrite
+looking for 1 pages from COREMAP
+found 1 page at 3d000, putting into coremap[1]
+looking for 1 pages from COREMAP
+found 1 page at 3e000, putting into coremap[2]
+looking for 1 pages from COREMAP
+found 1 page at 3f000, putting into coremap[3]
+looking for 1 pages from COREMAP
+found 1 page at 40000, putting into coremap[4]
+looking for 1 pages from COREMAP
+found 1 page at 41000, putting into coremap[5]
+looking for 1 pages from COREMAP
+found 1 page at 42000, putting into coremap[6]
+looking for 1 pages from COREMAP
+found 1 page at 43000, putting into coremap[7]
+looking for 1 pages from COREMAP
+found 1 page at 44000, putting into coremap[8]
+looking for 1 pages from COREMAP
+found 1 page at 45000, putting into coremap[9]
+looking for 1 pages from COREMAP
+found 1 page at 46000, putting into coremap[10]
+looking for 1 pages from COREMAP
+found 1 page at 47000, putting into coremap[11]
+looking for 1 pages from COREMAP
+found 1 page at 48000, putting into coremap[12]
+looking for 1 pages from COREMAP
+found 1 page at 49000, putting into coremap[13]
+looking for 1 pages from COREMAP
+found 1 page at 4a000, putting into coremap[14]
+looking for 1 pages from COREMAP
+found 1 page at 4b000, putting into coremap[15]
+Trying to write to the text segment
+This program should fail if the text segment is read-only.
+However, the kernel should not crash...
+freeing block of pages starting at  8003e000, index 2 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003f000, index 3 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80040000, index 4 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80041000, index 5 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80042000, index 6 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80043000, index 7 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80044000, index 8 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80045000, index 9 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80046000, index 10 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80047000, index 11 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80048000, index 12 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80049000, index 13 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004a000, index 14 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004b000, index 15 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003d000, index 1 in cormap 
+freed 1 pages from coremap
+Operation took 0.251246200 seconds
+OS/161 kernel:  p uw-testbin/romemwrite
+looking for 1 pages from COREMAP
+found 1 page at 3d000, putting into coremap[1]
+looking for 1 pages from COREMAP
+found 1 page at 3e000, putting into coremap[2]
+looking for 1 pages from COREMAP
+found 1 page at 3f000, putting into coremap[3]
+looking for 1 pages from COREMAP
+found 1 page at 40000, putting into coremap[4]
+looking for 1 pages from COREMAP
+found 1 page at 41000, putting into coremap[5]
+looking for 1 pages from COREMAP
+found 1 page at 42000, putting into coremap[6]
+looking for 1 pages from COREMAP
+found 1 page at 43000, putting into coremap[7]
+looking for 1 pages from COREMAP
+found 1 page at 44000, putting into coremap[8]
+looking for 1 pages from COREMAP
+found 1 page at 45000, putting into coremap[9]
+looking for 1 pages from COREMAP
+found 1 page at 46000, putting into coremap[10]
+looking for 1 pages from COREMAP
+found 1 page at 47000, putting into coremap[11]
+looking for 1 pages from COREMAP
+found 1 page at 48000, putting into coremap[12]
+looking for 1 pages from COREMAP
+found 1 page at 49000, putting into coremap[13]
+looking for 1 pages from COREMAP
+found 1 page at 4a000, putting into coremap[14]
+looking for 1 pages from COREMAP
+found 1 page at 4b000, putting into coremap[15]
+Trying to write to the text segment
+This program should fail if the text segment is read-only.
+However, the kernel should not crash...
+freeing block of pages starting at  8003e000, index 2 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003f000, index 3 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80040000, index 4 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80041000, index 5 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80042000, index 6 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80043000, index 7 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80044000, index 8 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80045000, index 9 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80046000, index 10 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80047000, index 11 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80048000, index 12 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80049000, index 13 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004a000, index 14 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004b000, index 15 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003d000, index 1 in cormap 
+freed 1 pages from coremap
+Operation took 0.251126160 seconds
+OS/161 kernel:  p uw-testbin/romemwrite
+looking for 1 pages from COREMAP
+found 1 page at 3d000, putting into coremap[1]
+looking for 1 pages from COREMAP
+found 1 page at 3e000, putting into coremap[2]
+looking for 1 pages from COREMAP
+found 1 page at 3f000, putting into coremap[3]
+looking for 1 pages from COREMAP
+found 1 page at 40000, putting into coremap[4]
+looking for 1 pages from COREMAP
+found 1 page at 41000, putting into coremap[5]
+looking for 1 pages from COREMAP
+found 1 page at 42000, putting into coremap[6]
+looking for 1 pages from COREMAP
+found 1 page at 43000, putting into coremap[7]
+looking for 1 pages from COREMAP
+found 1 page at 44000, putting into coremap[8]
+looking for 1 pages from COREMAP
+found 1 page at 45000, putting into coremap[9]
+looking for 1 pages from COREMAP
+found 1 page at 46000, putting into coremap[10]
+looking for 1 pages from COREMAP
+found 1 page at 47000, putting into coremap[11]
+looking for 1 pages from COREMAP
+found 1 page at 48000, putting into coremap[12]
+looking for 1 pages from COREMAP
+found 1 page at 49000, putting into coremap[13]
+looking for 1 pages from COREMAP
+found 1 page at 4a000, putting into coremap[14]
+looking for 1 pages from COREMAP
+found 1 page at 4b000, putting into coremap[15]
+Trying to write to the text segment
+This program should fail if the text segment is read-only.
+However, the kernel should not crash...
+freeing block of pages starting at  8003e000, index 2 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003f000, index 3 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80040000, index 4 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80041000, index 5 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80042000, index 6 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80043000, index 7 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80044000, index 8 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80045000, index 9 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80046000, index 10 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80047000, index 11 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80048000, index 12 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80049000, index 13 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004a000, index 14 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004b000, index 15 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003d000, index 1 in cormap 
+freed 1 pages from coremap
+Operation took 0.251140640 seconds
+OS/161 kernel:  p uw-testbin/romemwrite
+looking for 1 pages from COREMAP
+found 1 page at 3d000, putting into coremap[1]
+looking for 1 pages from COREMAP
+found 1 page at 3e000, putting into coremap[2]
+looking for 1 pages from COREMAP
+found 1 page at 3f000, putting into coremap[3]
+looking for 1 pages from COREMAP
+found 1 page at 40000, putting into coremap[4]
+looking for 1 pages from COREMAP
+found 1 page at 41000, putting into coremap[5]
+looking for 1 pages from COREMAP
+found 1 page at 42000, putting into coremap[6]
+looking for 1 pages from COREMAP
+found 1 page at 43000, putting into coremap[7]
+looking for 1 pages from COREMAP
+found 1 page at 44000, putting into coremap[8]
+looking for 1 pages from COREMAP
+found 1 page at 45000, putting into coremap[9]
+looking for 1 pages from COREMAP
+found 1 page at 46000, putting into coremap[10]
+looking for 1 pages from COREMAP
+found 1 page at 47000, putting into coremap[11]
+looking for 1 pages from COREMAP
+found 1 page at 48000, putting into coremap[12]
+looking for 1 pages from COREMAP
+found 1 page at 49000, putting into coremap[13]
+looking for 1 pages from COREMAP
+found 1 page at 4a000, putting into coremap[14]
+looking for 1 pages from COREMAP
+found 1 page at 4b000, putting into coremap[15]
+Trying to write to the text segment
+This program should fail if the text segment is read-only.
+However, the kernel should not crash...
+freeing block of pages starting at  8003e000, index 2 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003f000, index 3 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80040000, index 4 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80041000, index 5 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80042000, index 6 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80043000, index 7 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80044000, index 8 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80045000, index 9 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80046000, index 10 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80047000, index 11 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80048000, index 12 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80049000, index 13 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004a000, index 14 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004b000, index 15 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003d000, index 1 in cormap 
+freed 1 pages from coremap
+Operation took 0.251109320 seconds
+OS/161 kernel:  p uw-testbin/romemwrite
+looking for 1 pages from COREMAP
+found 1 page at 3d000, putting into coremap[1]
+looking for 1 pages from COREMAP
+found 1 page at 3e000, putting into coremap[2]
+looking for 1 pages from COREMAP
+found 1 page at 3f000, putting into coremap[3]
+looking for 1 pages from COREMAP
+found 1 page at 40000, putting into coremap[4]
+looking for 1 pages from COREMAP
+found 1 page at 41000, putting into coremap[5]
+looking for 1 pages from COREMAP
+found 1 page at 42000, putting into coremap[6]
+looking for 1 pages from COREMAP
+found 1 page at 43000, putting into coremap[7]
+looking for 1 pages from COREMAP
+found 1 page at 44000, putting into coremap[8]
+looking for 1 pages from COREMAP
+found 1 page at 45000, putting into coremap[9]
+looking for 1 pages from COREMAP
+found 1 page at 46000, putting into coremap[10]
+looking for 1 pages from COREMAP
+found 1 page at 47000, putting into coremap[11]
+looking for 1 pages from COREMAP
+found 1 page at 48000, putting into coremap[12]
+looking for 1 pages from COREMAP
+found 1 page at 49000, putting into coremap[13]
+looking for 1 pages from COREMAP
+found 1 page at 4a000, putting into coremap[14]
+looking for 1 pages from COREMAP
+found 1 page at 4b000, putting into coremap[15]
+Trying to write to the text segment
+This program should fail if the text segment is read-only.
+However, the kernel should not crash...
+freeing block of pages starting at  8003e000, index 2 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003f000, index 3 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80040000, index 4 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80041000, index 5 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80042000, index 6 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80043000, index 7 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80044000, index 8 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80045000, index 9 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80046000, index 10 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80047000, index 11 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80048000, index 12 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80049000, index 13 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004a000, index 14 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004b000, index 15 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003d000, index 1 in cormap 
+freed 1 pages from coremap
+Operation took 0.251182040 seconds
+OS/161 kernel:  p uw-testbin/romemwrite
+looking for 1 pages from COREMAP
+found 1 page at 3d000, putting into coremap[1]
+looking for 1 pages from COREMAP
+found 1 page at 3e000, putting into coremap[2]
+looking for 1 pages from COREMAP
+found 1 page at 3f000, putting into coremap[3]
+looking for 1 pages from COREMAP
+found 1 page at 40000, putting into coremap[4]
+looking for 1 pages from COREMAP
+found 1 page at 41000, putting into coremap[5]
+looking for 1 pages from COREMAP
+found 1 page at 42000, putting into coremap[6]
+looking for 1 pages from COREMAP
+found 1 page at 43000, putting into coremap[7]
+looking for 1 pages from COREMAP
+found 1 page at 44000, putting into coremap[8]
+looking for 1 pages from COREMAP
+found 1 page at 45000, putting into coremap[9]
+looking for 1 pages from COREMAP
+found 1 page at 46000, putting into coremap[10]
+looking for 1 pages from COREMAP
+found 1 page at 47000, putting into coremap[11]
+looking for 1 pages from COREMAP
+found 1 page at 48000, putting into coremap[12]
+looking for 1 pages from COREMAP
+found 1 page at 49000, putting into coremap[13]
+looking for 1 pages from COREMAP
+found 1 page at 4a000, putting into coremap[14]
+looking for 1 pages from COREMAP
+found 1 page at 4b000, putting into coremap[15]
+Trying to write to the text segment
+This program should fail if the text segment is read-only.
+However, the kernel should not crash...
+freeing block of pages starting at  8003e000, index 2 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003f000, index 3 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80040000, index 4 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80041000, index 5 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80042000, index 6 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80043000, index 7 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80044000, index 8 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80045000, index 9 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80046000, index 10 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80047000, index 11 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80048000, index 12 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80049000, index 13 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004a000, index 14 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004b000, index 15 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003d000, index 1 in cormap 
+freed 1 pages from coremap
+Operation took 0.251108960 seconds
+OS/161 kernel:  p uw-testbin/romemwrite
+looking for 1 pages from COREMAP
+found 1 page at 3d000, putting into coremap[1]
+looking for 1 pages from COREMAP
+found 1 page at 3e000, putting into coremap[2]
+looking for 1 pages from COREMAP
+found 1 page at 3f000, putting into coremap[3]
+looking for 1 pages from COREMAP
+found 1 page at 40000, putting into coremap[4]
+looking for 1 pages from COREMAP
+found 1 page at 41000, putting into coremap[5]
+looking for 1 pages from COREMAP
+found 1 page at 42000, putting into coremap[6]
+looking for 1 pages from COREMAP
+found 1 page at 43000, putting into coremap[7]
+looking for 1 pages from COREMAP
+found 1 page at 44000, putting into coremap[8]
+looking for 1 pages from COREMAP
+found 1 page at 45000, putting into coremap[9]
+looking for 1 pages from COREMAP
+found 1 page at 46000, putting into coremap[10]
+looking for 1 pages from COREMAP
+found 1 page at 47000, putting into coremap[11]
+looking for 1 pages from COREMAP
+found 1 page at 48000, putting into coremap[12]
+looking for 1 pages from COREMAP
+found 1 page at 49000, putting into coremap[13]
+looking for 1 pages from COREMAP
+found 1 page at 4a000, putting into coremap[14]
+looking for 1 pages from COREMAP
+found 1 page at 4b000, putting into coremap[15]
+Trying to write to the text segment
+This program should fail if the text segment is read-only.
+However, the kernel should not crash...
+freeing block of pages starting at  8003e000, index 2 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003f000, index 3 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80040000, index 4 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80041000, index 5 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80042000, index 6 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80043000, index 7 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80044000, index 8 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80045000, index 9 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80046000, index 10 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80047000, index 11 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80048000, index 12 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80049000, index 13 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004a000, index 14 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004b000, index 15 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003d000, index 1 in cormap 
+freed 1 pages from coremap
+Operation took 0.251032440 seconds
+OS/161 kernel:  p uw-testbin/romemwrite
+looking for 1 pages from COREMAP
+found 1 page at 3d000, putting into coremap[1]
+looking for 1 pages from COREMAP
+found 1 page at 3e000, putting into coremap[2]
+looking for 1 pages from COREMAP
+found 1 page at 3f000, putting into coremap[3]
+looking for 1 pages from COREMAP
+found 1 page at 40000, putting into coremap[4]
+looking for 1 pages from COREMAP
+found 1 page at 41000, putting into coremap[5]
+looking for 1 pages from COREMAP
+found 1 page at 42000, putting into coremap[6]
+looking for 1 pages from COREMAP
+found 1 page at 43000, putting into coremap[7]
+looking for 1 pages from COREMAP
+found 1 page at 44000, putting into coremap[8]
+looking for 1 pages from COREMAP
+found 1 page at 45000, putting into coremap[9]
+looking for 1 pages from COREMAP
+found 1 page at 46000, putting into coremap[10]
+looking for 1 pages from COREMAP
+found 1 page at 47000, putting into coremap[11]
+looking for 1 pages from COREMAP
+found 1 page at 48000, putting into coremap[12]
+looking for 1 pages from COREMAP
+found 1 page at 49000, putting into coremap[13]
+looking for 1 pages from COREMAP
+found 1 page at 4a000, putting into coremap[14]
+looking for 1 pages from COREMAP
+found 1 page at 4b000, putting into coremap[15]
+Trying to write to the text segment
+This program should fail if the text segment is read-only.
+However, the kernel should not crash...
+freeing block of pages starting at  8003e000, index 2 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003f000, index 3 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80040000, index 4 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80041000, index 5 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80042000, index 6 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80043000, index 7 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80044000, index 8 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80045000, index 9 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80046000, index 10 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80047000, index 11 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80048000, index 12 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80049000, index 13 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004a000, index 14 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004b000, index 15 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003d000, index 1 in cormap 
+freed 1 pages from coremap
+Operation took 0.251113800 seconds
+OS/161 kernel:  p uw-testbin/romemwrite
+looking for 1 pages from COREMAP
+found 1 page at 3d000, putting into coremap[1]
+looking for 1 pages from COREMAP
+found 1 page at 3e000, putting into coremap[2]
+looking for 1 pages from COREMAP
+found 1 page at 3f000, putting into coremap[3]
+looking for 1 pages from COREMAP
+found 1 page at 40000, putting into coremap[4]
+looking for 1 pages from COREMAP
+found 1 page at 41000, putting into coremap[5]
+looking for 1 pages from COREMAP
+found 1 page at 42000, putting into coremap[6]
+looking for 1 pages from COREMAP
+found 1 page at 43000, putting into coremap[7]
+looking for 1 pages from COREMAP
+found 1 page at 44000, putting into coremap[8]
+looking for 1 pages from COREMAP
+found 1 page at 45000, putting into coremap[9]
+looking for 1 pages from COREMAP
+found 1 page at 46000, putting into coremap[10]
+looking for 1 pages from COREMAP
+found 1 page at 47000, putting into coremap[11]
+looking for 1 pages from COREMAP
+found 1 page at 48000, putting into coremap[12]
+looking for 1 pages from COREMAP
+found 1 page at 49000, putting into coremap[13]
+looking for 1 pages from COREMAP
+found 1 page at 4a000, putting into coremap[14]
+looking for 1 pages from COREMAP
+found 1 page at 4b000, putting into coremap[15]
+Trying to write to the text segment
+This program should fail if the text segment is read-only.
+However, the kernel should not crash...
+freeing block of pages starting at  8003e000, index 2 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003f000, index 3 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80040000, index 4 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80041000, index 5 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80042000, index 6 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80043000, index 7 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80044000, index 8 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80045000, index 9 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80046000, index 10 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80047000, index 11 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80048000, index 12 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80049000, index 13 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004a000, index 14 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004b000, index 15 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003d000, index 1 in cormap 
+freed 1 pages from coremap
+Operation took 0.251099520 seconds
+OS/161 kernel:  p uw-testbin/romemwrite
+looking for 1 pages from COREMAP
+found 1 page at 3d000, putting into coremap[1]
+looking for 1 pages from COREMAP
+found 1 page at 3e000, putting into coremap[2]
+looking for 1 pages from COREMAP
+found 1 page at 3f000, putting into coremap[3]
+looking for 1 pages from COREMAP
+found 1 page at 40000, putting into coremap[4]
+looking for 1 pages from COREMAP
+found 1 page at 41000, putting into coremap[5]
+looking for 1 pages from COREMAP
+found 1 page at 42000, putting into coremap[6]
+looking for 1 pages from COREMAP
+found 1 page at 43000, putting into coremap[7]
+looking for 1 pages from COREMAP
+found 1 page at 44000, putting into coremap[8]
+looking for 1 pages from COREMAP
+found 1 page at 45000, putting into coremap[9]
+looking for 1 pages from COREMAP
+found 1 page at 46000, putting into coremap[10]
+looking for 1 pages from COREMAP
+found 1 page at 47000, putting into coremap[11]
+looking for 1 pages from COREMAP
+found 1 page at 48000, putting into coremap[12]
+looking for 1 pages from COREMAP
+found 1 page at 49000, putting into coremap[13]
+looking for 1 pages from COREMAP
+found 1 page at 4a000, putting into coremap[14]
+looking for 1 pages from COREMAP
+found 1 page at 4b000, putting into coremap[15]
+Trying to write to the text segment
+This program should fail if the text segment is read-only.
+However, the kernel should not crash...
+freeing block of pages starting at  8003e000, index 2 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003f000, index 3 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80040000, index 4 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80041000, index 5 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80042000, index 6 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80043000, index 7 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80044000, index 8 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80045000, index 9 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80046000, index 10 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80047000, index 11 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80048000, index 12 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80049000, index 13 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004a000, index 14 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004b000, index 15 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003d000, index 1 in cormap 
+freed 1 pages from coremap
+Operation took 0.251211080 seconds
+OS/161 kernel:  p uw-testbin/romemwrite
+looking for 1 pages from COREMAP
+found 1 page at 3d000, putting into coremap[1]
+looking for 1 pages from COREMAP
+found 1 page at 3e000, putting into coremap[2]
+looking for 1 pages from COREMAP
+found 1 page at 3f000, putting into coremap[3]
+looking for 1 pages from COREMAP
+found 1 page at 40000, putting into coremap[4]
+looking for 1 pages from COREMAP
+found 1 page at 41000, putting into coremap[5]
+looking for 1 pages from COREMAP
+found 1 page at 42000, putting into coremap[6]
+looking for 1 pages from COREMAP
+found 1 page at 43000, putting into coremap[7]
+looking for 1 pages from COREMAP
+found 1 page at 44000, putting into coremap[8]
+looking for 1 pages from COREMAP
+found 1 page at 45000, putting into coremap[9]
+looking for 1 pages from COREMAP
+found 1 page at 46000, putting into coremap[10]
+looking for 1 pages from COREMAP
+found 1 page at 47000, putting into coremap[11]
+looking for 1 pages from COREMAP
+found 1 page at 48000, putting into coremap[12]
+looking for 1 pages from COREMAP
+found 1 page at 49000, putting into coremap[13]
+looking for 1 pages from COREMAP
+found 1 page at 4a000, putting into coremap[14]
+looking for 1 pages from COREMAP
+found 1 page at 4b000, putting into coremap[15]
+Trying to write to the text segment
+This program should fail if the text segment is read-only.
+However, the kernel should not crash...
+freeing block of pages starting at  8003e000, index 2 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003f000, index 3 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80040000, index 4 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80041000, index 5 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80042000, index 6 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80043000, index 7 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80044000, index 8 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80045000, index 9 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80046000, index 10 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80047000, index 11 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80048000, index 12 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80049000, index 13 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004a000, index 14 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004b000, index 15 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003d000, index 1 in cormap 
+freed 1 pages from coremap
+Operation took 0.251045760 seconds
+OS/161 kernel:  p uw-testbin/romemwrite
+looking for 1 pages from COREMAP
+found 1 page at 3d000, putting into coremap[1]
+looking for 1 pages from COREMAP
+found 1 page at 3e000, putting into coremap[2]
+looking for 1 pages from COREMAP
+found 1 page at 3f000, putting into coremap[3]
+looking for 1 pages from COREMAP
+found 1 page at 40000, putting into coremap[4]
+looking for 1 pages from COREMAP
+found 1 page at 41000, putting into coremap[5]
+looking for 1 pages from COREMAP
+found 1 page at 42000, putting into coremap[6]
+looking for 1 pages from COREMAP
+found 1 page at 43000, putting into coremap[7]
+looking for 1 pages from COREMAP
+found 1 page at 44000, putting into coremap[8]
+looking for 1 pages from COREMAP
+found 1 page at 45000, putting into coremap[9]
+looking for 1 pages from COREMAP
+found 1 page at 46000, putting into coremap[10]
+looking for 1 pages from COREMAP
+found 1 page at 47000, putting into coremap[11]
+looking for 1 pages from COREMAP
+found 1 page at 48000, putting into coremap[12]
+looking for 1 pages from COREMAP
+found 1 page at 49000, putting into coremap[13]
+looking for 1 pages from COREMAP
+found 1 page at 4a000, putting into coremap[14]
+looking for 1 pages from COREMAP
+found 1 page at 4b000, putting into coremap[15]
+Trying to write to the text segment
+This program should fail if the text segment is read-only.
+However, the kernel should not crash...
+freeing block of pages starting at  8003e000, index 2 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003f000, index 3 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80040000, index 4 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80041000, index 5 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80042000, index 6 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80043000, index 7 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80044000, index 8 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80045000, index 9 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80046000, index 10 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80047000, index 11 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80048000, index 12 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80049000, index 13 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004a000, index 14 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004b000, index 15 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003d000, index 1 in cormap 
+freed 1 pages from coremap
+Operation took 0.251045880 seconds
+OS/161 kernel:  p uw-testbin/romemwrite
+looking for 1 pages from COREMAP
+found 1 page at 3d000, putting into coremap[1]
+looking for 1 pages from COREMAP
+found 1 page at 3e000, putting into coremap[2]
+looking for 1 pages from COREMAP
+found 1 page at 3f000, putting into coremap[3]
+looking for 1 pages from COREMAP
+found 1 page at 40000, putting into coremap[4]
+looking for 1 pages from COREMAP
+found 1 page at 41000, putting into coremap[5]
+looking for 1 pages from COREMAP
+found 1 page at 42000, putting into coremap[6]
+looking for 1 pages from COREMAP
+found 1 page at 43000, putting into coremap[7]
+looking for 1 pages from COREMAP
+found 1 page at 44000, putting into coremap[8]
+looking for 1 pages from COREMAP
+found 1 page at 45000, putting into coremap[9]
+looking for 1 pages from COREMAP
+found 1 page at 46000, putting into coremap[10]
+looking for 1 pages from COREMAP
+found 1 page at 47000, putting into coremap[11]
+looking for 1 pages from COREMAP
+found 1 page at 48000, putting into coremap[12]
+looking for 1 pages from COREMAP
+found 1 page at 49000, putting into coremap[13]
+looking for 1 pages from COREMAP
+found 1 page at 4a000, putting into coremap[14]
+looking for 1 pages from COREMAP
+found 1 page at 4b000, putting into coremap[15]
+Trying to write to the text segment
+This program should fail if the text segment is read-only.
+However, the kernel should not crash...
+freeing block of pages starting at  8003e000, index 2 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003f000, index 3 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80040000, index 4 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80041000, index 5 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80042000, index 6 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80043000, index 7 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80044000, index 8 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80045000, index 9 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80046000, index 10 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80047000, index 11 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80048000, index 12 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80049000, index 13 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004a000, index 14 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004b000, index 15 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003d000, index 1 in cormap 
+freed 1 pages from coremap
+Operation took 0.271360160 seconds
+OS/161 kernel:  p uw-testbin/romemwrite
+looking for 1 pages from COREMAP
+found 1 page at 3d000, putting into coremap[1]
+looking for 1 pages from COREMAP
+found 1 page at 3e000, putting into coremap[2]
+looking for 1 pages from COREMAP
+found 1 page at 3f000, putting into coremap[3]
+looking for 1 pages from COREMAP
+found 1 page at 40000, putting into coremap[4]
+looking for 1 pages from COREMAP
+found 1 page at 41000, putting into coremap[5]
+looking for 1 pages from COREMAP
+found 1 page at 42000, putting into coremap[6]
+looking for 1 pages from COREMAP
+found 1 page at 43000, putting into coremap[7]
+looking for 1 pages from COREMAP
+found 1 page at 44000, putting into coremap[8]
+looking for 1 pages from COREMAP
+found 1 page at 45000, putting into coremap[9]
+looking for 1 pages from COREMAP
+found 1 page at 46000, putting into coremap[10]
+looking for 1 pages from COREMAP
+found 1 page at 47000, putting into coremap[11]
+looking for 1 pages from COREMAP
+found 1 page at 48000, putting into coremap[12]
+looking for 1 pages from COREMAP
+found 1 page at 49000, putting into coremap[13]
+looking for 1 pages from COREMAP
+found 1 page at 4a000, putting into coremap[14]
+looking for 1 pages from COREMAP
+found 1 page at 4b000, putting into coremap[15]
+Trying to write to the text segment
+This program should fail if the text segment is read-only.
+However, the kernel should not crash...
+freeing block of pages starting at  8003e000, index 2 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003f000, index 3 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80040000, index 4 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80041000, index 5 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80042000, index 6 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80043000, index 7 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80044000, index 8 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80045000, index 9 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80046000, index 10 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80047000, index 11 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80048000, index 12 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80049000, index 13 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004a000, index 14 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004b000, index 15 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003d000, index 1 in cormap 
+freed 1 pages from coremap
+Operation took 0.251169680 seconds
+OS/161 kernel:  p uw-testbin/romemwrite
+looking for 1 pages from COREMAP
+found 1 page at 3d000, putting into coremap[1]
+looking for 1 pages from COREMAP
+found 1 page at 3e000, putting into coremap[2]
+looking for 1 pages from COREMAP
+found 1 page at 3f000, putting into coremap[3]
+looking for 1 pages from COREMAP
+found 1 page at 40000, putting into coremap[4]
+looking for 1 pages from COREMAP
+found 1 page at 41000, putting into coremap[5]
+looking for 1 pages from COREMAP
+found 1 page at 42000, putting into coremap[6]
+looking for 1 pages from COREMAP
+found 1 page at 43000, putting into coremap[7]
+looking for 1 pages from COREMAP
+found 1 page at 44000, putting into coremap[8]
+looking for 1 pages from COREMAP
+found 1 page at 45000, putting into coremap[9]
+looking for 1 pages from COREMAP
+found 1 page at 46000, putting into coremap[10]
+looking for 1 pages from COREMAP
+found 1 page at 47000, putting into coremap[11]
+looking for 1 pages from COREMAP
+found 1 page at 48000, putting into coremap[12]
+looking for 1 pages from COREMAP
+found 1 page at 49000, putting into coremap[13]
+looking for 1 pages from COREMAP
+found 1 page at 4a000, putting into coremap[14]
+looking for 1 pages from COREMAP
+found 1 page at 4b000, putting into coremap[15]
+Trying to write to the text segment
+This program should fail if the text segment is read-only.
+However, the kernel should not crash...
+freeing block of pages starting at  8003e000, index 2 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003f000, index 3 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80040000, index 4 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80041000, index 5 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80042000, index 6 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80043000, index 7 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80044000, index 8 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80045000, index 9 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80046000, index 10 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80047000, index 11 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80048000, index 12 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80049000, index 13 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004a000, index 14 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004b000, index 15 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003d000, index 1 in cormap 
+freed 1 pages from coremap
+Operation took 0.251061120 seconds
+OS/161 kernel:  p uw-testbin/romemwrite
+looking for 1 pages from COREMAP
+found 1 page at 3d000, putting into coremap[1]
+looking for 1 pages from COREMAP
+found 1 page at 3e000, putting into coremap[2]
+looking for 1 pages from COREMAP
+found 1 page at 3f000, putting into coremap[3]
+looking for 1 pages from COREMAP
+found 1 page at 40000, putting into coremap[4]
+looking for 1 pages from COREMAP
+found 1 page at 41000, putting into coremap[5]
+looking for 1 pages from COREMAP
+found 1 page at 42000, putting into coremap[6]
+looking for 1 pages from COREMAP
+found 1 page at 43000, putting into coremap[7]
+looking for 1 pages from COREMAP
+found 1 page at 44000, putting into coremap[8]
+looking for 1 pages from COREMAP
+found 1 page at 45000, putting into coremap[9]
+looking for 1 pages from COREMAP
+found 1 page at 46000, putting into coremap[10]
+looking for 1 pages from COREMAP
+found 1 page at 47000, putting into coremap[11]
+looking for 1 pages from COREMAP
+found 1 page at 48000, putting into coremap[12]
+looking for 1 pages from COREMAP
+found 1 page at 49000, putting into coremap[13]
+looking for 1 pages from COREMAP
+found 1 page at 4a000, putting into coremap[14]
+looking for 1 pages from COREMAP
+found 1 page at 4b000, putting into coremap[15]
+Trying to write to the text segment
+This program should fail if the text segment is read-only.
+However, the kernel should not crash...
+freeing block of pages starting at  8003e000, index 2 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003f000, index 3 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80040000, index 4 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80041000, index 5 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80042000, index 6 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80043000, index 7 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80044000, index 8 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80045000, index 9 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80046000, index 10 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80047000, index 11 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80048000, index 12 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80049000, index 13 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004a000, index 14 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004b000, index 15 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003d000, index 1 in cormap 
+freed 1 pages from coremap
+Operation took 0.251071080 seconds
+OS/161 kernel:  p uw-testbin/romemwrite
+looking for 1 pages from COREMAP
+found 1 page at 3d000, putting into coremap[1]
+looking for 1 pages from COREMAP
+found 1 page at 3e000, putting into coremap[2]
+looking for 1 pages from COREMAP
+found 1 page at 3f000, putting into coremap[3]
+looking for 1 pages from COREMAP
+found 1 page at 40000, putting into coremap[4]
+looking for 1 pages from COREMAP
+found 1 page at 41000, putting into coremap[5]
+looking for 1 pages from COREMAP
+found 1 page at 42000, putting into coremap[6]
+looking for 1 pages from COREMAP
+found 1 page at 43000, putting into coremap[7]
+looking for 1 pages from COREMAP
+found 1 page at 44000, putting into coremap[8]
+looking for 1 pages from COREMAP
+found 1 page at 45000, putting into coremap[9]
+looking for 1 pages from COREMAP
+found 1 page at 46000, putting into coremap[10]
+looking for 1 pages from COREMAP
+found 1 page at 47000, putting into coremap[11]
+looking for 1 pages from COREMAP
+found 1 page at 48000, putting into coremap[12]
+looking for 1 pages from COREMAP
+found 1 page at 49000, putting into coremap[13]
+looking for 1 pages from COREMAP
+found 1 page at 4a000, putting into coremap[14]
+looking for 1 pages from COREMAP
+found 1 page at 4b000, putting into coremap[15]
+Trying to write to the text segment
+This program should fail if the text segment is read-only.
+However, the kernel should not crash...
+freeing block of pages starting at  8003e000, index 2 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003f000, index 3 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80040000, index 4 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80041000, index 5 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80042000, index 6 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80043000, index 7 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80044000, index 8 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80045000, index 9 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80046000, index 10 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80047000, index 11 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80048000, index 12 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80049000, index 13 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004a000, index 14 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004b000, index 15 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003d000, index 1 in cormap 
+freed 1 pages from coremap
+Operation took 0.251048080 seconds
+OS/161 kernel:  p uw-testbin/romemwrite
+looking for 1 pages from COREMAP
+found 1 page at 3d000, putting into coremap[1]
+looking for 1 pages from COREMAP
+found 1 page at 3e000, putting into coremap[2]
+looking for 1 pages from COREMAP
+found 1 page at 3f000, putting into coremap[3]
+looking for 1 pages from COREMAP
+found 1 page at 40000, putting into coremap[4]
+looking for 1 pages from COREMAP
+found 1 page at 41000, putting into coremap[5]
+looking for 1 pages from COREMAP
+found 1 page at 42000, putting into coremap[6]
+looking for 1 pages from COREMAP
+found 1 page at 43000, putting into coremap[7]
+looking for 1 pages from COREMAP
+found 1 page at 44000, putting into coremap[8]
+looking for 1 pages from COREMAP
+found 1 page at 45000, putting into coremap[9]
+looking for 1 pages from COREMAP
+found 1 page at 46000, putting into coremap[10]
+looking for 1 pages from COREMAP
+found 1 page at 47000, putting into coremap[11]
+looking for 1 pages from COREMAP
+found 1 page at 48000, putting into coremap[12]
+looking for 1 pages from COREMAP
+found 1 page at 49000, putting into coremap[13]
+looking for 1 pages from COREMAP
+found 1 page at 4a000, putting into coremap[14]
+looking for 1 pages from COREMAP
+found 1 page at 4b000, putting into coremap[15]
+Trying to write to the text segment
+This program should fail if the text segment is read-only.
+However, the kernel should not crash...
+freeing block of pages starting at  8003e000, index 2 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003f000, index 3 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80040000, index 4 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80041000, index 5 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80042000, index 6 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80043000, index 7 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80044000, index 8 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80045000, index 9 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80046000, index 10 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80047000, index 11 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80048000, index 12 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80049000, index 13 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004a000, index 14 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004b000, index 15 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003d000, index 1 in cormap 
+freed 1 pages from coremap
+Operation took 0.251057200 seconds
+OS/161 kernel:  p uw-testbin/romemwrite
+looking for 1 pages from COREMAP
+found 1 page at 3d000, putting into coremap[1]
+looking for 1 pages from COREMAP
+found 1 page at 3e000, putting into coremap[2]
+looking for 1 pages from COREMAP
+found 1 page at 3f000, putting into coremap[3]
+looking for 1 pages from COREMAP
+found 1 page at 40000, putting into coremap[4]
+looking for 1 pages from COREMAP
+found 1 page at 41000, putting into coremap[5]
+looking for 1 pages from COREMAP
+found 1 page at 42000, putting into coremap[6]
+looking for 1 pages from COREMAP
+found 1 page at 43000, putting into coremap[7]
+looking for 1 pages from COREMAP
+found 1 page at 44000, putting into coremap[8]
+looking for 1 pages from COREMAP
+found 1 page at 45000, putting into coremap[9]
+looking for 1 pages from COREMAP
+found 1 page at 46000, putting into coremap[10]
+looking for 1 pages from COREMAP
+found 1 page at 47000, putting into coremap[11]
+looking for 1 pages from COREMAP
+found 1 page at 48000, putting into coremap[12]
+looking for 1 pages from COREMAP
+found 1 page at 49000, putting into coremap[13]
+looking for 1 pages from COREMAP
+found 1 page at 4a000, putting into coremap[14]
+looking for 1 pages from COREMAP
+found 1 page at 4b000, putting into coremap[15]
+Trying to write to the text segment
+This program should fail if the text segment is read-only.
+However, the kernel should not crash...
+freeing block of pages starting at  8003e000, index 2 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003f000, index 3 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80040000, index 4 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80041000, index 5 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80042000, index 6 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80043000, index 7 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80044000, index 8 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80045000, index 9 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80046000, index 10 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80047000, index 11 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80048000, index 12 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80049000, index 13 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004a000, index 14 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004b000, index 15 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003d000, index 1 in cormap 
+freed 1 pages from coremap
+Operation took 0.266587640 seconds
+OS/161 kernel:  p uw-testbin/romemwrite
+looking for 1 pages from COREMAP
+found 1 page at 3d000, putting into coremap[1]
+looking for 1 pages from COREMAP
+found 1 page at 3e000, putting into coremap[2]
+looking for 1 pages from COREMAP
+found 1 page at 3f000, putting into coremap[3]
+looking for 1 pages from COREMAP
+found 1 page at 40000, putting into coremap[4]
+looking for 1 pages from COREMAP
+found 1 page at 41000, putting into coremap[5]
+looking for 1 pages from COREMAP
+found 1 page at 42000, putting into coremap[6]
+looking for 1 pages from COREMAP
+found 1 page at 43000, putting into coremap[7]
+looking for 1 pages from COREMAP
+found 1 page at 44000, putting into coremap[8]
+looking for 1 pages from COREMAP
+found 1 page at 45000, putting into coremap[9]
+looking for 1 pages from COREMAP
+found 1 page at 46000, putting into coremap[10]
+looking for 1 pages from COREMAP
+found 1 page at 47000, putting into coremap[11]
+looking for 1 pages from COREMAP
+found 1 page at 48000, putting into coremap[12]
+looking for 1 pages from COREMAP
+found 1 page at 49000, putting into coremap[13]
+looking for 1 pages from COREMAP
+found 1 page at 4a000, putting into coremap[14]
+looking for 1 pages from COREMAP
+found 1 page at 4b000, putting into coremap[15]
+Trying to write to the text segment
+This program should fail if the text segment is read-only.
+However, the kernel should not crash...
+freeing block of pages starting at  8003e000, index 2 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003f000, index 3 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80040000, index 4 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80041000, index 5 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80042000, index 6 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80043000, index 7 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80044000, index 8 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80045000, index 9 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80046000, index 10 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80047000, index 11 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80048000, index 12 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80049000, index 13 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004a000, index 14 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004b000, index 15 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003d000, index 1 in cormap 
+freed 1 pages from coremap
+Operation took 0.251113640 seconds
+OS/161 kernel:  p uw-testbin/romemwrite
+looking for 1 pages from COREMAP
+found 1 page at 3d000, putting into coremap[1]
+looking for 1 pages from COREMAP
+found 1 page at 3e000, putting into coremap[2]
+looking for 1 pages from COREMAP
+found 1 page at 3f000, putting into coremap[3]
+looking for 1 pages from COREMAP
+found 1 page at 40000, putting into coremap[4]
+looking for 1 pages from COREMAP
+found 1 page at 41000, putting into coremap[5]
+looking for 1 pages from COREMAP
+found 1 page at 42000, putting into coremap[6]
+looking for 1 pages from COREMAP
+found 1 page at 43000, putting into coremap[7]
+looking for 1 pages from COREMAP
+found 1 page at 44000, putting into coremap[8]
+looking for 1 pages from COREMAP
+found 1 page at 45000, putting into coremap[9]
+looking for 1 pages from COREMAP
+found 1 page at 46000, putting into coremap[10]
+looking for 1 pages from COREMAP
+found 1 page at 47000, putting into coremap[11]
+looking for 1 pages from COREMAP
+found 1 page at 48000, putting into coremap[12]
+looking for 1 pages from COREMAP
+found 1 page at 49000, putting into coremap[13]
+looking for 1 pages from COREMAP
+found 1 page at 4a000, putting into coremap[14]
+looking for 1 pages from COREMAP
+found 1 page at 4b000, putting into coremap[15]
+Trying to write to the text segment
+This program should fail if the text segment is read-only.
+However, the kernel should not crash...
+freeing block of pages starting at  8003e000, index 2 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003f000, index 3 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80040000, index 4 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80041000, index 5 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80042000, index 6 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80043000, index 7 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80044000, index 8 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80045000, index 9 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80046000, index 10 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80047000, index 11 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80048000, index 12 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80049000, index 13 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004a000, index 14 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004b000, index 15 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003d000, index 1 in cormap 
+freed 1 pages from coremap
+Operation took 0.251192520 seconds
+OS/161 kernel:  p uw-testbin/romemwrite
+looking for 1 pages from COREMAP
+found 1 page at 3d000, putting into coremap[1]
+looking for 1 pages from COREMAP
+found 1 page at 3e000, putting into coremap[2]
+looking for 1 pages from COREMAP
+found 1 page at 3f000, putting into coremap[3]
+looking for 1 pages from COREMAP
+found 1 page at 40000, putting into coremap[4]
+looking for 1 pages from COREMAP
+found 1 page at 41000, putting into coremap[5]
+looking for 1 pages from COREMAP
+found 1 page at 42000, putting into coremap[6]
+looking for 1 pages from COREMAP
+found 1 page at 43000, putting into coremap[7]
+looking for 1 pages from COREMAP
+found 1 page at 44000, putting into coremap[8]
+looking for 1 pages from COREMAP
+found 1 page at 45000, putting into coremap[9]
+looking for 1 pages from COREMAP
+found 1 page at 46000, putting into coremap[10]
+looking for 1 pages from COREMAP
+found 1 page at 47000, putting into coremap[11]
+looking for 1 pages from COREMAP
+found 1 page at 48000, putting into coremap[12]
+looking for 1 pages from COREMAP
+found 1 page at 49000, putting into coremap[13]
+looking for 1 pages from COREMAP
+found 1 page at 4a000, putting into coremap[14]
+looking for 1 pages from COREMAP
+found 1 page at 4b000, putting into coremap[15]
+Trying to write to the text segment
+This program should fail if the text segment is read-only.
+However, the kernel should not crash...
+freeing block of pages starting at  8003e000, index 2 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003f000, index 3 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80040000, index 4 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80041000, index 5 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80042000, index 6 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80043000, index 7 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80044000, index 8 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80045000, index 9 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80046000, index 10 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80047000, index 11 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80048000, index 12 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80049000, index 13 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004a000, index 14 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004b000, index 15 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003d000, index 1 in cormap 
+freed 1 pages from coremap
+Operation took 0.251060400 seconds
+OS/161 kernel:  p uw-testbin/romemwrite
+looking for 1 pages from COREMAP
+found 1 page at 3d000, putting into coremap[1]
+looking for 1 pages from COREMAP
+found 1 page at 3e000, putting into coremap[2]
+looking for 1 pages from COREMAP
+found 1 page at 3f000, putting into coremap[3]
+looking for 1 pages from COREMAP
+found 1 page at 40000, putting into coremap[4]
+looking for 1 pages from COREMAP
+found 1 page at 41000, putting into coremap[5]
+looking for 1 pages from COREMAP
+found 1 page at 42000, putting into coremap[6]
+looking for 1 pages from COREMAP
+found 1 page at 43000, putting into coremap[7]
+looking for 1 pages from COREMAP
+found 1 page at 44000, putting into coremap[8]
+looking for 1 pages from COREMAP
+found 1 page at 45000, putting into coremap[9]
+looking for 1 pages from COREMAP
+found 1 page at 46000, putting into coremap[10]
+looking for 1 pages from COREMAP
+found 1 page at 47000, putting into coremap[11]
+looking for 1 pages from COREMAP
+found 1 page at 48000, putting into coremap[12]
+looking for 1 pages from COREMAP
+found 1 page at 49000, putting into coremap[13]
+looking for 1 pages from COREMAP
+found 1 page at 4a000, putting into coremap[14]
+looking for 1 pages from COREMAP
+found 1 page at 4b000, putting into coremap[15]
+Trying to write to the text segment
+This program should fail if the text segment is read-only.
+However, the kernel should not crash...
+freeing block of pages starting at  8003e000, index 2 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003f000, index 3 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80040000, index 4 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80041000, index 5 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80042000, index 6 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80043000, index 7 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80044000, index 8 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80045000, index 9 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80046000, index 10 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80047000, index 11 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80048000, index 12 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  80049000, index 13 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004a000, index 14 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8004b000, index 15 in cormap 
+freed 1 pages from coremap
+freeing block of pages starting at  8003d000, index 1 in cormap 
+freed 1 pages from coremap
+Operation took 0.251261320 seconds
+OS/161 kernel:   q
+Shutting down.
+The system is halted.

@@ -29,7 +29,7 @@
 
 #ifndef _ADDRSPACE_H_
 #define _ADDRSPACE_H_
-
+#include "opt-A3.h"
 /*
  * Address space structure and operations.
  */
@@ -48,14 +48,24 @@ struct vnode;
  */
 
 struct addrspace {
-  vaddr_t as_vbase1;
-  paddr_t as_pbase1;
-  size_t as_npages1;
-  vaddr_t as_vbase2;
-  paddr_t as_pbase2;
-  size_t as_npages2;
-  paddr_t as_stackpbase;
+
+  #if OPT_A3
+    paddr_t * as_pbase1;      // page table for text
+    paddr_t * as_pbase2;      //page table for data
+    paddr_t * as_stackpbase;  // page table for stack
+    bool loadelf_done;        // added flag
+  #else 
+    paddr_t as_pbase1;
+    paddr_t as_pbase2;
+    paddr_t as_stackpbase;
+  #endif 
+  
+    vaddr_t as_vbase1;
+    size_t as_npages1;
+    vaddr_t as_vbase2;
+    size_t as_npages2;
 };
+
 
 /*
  * Functions in addrspace.c:

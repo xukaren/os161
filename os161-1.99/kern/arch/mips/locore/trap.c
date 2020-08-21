@@ -39,6 +39,9 @@
 #include <vm.h>
 #include <mainbus.h>
 #include <syscall.h>
+#include "opt-A3.h"
+#include <addrspace.h>
+#include <proc.h>
 
 
 /* in exception.S */
@@ -111,6 +114,28 @@ kill_curthread(vaddr_t epc, unsigned code, vaddr_t vaddr)
 	/*
 	 * You will probably want to change this.
 	 */
+	 #if OPT_A3
+		sys__exit(sig);
+		 // sys__exit without comments: 
+		// struct addrspace *as;
+		// struct proc *p = curproc;
+		// DEBUG(DB_SYSCALL,"Syscall: kill_curthread(%d)\n",exitcode);
+
+		// KASSERT(curproc->p_addrspace != NULL);
+		// as_deactivate();
+
+		// as = curproc_setas(NULL);
+		// as_destroy(as);
+
+		// proc_remthread(curthread);
+
+    	// proc_destroy(p);
+		// thread_exit();
+		// /* thread_exit() does not return, so we should never get here */
+		// panic("in kill_curthread: return from thread_exit in kill_curthread\n");
+
+
+	 #endif
 
 	kprintf("Fatal user mode trap %u sig %d (%s, epc 0x%x, vaddr 0x%x)\n",
 		code, sig, trapcodenames[code], epc, vaddr);
